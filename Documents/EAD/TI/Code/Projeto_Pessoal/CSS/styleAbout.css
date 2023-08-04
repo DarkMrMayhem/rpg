@@ -1,10 +1,8 @@
 /*Import de todas paginas*/
 @import url("../CSS/navbar.css");
 @import url("../CSS/footer.css");
-/*Import do Inicio*/
-@import url("../CSS/presentation.css");
-@import url("../CSS/imageFicha.css");
-@import url("../CSS/starting.css");
+/*Import do About*/
+@import url("../CSS/presentationAbout.css");
 
 :root {
     /*Tema Escuro*/
@@ -22,6 +20,7 @@
     --fundo-botão-texto-TC: #000;
     --text-color-TC: #000;
     /*Others*/
+    --fundo-banner: #363636;
     --cabecalho-azul: #3272D1;
     --rodape-azul-escuro: #0A52BD;
     --sol: #EEB522;
