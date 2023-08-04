@@ -1,0 +1,135 @@
+# Version: 0.1
+# 
+# "race":
+#   "T20":
+#       "Humano"
+#       "Anão"
+#       "Dahllan"
+#       "Elfo"
+#       "Goblin"
+#       "Lefou"
+#       "Minotauro"
+#       "Qareen"
+#       "Golem"
+#       "Hynne"
+#       "Kliren"
+#       "Medusa"
+#       "Osteon"
+#       "Sereia/tritão"
+#       "Sílfide"
+#       "Suraggel"
+#       "Trog"
+
+#   "Ghanor": 
+#       "Anão"
+#       "Elfo"
+#       "Gigante"
+#       "Hobgoblin"
+#       "Meio-Elfo"
+#       "Aberrante"
+
+#   "Homebrew": 
+#       "Felis"
+#       "Gigante"
+#       "Golem"
+#       "HalfElf"
+#       "Nagah"
+#       "Licantropo"
+#       "Vampiro"
+#       "Amorfático" 
+		
+#   "Povo-Trovão": 
+#       "Ceratops"
+#       "Pteros"
+#       "Velocis"
+#       "Voracis"
+	
+#   "Moreau": 
+#       "Búfalo"
+#       "Coelho"
+#       "Coruja"
+#       "Crocodilo"
+#       "Gato"
+#       "Hiena"
+#       "Leão"
+#       "Lobo"
+#       "Morcego"
+#       "Raposa"
+#       "Serpente"
+#       "Urso"
+	
+#   "Arym": 
+#       "Dampiro"
+#       "Draconato"
+#       "Aasimar"
+#       "Duplo"
+#       "Gnomo"
+#       "Harpia"
+#       "Kobold"
+#       "Herança do Camundongo"
+#       "Herança do Macaco"
+#       "Herança do Pato"
+#       "Herança da Tartaruga"
+#       "Oni"
+#       "Orc"
+#       "Meio-Elfo"
+    
+#   "Ameaças (0.4)":
+#       "Kaijin"
+#       "Kappa"
+#       "Mashin"
+#       "Nezumi"
+#       "Tengu"
+#       "Meio-Orc"
+#       "Orc"
+#       "Tabrachi"
+#       "Trog"
+#       "Trog Anão"
+#       "Ogro"
+#       "Bugbear"
+#       "Hobgoblin"
+#       "Gnoll"
+#       "Golem"
+#       "Kallyanach"
+#       "Minauro"
+#       "Harpia"
+
+
+
+
+
+
+
+
+
+"race":         (2411 linhas) | (79 Raças)
+"class":        (0 linhas)
+"origin":       (0 linhas)
+"devotion":     (0 linhas)
+"skill":        (0 linhas)
+"generalPower": (0 linhas)
+"equipment":    (0 linhas)
+"spells":       (0 linhas)
+
+
+Nível
+Atributos
+Raça
+
+Classe
+    Poderes de Classe
+Origem
+    Poderes de Origem
+Devoção
+    Poderes de Devoção
+
+Distinção
+    Poderes de Devoção
+Poderes
+    Poderes Gerais
+Magia
+    Magias
+Equipamento
+    Equipamento
+Desvantagem
+    Poder de Desvantagem
