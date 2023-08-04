@@ -1,3 +1,12 @@
+@import url("../CSS/navbar.css");
+@import url("../CSS/presentation.css");
+@import url("../CSS/imageFicha.css");
+@import url("../CSS/footer.css");
+@import url("../CSS/starting.css");
+/*
+@import url(""); 
+*/
+
 :root {
     /*Tema Escuro*/
     --fundo-TE: #282424;
@@ -27,12 +36,10 @@
     --bronze-borda: #964F0C;
 }
 
-/*------------------------Cores Acima------------------------*/
-
 body {
     background-color: var(--fundo-TC);
     font-family: 'Alegreya Sans', sans-serif;
-
+    
     align-items: center;
     box-sizing: border-box;
     display: flex;
@@ -44,176 +51,18 @@ body {
     transition: background 0.2s linear;
 }
 
-/*Barra de Navegação*/
+/*Infos Gerais*/
 
-.navbar, 
-.navbar__links, 
-.navbar__chk {
+main {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
-
-.navbar {
-    background-color: var(--cabecalho-azul);
-    
-    padding: 1rem 0;
-    width: 100%;
-}
-
-.navbar__logo {
-    border-radius: 50px;
-    height: auto;
-    max-width: 60px; 
-}
-
-.navbar__links-item {
-    color: var(--text-color-TC);
-    
-    margin-right: 2rem;
-    text-decoration: none;
-}
-
-/*Tema Claro - Escuro*/
-
-.checkbox {
-    opacity: 0;
-    position: relative;
-}
-
-.fas {
-    font-size: 1.3rem;
-}
-
-.label {
-    align-items: center;
-    border-radius: 50px;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-
-    height: 26px;
-    width: 26px;
-    
-    transform: scale(1.5);
-}
-
-.fa-sun {
-    color: var(--sol);
-    opacity: initial;
-}
-
-.fa-moon {
-    opacity: 0;
-}
-
-/*Dark Mode*/
-
-.dark {
-    background: var(--fundo-TE);
-    color: var(--text-color-TE);
-}
-
-.dark .fa-sun {
-    opacity: 0;
-}
-
-.dark .fa-moon {
-    color: var(--lua);
-    opacity: initial;
-}
-
-/*Infos Gerais*/
 
 .corpo {
     align-items: flex-start;
     display: flex;
-    flex-direction: row;
-}
-
-.presentation {
-    align-items: stretch;
-    display: flex;
     flex-direction: column;
-    margin: 2rem 2rem;
     width: 50%;
-}
-
-.presentation__title {
-    font-size: 1.8rem;
-    font-weight: bold;
-    text-align: center;
-}
-
-.presentation__text {
-    line-height: 1.2rem;
-    margin-top: 1rem;
-    text-align: justify;
-}
-
-.presentation__text2 {
-    margin-top: .8rem;
-    line-height: 1.2rem;
-}
-
-.presentation__text2-item {
-    margin-top: .5rem;
-}
-
-.tocha__azul {
-    color: var(--rodape-azul-escuro);
-    
-    font-weight: bold;
-}
-
-.presentation__link {
-    text-decoration: underline;
-}
-
-.imagem {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    margin: 2rem;
-    width: 800px;
-    justify-content: center;
-}
-
-.imagem__ficha {
-    align-self: center;
-
-    max-width: 1211px; 
-    max-height: 1625px;
-    
-    width: 70%; 
-    height: 70%;
-}
-
-/* Rodapé */
-
-.rodape {
-    background-color: var(--rodape-azul-escuro);
-    color: var(--text-color-TE);
-    
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    padding: 1rem 0;
-    width: 100%;
-}
-
-.rodape__text {
-    margin-top: 1rem;
-    text-align: center;
-}
-
-.rodape__link {
-    text-decoration: underline;
-}
-
-.strong {
-    font-weight: bold;
+    margin: 2rem 2rem;
 }
