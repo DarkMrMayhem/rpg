@@ -25,6 +25,16 @@
     --rodape-azul-escuro: #0A52BD;
     --sol: #EEB522;
     --lua: #AEA5A5;
+    --transparente: transparent;
+    /*Cores First 8*/
+    --cor-gado: #84519C;
+    --cor-lucas: #3288c2;
+    --cor-dark: #ee5108;
+    --cor-binho: #e4b400;
+    --cor-diego: #ca025c;
+    --cor-northeus: #25806a;
+    --cor-augusto: #ce3126;
+    --cor-ramom: #3f6d95;
     /*Moedas*/
     --dourado-moeda: #9A7311;
     --dourado-borda: #6B4F09;
