@@ -1,9 +1,8 @@
 /*Import de todas paginas*/
 @import url("../CSS/navbar.css");
 @import url("../CSS/footer.css");
-/*Import do About*/
-@import url("../CSS/presentationAbout.css");
-@import url("../CSS/buttonDiscordAbout.css");
+/*Import do Inicio*/
+/* @import url("");*/
 
 :root {
     /*Tema Escuro*/
@@ -21,21 +20,10 @@
     --fundo-botão-texto-TC: #000;
     --text-color-TC: #000;
     /*Others*/
-    --fundo-banner: #363636;
     --cabecalho-azul: #3272D1;
     --rodape-azul-escuro: #0A52BD;
     --sol: #EEB522;
     --lua: #AEA5A5;
-    --transparente: transparent;
-    /*Cores First 8*/
-    --cor-gado: #84519C;
-    --cor-lucas: #3288c2;
-    --cor-dark: #ee5108;
-    --cor-binho: #e4b400;
-    --cor-diego: #ca025c;
-    --cor-northeus: #25806a;
-    --cor-augusto: #ce3126;
-    --cor-ramom: #3f6d95;
     /*Moedas*/
     --dourado-moeda: #9A7311;
     --dourado-borda: #6B4F09;
@@ -67,3 +55,57 @@ main {
     flex-direction: row;
     justify-content: space-between;
 }
+
+/*Botões*/
+
+.db__botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+}
+
+.db__bt {
+
+}
+
+.db__bt-race {
+
+}
+
+.db__bt-class {
+
+}
+
+.db__bt-origin {
+
+}
+
+.db__bt-devotion {
+
+}
+
+.db__bt-distinction {
+
+}
+
+.db__bt-skill {
+
+}
+
+.db__bt-generalPower {
+
+}
+
+.db__bt-spells {
+
+}
+
+.db__bt-equipment {
+
+}
+
+.db__bt-disadvantage {
+
+}
+

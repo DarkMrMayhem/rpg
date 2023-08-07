@@ -2405,7 +2405,50 @@
 					}
 				]
 			}
-			
 		]
-	}
+	},
+
+Retirar_no_FInal:__________________Classes
+
+  {
+    "class":
+    [
+      {
+        "className": "Arcanista",
+        "abilities": 
+        [
+          {
+            "abilitiesName": "Atributos",
+            "abilitiesDescription": "+1 em Três Atributos Diferentes"
+          },
+          {
+            "abilitiesName": "Versátil",
+            "abilitiesDescription": "Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha."
+          }
+        ]
+      },
+    ]
+  },
+
+Retirar_no_FInal:__________________Classes
+
+  {
+    "origin":
+    [
+      {
+        "className": "Arcanista",
+        "abilities": 
+        [
+          {
+            "abilitiesName": "Atributos",
+            "abilitiesDescription": "+1 em Três Atributos Diferentes"
+          },
+          {
+            "abilitiesName": "Versátil",
+            "abilitiesDescription": "Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha."
+          }
+        ]
+      },
+    ]
+  },
 ]
