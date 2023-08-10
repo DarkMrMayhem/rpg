@@ -2,7 +2,7 @@
 @import url("../CSS/navbar.css");
 @import url("../CSS/footer.css");
 /*Import do Inicio*/
-/* @import url("");*/
+@import url("../CSS/styleDBButtons.css");
 
 :root {
     /*Tema Escuro*/
@@ -55,57 +55,3 @@ main {
     flex-direction: row;
     justify-content: space-between;
 }
-
-/*Botões*/
-
-.db__botoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: left;
-}
-
-.db__bt {
-
-}
-
-.db__bt-race {
-
-}
-
-.db__bt-class {
-
-}
-
-.db__bt-origin {
-
-}
-
-.db__bt-devotion {
-
-}
-
-.db__bt-distinction {
-
-}
-
-.db__bt-skill {
-
-}
-
-.db__bt-generalPower {
-
-}
-
-.db__bt-spells {
-
-}
-
-.db__bt-equipment {
-
-}
-
-.db__bt-disadvantage {
-
-}
-

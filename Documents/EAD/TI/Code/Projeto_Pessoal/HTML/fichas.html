@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="C:/Users/wesleyabatista/Documents/EAD/TI/Code/Projeto_Pessoal/CSS/reset.css">
     <link rel="stylesheet" href="C:/Users/wesleyabatista/Documents/EAD/TI/Code/Projeto_Pessoal/CSS/style.css">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>    
+    <script src="../JS/darkmode.js" defer></script>
     <title>Database da Estalagem da Tocha Azul</title>
 </head>
 
@@ -32,16 +34,117 @@
             </label>
         </div>
     </header>
+    
     <main>
-
+        <div class="menu__suspenso">
+            <label for="races">Escolha sua Raça:</label>
+            <select name="T20" id="races">
+                <!-- T20 -->
+                <option value="t20__humano">Humano</option>
+                <option value="t20__anao">Anão</option>
+                <option value="t20__dahllan">Dahllan</option>
+                <option value="t20__elfo">Elfo</option>
+                <option value="t20__goblin">Goblin</option>
+                <option value="t20__lefou">Lefou</option>
+                <option value="t20__minotauro">Minotauro</option>
+                <option value="t20__qareen">Qareen</option>
+                <option value="t20__golem">Golem</option>
+                <option value="t20__hynne">Hynne</option>
+                <option value="t20__kliren">Kliren</option>
+                <option value="t20__medusa">Medusa</option>
+                <option value="t20__osteon">Osteon</option>
+                <option value="t20__sereia">Sereia/tritão</option>
+                <option value="t20__silfide">Sílfide</option>
+                <option value="t20__suraggel">Suraggel</option>
+                <option value="t20__trog">Trog</option>
+                <!-- Ghanor --> 
+                <option value="ghanor__anao">Anão</option>
+                <option value="ghanor__elfo">Elfo</option>
+                <option value="ghanor__gigante">Gigante</option>
+                <option value="ghanor__hobgoblin">Hobgoblin</option>
+                <option value="ghanor__meioElfo">Meio-Elfo</option>
+                <option value="ghanor__aberrante">Aberrante</option>
+                <!-- Homebrew -->
+                <option value="homebrew__felis">Felis</option>
+                <option value="homebrew__gigante">Gigante</option>
+                <option value="homebrew__golem">Golem</option>
+                <option value="homebrew__halfElf">HalfElf</option>
+                <option value="homebrew__nagah">Nagah</option>
+                <option value="homebrew__licantropo">Licantropo</option>
+                <option value="homebrew__vampiro">Vampiro</option>
+                <option value="homebrew__amorfatico">Amorfático</option>
+                <!-- Povo-Trovão -->
+                <option value="povoTrovao__ceratops">Ceratops</option>
+                <option value="povoTrovao__pteros">Pteros</option>
+                <option value="povoTrovao__velocis">Velocis</option>
+                <option value="povoTrovao__voracis">Voracis</option>
+                <!-- Moreau -->
+                <option value="moreau__bufalo">Búfalo</option>
+                <option value="moreau__coelho">Coelho</option>
+                <option value="moreau__coruja">Coruja</option>
+                <option value="moreau__crocodilo">Crocodilo</option>
+                <option value="moreau__gato">Gato</option>
+                <option value="moreau__hiena">Hiena</option>
+                <option value="moreau__leao">Leão</option>
+                <option value="moreau__lobo">Lobo</option>
+                <option value="moreau__morcego">Morcego</option>
+                <option value="moreau__raposa">Raposa</option>
+                <option value="moreau__serpente">Serpente</option>
+                <option value="moreau__urso">Urso</option>
+                <!-- Arym -->
+                <option value="arym__dampiro">Dampiro</option>
+                <option value="arym__draconato">Draconato</option>
+                <option value="arym__aasimar">Aasimar</option>
+                <option value="arym__duplo">Duplo</option>
+                <option value="arym__gnomo">Gnomo</option>
+                <option value="arym__harpia">Harpia</option>
+                <option value="arym__kobold">Kobold</option>
+                <option value="arym__camundongo">Herança do Camundongo</option>
+                <option value="arym__macaco">Herança do Macaco</option>
+                <option value="arym__pato">Herança do Pato</option>
+                <option value="arym__tartaruga">Herança da Tartaruga</option>
+                <option value="arym__oni">Oni</option>
+                <option value="arym__orc">Orc</option>
+                <option value="arym__meioElfo">Meio-Elfo</option>
+                <!-- Ameaças (0.4) -->
+                <option value="ameacas__kaijin">Kaijin</option>
+                <option value="ameacas__kappa">Kappa</option>
+                <option value="ameacas__mashin">Mashin</option>
+                <option value="ameacas__nezumi">Nezumi</option>
+                <option value="ameacas__tengu">Tengu</option>
+                <option value="ameacas__meioOrc">Meio-Orc</option>
+                <option value="ameacas__orc">Orc</option>
+                <option value="ameacas__tabrachi">Tabrachi</option>
+                <option value="ameacas__trog">Trog</option>
+                <option value="ameacas__trogAnao">Trog Anão</option>
+                <option value="ameacas__ogro">Ogro</option>
+                <option value="ameacas__bugbear">Bugbear</option>
+                <option value="ameacas__hobgoblin">Hobgoblin</option>
+                <option value="ameacas__gnoll">Gnoll</option>
+                <option value="ameacas__golem">Golem</option>
+                <option value="ameacas__kallyanach">Kallyanach</option>
+                <option value="ameacas__minauro">Minauro</option>
+                <option value="ameacas__harpia">Harpia</option>
+            </select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            <select name="" id=""></select>
+            
+        </div>
     </main>
+    
     <footer class="rodape">
         <p class="rodape__text"><b class="strong">Tormenta20</b> é um produto da Jambô Editora e seus respectivos criadores, todos os direitos reservados.</p>
         <p class="rodape__text"><a class="rodape__link" href="https://jamboeditora.com.br/" target="_blank">https://jamboeditora.com.br/</a></p>
         <p class="rodape__text">Este é um projeto de fãs e não possui fins lucrativos</p>
     </footer>
-    
-    <script src="../JS/script.js" defer></script>
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
 </body>
 </html>

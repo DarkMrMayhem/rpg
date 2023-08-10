@@ -101,7 +101,6 @@
 
 
 
-
 "race":         (2411 linhas) | (79 Raças)
 "class":        (0 linhas)
 "origin":       (0 linhas)
@@ -110,6 +109,7 @@
 "generalPower": (0 linhas)
 "equipment":    (0 linhas)
 "spells":       (0 linhas)
+"distinction":  (0 linhas)
 
 
 Nível
@@ -125,6 +125,7 @@ Devoção
 
 Distinção
     Poderes de Devoção
+Perícias
 Poderes
     Poderes Gerais
 Magia
@@ -133,3 +134,185 @@ Equipamento
     Equipamento
 Desvantagem
     Poder de Desvantagem
+
+
+---------------------------------------------------------------------------------------------------------------
+{
+		"origin":
+		[
+			{
+				"className": "-",
+				"raceAbilities": 
+				[
+					{
+						"abilitiesName": "Atributos",
+						"abilitiesDescription": "+1 em Três Atributos Diferentes"
+					},
+					{
+						"abilitiesName": "Versátil",
+						"abilitiesDescription": "Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha."
+					}
+				]
+			}
+		]
+	}
+---------------------------------------------------------------------------------------------------------------
+
+
+
+--------------| Modelo de Sintaxe
+
+Raça:
+
+[
+  {
+    "race":
+    [
+      {
+        "raceName": "Nome",
+        "raceAbilities":
+        [
+          {
+            "raceAbilitiesName": "Nome",
+            "raceAbilitiesDescription": "Habilidade",
+            "raceAbilitiesOptions": //(Opcional)
+            [
+              {  
+                "raceAbilitiesOptionsName": "Nome",
+                "raceAbilitiesOptionsDescription": "Habilidade"    
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
+
+  Classe: 
+
+[
+  {
+    "class":
+    [
+      {
+        "className": "Arcanista",
+        "classCharacteristics": 
+        [
+          {
+            "classCharacteristicsInitialPV": 8, 
+            "classCharacteristicsLevelPV": 2,
+            "classCharacteristicsPM": 6,
+            "classCharacteristicsSkills": "Misticismo, Vontade",
+            "classCharacteristicsSkillsOptions": 
+            [
+              {
+                "classCharacteristicsSkillsOptionsQty": 2,
+                "classCharacteristicsSkillsOptions": "Conhecimento, Diplomacia, Enganação, Guerra, Iniciativa, Intimidação, Intuição, Investigação, Nobreza, Ofício, Percepção"
+              }
+            ],
+            "classCharacteristicsProficiency": "Nenhuma" 
+          }
+        ],
+        [
+        "classAbilities":
+        [
+          {
+            "classAbilitiesLevelRequire": 1,
+            "classAbilitiesName": "Caminho do Arcanista",
+            "classAbilitiesDescription": "Description",
+            "classAbilitiesOptions": 
+            [
+              {
+                "classAbilitiesOptionsName": "Bruxo",
+                "classAbilitiesOptionsDescription": "Description"
+              },
+              {
+                "classAbilitiesOptionsName": "Feiticeiro",
+                "classAbilitiesOptionsDescription": "Description"
+              },
+              {
+                "classAbilitiesOptionsName": "Mago",
+                "classAbilitiesOptionsDescription": "Description"
+              }
+            ]
+          },
+        ]
+      }
+    ]
+  }
+]
+
+
+
+
+[{ "indice1": "valor1", "indice2": "valor2" }]
+
+Sempre que tiver mais de 1 valor dentro de um indice, precisa abrir [colchetes] e {chaves} -> [{}]
+indices/valores multiplos são separados por virgula.
+
+String precisa estar entre aspas | Number não
+
+
+
+
+
+
+
+
+
+
+
+
+
+Botoes usado:
+Discord: https://uiverse.io/kamehame-ha/dull-dog-37
+Glitch: https://uiverse.io/212004ALJI/fat-eagle-24
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nível (1 - 20)
+Atributos 
+  [ 4, 4, -1, -1, -1, -1 ] -> 4
+  [ 4, 3,  0,  0,  0, -1 ] -> 6
+  [ 4, 2,  2,  0,  0, -1 ] -> 7
+  [ 4, 2,  1,  0,  0,  0 ] -> 7
+  [ 3, 3,  3,  0, -1, -1 ] -> 7
+  [ 3, 2,  2,  1,  0, -1 ] -> 7
+  [ 3, 3,  2,  0,  0,  0 ] -> 8
+Raça (1 - 79)
+Classe (1 - xx)
+Origem (1 - xx)
+Devoção (1 - 2x)
+Perícia (1 - 29)
+Poder Geral (1 - xx)
+Equiamento (1 - xx)
+  Arma
+    Arma Simples
+    Arma Marcial
+    Arma Exótica
+    Arma de Fogo
+  Armadura
+    Armadura Leve
+    Armadura Pesada
+    Escudo Leve
+    Escudo Pesado
+  Esotérico
+  Item
+Magia (1 - xx)
+  1º Circulo
+  2º Circulo
+  3º Circulo
+  4º Circulo
+  5º Circulo
+Distinção (1 - xx)
