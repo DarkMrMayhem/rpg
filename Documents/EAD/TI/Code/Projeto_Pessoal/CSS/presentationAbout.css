@@ -38,6 +38,7 @@
 
 .about__table {
     background-color: var(--transparente);
+    color: var(--text-color-TE);
 }
 
 .about__table-cabecalho {

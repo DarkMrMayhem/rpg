@@ -296,7 +296,13 @@ Origem (1 - xx)
 Devoção (1 - 2x)
 Perícia (1 - 29)
 Poder Geral (1 - xx)
-Equiamento (1 - xx)
+  Combate
+  Destino
+  Magia
+  Concedido
+  Tormenta
+  Nativo
+Equipamento (1 - xx)
   Arma
     Arma Simples
     Arma Marcial
@@ -316,3 +322,8 @@ Magia (1 - xx)
   4º Circulo
   5º Circulo
 Distinção (1 - xx)
+Desvantagem (1 - xx)
+
+
+
+<option value=""></option>
