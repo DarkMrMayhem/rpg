@@ -1,6 +1,7 @@
 .about__section {
-    align-items: stretch;
     background-color: var(--fundo-banner);
+
+    align-items: stretch;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -12,6 +13,7 @@
 
 .about__section-title {
     color: var(--text-color-TE);
+
     font-size: 1.8rem;
     font-weight: bold;
     text-align: center;
@@ -19,6 +21,7 @@
 
 .about__section-text {
     color: var(--text-color-TE);
+
     line-height: 1.2rem;
     margin-top: 1rem;
     text-align: justify;
@@ -26,12 +29,14 @@
 
 .about__section-detalhe {
     color: var(--cabecalho-azul);
+
     font-weight: bold;
     text-decoration: underline;
 }
 
 .fundo__tabela {
     background-color: var(--fundo-banner-table);
+
     margin-top: 1rem;
     padding: 0 0 1rem 0.2rem;
 }
@@ -43,6 +48,7 @@
 
 .about__table-cabecalho {
     color: var(--text-color-TE);
+
     border-bottom: 1px solid;
 }
 

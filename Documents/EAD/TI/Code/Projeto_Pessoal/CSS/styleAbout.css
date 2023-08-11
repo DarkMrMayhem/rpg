@@ -45,6 +45,8 @@
     --bronze-borda: #964F0C;
 }
 
+/*---------------------------------------------------------------------------*/
+
 body {
     background-color: var(--fundo-TC);
     font-family: 'Alegreya Sans', sans-serif;

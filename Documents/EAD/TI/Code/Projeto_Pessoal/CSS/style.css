@@ -37,14 +37,21 @@
     --bronze-borda: #964F0C;
 }
 
+/*---------------------------------------------------------------------------*/
+
+body,
+.corpo {
+    display: flex;
+    flex-direction: column;
+}
+
+
 body {
     background-color: var(--fundo-TC);
     font-family: 'Alegreya Sans', sans-serif;
     
     align-items: center;
     box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
     
     height: 100vh;
     width: 100%;
@@ -62,8 +69,6 @@ main {
 
 .corpo {
     align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    width: 50%;
     margin: 2rem 2rem;
+    width: 50%;
 }

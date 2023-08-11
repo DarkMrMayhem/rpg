@@ -54,6 +54,7 @@
 
 .fa-sun {
     color: var(--sol);
+
     opacity: initial;
 }
 
@@ -74,5 +75,6 @@
 
 .dark .fa-moon {
     color: var(--lua);
+    
     opacity: initial;
 }

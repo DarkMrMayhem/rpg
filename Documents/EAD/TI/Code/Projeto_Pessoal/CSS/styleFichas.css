@@ -4,7 +4,6 @@
 /*Import do Inicio*/
 /* @import url(""); */
 
-
 :root {
     /*Tema Escuro*/
     --fundo-TE: #282424;
@@ -35,6 +34,8 @@
     --bronze-moeda: #BC6D24;
     --bronze-borda: #964F0C;
 }
+
+/*---------------------------------------------------------------------------*/
 
 body {
     background-color: var(--fundo-TC);
@@ -73,7 +74,7 @@ main {
     color: var(--texto-botão);
     
     align-items: center;
-    border-radius: 50px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Isso aqui ta certo */
@@ -86,7 +87,7 @@ main {
     background-color: var(--fundo-botão-borda-TE);
     color: var(--fundo-botão-texto-TE);
     
-    border-radius: 50px;
+    border-radius: 5px;
     width: 150px;
     
     text-align-last: center;
@@ -251,4 +252,21 @@ option  {
     padding: 3px;
 }
 
-.resumo__ficha-part3 {}
+.resumo__ficha-part3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+}
+
+.resumo__ficha-pericias__case {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.resumo__ficha-pericias__case input {
+    width: 10px;
+    margin-left: 5px;
+}

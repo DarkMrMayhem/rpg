@@ -17,8 +17,9 @@
 }
 
 .presentation__text2 {
-    margin-top: .8rem;
     line-height: 1.2rem;
+    margin-top: .8rem;
+    text-align: justify;
 }
 
 .presentation__text2-item {
