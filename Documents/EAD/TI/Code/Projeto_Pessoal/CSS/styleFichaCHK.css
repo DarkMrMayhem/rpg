@@ -1,0 +1,516 @@
+.resumoFicha__pericias-chk__container {
+    cursor: pointer;
+    position: relative;
+    margin: auto;
+    width: 50%;
+    height: auto;
+    -webkit-tap-highlight-color: transparent;
+    transform: translate3d(0, 0, 0);
+}
+
+.resumoFicha__pericias-chk__container:before {
+    content: "";
+    position: relative;
+    top: -15px;
+    left: -15px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: rgba(34, 50, 84, 0.03);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.resumoFicha__pericias-chk__container svg {
+    position: relative;
+    z-index: 1;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #c8ccd4;
+    stroke-width: 1.5;
+    transform: translate3d(0, 0, 0);
+    transition: all 0.2s ease;
+}
+
+.resumoFicha__pericias-chk__container svg path {
+    stroke-dasharray: 60;
+    stroke-dashoffset: 0;
+}
+
+.resumoFicha__pericias-chk__container svg polyline {
+    stroke-dasharray: 22;
+    stroke-dashoffset: 66;
+}
+
+.resumoFicha__pericias-chk__container:hover:before {
+    opacity: 1;
+}
+
+.resumoFicha__pericias-chk__container:hover svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+/*treino__acro*/
+#treino__acro:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__acro:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__acro:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__ades*/
+#treino__ades:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__ades:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__ades:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__atle*/
+#treino__atle:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__atle:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__atle:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__atua*/
+#treino__atua:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__atua:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__atua:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__cava*/
+#treino__cava:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__cava:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__cava:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__conh*/
+#treino__conh:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__conh:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__conh:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__cura*/
+#treino__cura:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__cura:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__cura:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__dipl*/
+#treino__dipl:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__dipl:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__dipl:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__enga*/
+#treino__enga:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__enga:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__enga:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__fort*/
+#treino__fort:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__fort:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__fort:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__furt*/
+#treino__furt:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__furt:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__furt:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__guer*/
+#treino__guer:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__guer:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__guer:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__inic*/
+#treino__inic:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__inic:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__inic:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__inti*/
+#treino__inti:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__inti:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__inti:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__intu*/
+#treino__intu:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__intu:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__intu:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__inve*/
+#treino__inve:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__inve:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__inve:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__joga*/
+#treino__joga:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__joga:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__joga:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__ladi*/
+#treino__ladi:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__ladi:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__ladi:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__luta*/
+#treino__luta:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__luta:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__luta:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__mist*/
+#treino__mist:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__mist:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__mist:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__nobr*/
+#treino__nobr:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__nobr:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__nobr:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__ofic*/
+#treino__ofic:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__ofic:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__ofic:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__perc*/
+#treino__perc:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__perc:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__perc:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__pilo*/
+#treino__pilo:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__pilo:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__pilo:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__pont*/
+#treino__pont:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__pont:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__pont:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__refl*/
+#treino__refl:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__refl:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__refl:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__reli*/
+#treino__reli:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__reli:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__reli:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__sobr*/
+#treino__sobr:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__sobr:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__sobr:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*treino__vont*/
+#treino__vont:checked + .resumoFicha__pericias-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#treino__vont:checked + .resumoFicha__pericias-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#treino__vont:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
