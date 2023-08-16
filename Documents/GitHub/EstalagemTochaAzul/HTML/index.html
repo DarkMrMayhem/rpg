@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700&display=swap">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="../JS/darkmode.js" defer></script>
+    <title>Estalagem da Tocha Azul</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <img class="navbar__logo" src="../IMG/Logo_Disc_Menor.png" alt="logo da masmorra da tocha azul">
+        <div class="navbar__links">
+            <a class="navbar__links-item" href="./index.html">Início</a>
+            <a class="navbar__links-item" href="./fichas.html">Fichas</a>
+            <a class="navbar__links-item" href="./db-original.html">Database</a>
+            <a class="navbar__links-item" href="./db-homebrew.html">Homebrew</a>
+            <a class="navbar__links-item" href="./changelog.html">Changelog</a>
+            <a class="navbar__links-item" href="./about.html">Sobre Nós</a>
+        </div>
+        <div class="navbar__chk">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </label>
+        </div>
+    </header>
+    <main>
+        <section class="corpo">
+            <section class="presentation">
+                <h2 class="presentation__title">Bem vindo a Estalagem da Tocha Azul</h2>
+                <p class="presentation__text"><b class="tocha-azul">Estalagem da Tocha Azul</b> é um site para criação de fichas para o sistema Tormenta 20. Com ele, é possível criar fichas passo a passo, desde sua raça até sua distinção e ter sua ficha montada facilmente, com a possibilidade de exportá-la para um arquivo JSON e importá-la diretamente no FoundryVTT.</p>
+                <ul class="presentation__text2">
+                    <li class="presentation__text2-item">É possível fazer a ficha respeitando as regras oficiais do jogo ou com os homebrews aceitos pelos jogadores da <b class="tocha-azul">Masmorra da Tocha Azul</b>.</li>
+                    <li class="presentation__text2-item">Você pode ver o que está disponível para criação de fichas em <a class="presentation__link" href="../HTML/db-original.html">Database</a> e <a class="presentation__link" href="../HTML/db-homebrew.html">Homebrew</a>.</li>
+                    <li class="presentation__text2-item">Você pode ver o que está para ser adicionado em <a class="presentation__link" href="../HTML/changelog.html">Changelog</a>.</li>
+                    <li class="presentation__text2-item">Se você tem alguma sugestão, critica ou reclamação ou quer apenas entrar no servidor da Masmorra da Tocha Azul, <a  class="presentation__link" href="https://discord.gg/UY2PDSkkP5">Clique Aqui</a>.</li>
+                    <li class="presentation__text2-item">Se você é um desenvolvedor que queira contribuir com o projeto, utilize o nosso <a class="presentation__link" href="https://github.com/DarkMrMayhem/rpg/tree/master/Documents/EAD/TI/Code/Projeto_Pessoal">GitHub</a>.</li>
+                </ul>
+            </section>
+            <section class="starting">
+                <h3 class="starting-h3">Começar Agora:</h3>
+                <button class="starting-botao"><a href="./fichas.html">+ Criar sua Ficha</a></button>
+                <h3 class="starting-h3">Ou acesse:</h3>
+                <button type="button" class="starting-botao starting-nao-pronto"><a href="#">Database</a></button>
+                <button type="button" class="starting-botao starting-nao-pronto"><a href="#">Homebrew</a></button>
+                <button type="button" class="starting-botao starting-nao-pronto"><a href="#">Changelog</a></button>
+                <button type="button" class="starting-botao"><a href="./about.html">Sobre Nós</a></button>
+            </section>
+        </section>
+        <section class="imagem">
+            <img class="imagem__ficha" src="../IMG/Renner com Perspectiva.png" alt="img de uma ficha de Tormenta20">
+        </section>
+    </section>
+</main>
+<footer class="rodape">
+    <p class="rodape__text"><b style="font-weight: bold;">Tormenta20</b> é um produto da Jambô Editora e seus respectivos criadores, todos os direitos reservados.</p>
+    <p class="rodape__text"><a class="rodape__link" href="https://jamboeditora.com.br/" target="_blank">https://jamboeditora.com.br/</a></p>
+    <p class="rodape__text">Este é um projeto de fãs e não possui fins lucrativos</p>
+</footer>
+</body>
+</html>

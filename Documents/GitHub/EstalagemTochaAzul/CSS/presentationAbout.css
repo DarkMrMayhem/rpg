@@ -1,0 +1,66 @@
+.about__section {
+    background-color: var(--fundo-banner);
+
+    align-items: stretch;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 3rem 3rem;
+    padding: 2rem 2rem;
+    width: 25%;
+}
+
+.about__section-title {
+    color: var(--text-color-TE);
+
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about__section-text {
+    color: var(--text-color-TE);
+
+    line-height: 1.2rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.about__section-detalhe {
+    color: var(--cabecalho-azul);
+
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.fundo__tabela {
+    background-color: var(--fundo-banner-table);
+
+    margin-top: 1rem;
+    padding: 0 0 1rem 0.2rem;
+}
+
+.about__table {
+    background-color: var(--transparente);
+    color: var(--text-color-TE);
+}
+
+.about__table-cabecalho {
+    color: var(--text-color-TE);
+
+    border-bottom: 1px solid;
+}
+
+.about__table-col {
+    padding-top: 0.5rem;
+}
+
+.about__table-gado {color: var(--cor-gado);}
+.about__table-lucas {color: var(--cor-lucas);}
+.about__table-dark {color: var(--cor-dark);}
+.about__table-binho {color: var(--cor-binho);}
+.about__table-diego {color: var(--cor-diego);}
+.about__table-northeus {color: var(--cor-northeus);}
+.about__table-augusto {color: var(--cor-augusto);}
+.about__table-ramom {color: var(--cor-ramom);}

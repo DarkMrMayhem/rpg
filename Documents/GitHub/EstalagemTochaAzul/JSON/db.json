@@ -1,0 +1,2655 @@
+[
+	{
+		"race": 
+		[
+			{
+				"raceName": "Humano",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+1 em Três Atributos Diferentes"
+					},
+					{
+						"raceAbilitiesName": "Versátil",
+						"raceAbilitiesDescription": "Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha."
+					}
+				]
+			},
+			{
+				"raceName": "Anão",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Sabedoria +1, Destreza –1."
+					},
+					{
+						"raceAbilitiesName": "Conhecimento das Rochas",
+						"raceAbilitiesDescription": "Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo."
+					},
+					{
+						"raceAbilitiesName": "Devagar e Sempre",
+						"raceAbilitiesDescription": "Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga."
+					},
+					{
+						"raceAbilitiesName": "Duro como Pedra",
+						"raceAbilitiesDescription": "Você recebe +3 pontos de vida no 1º nível e +1 por nível seguinte."
+					},
+					{
+						"raceAbilitiesName": "Tradição de Heredrimm",
+						"raceAbilitiesDescription": "Você é perito nas armas tradicionais anãs, seja por ter treinado com elas, seja por usá-las como ferramentas de ofício. Para você, todos os machados, martelos, marretas e picaretas são armas simples. Você recebe +2 em ataques com essas armas."
+					}
+				]
+			},
+			{
+				"raceName": "Dahllan",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Sabedoria +2, Destreza +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Amiga das Plantas",
+						"raceAbilitiesDescription": "Você pode lançar a magia Controlar Plantas (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Armadura de Allihanna",
+						"raceAbilitiesDescription": "Você pode gastar uma ação de movimento e 1 PM para transformar sua pele em casca de árvore, recebendo +2 na Defesa até o fim da cena."
+					},
+					{
+						"raceAbilitiesName": "Empatia Selvagem",
+						"raceAbilitiesDescription": "Você pode se comunicar com animais por meio de linguagem corporal e vocalizações. Você pode usar Adestramento para mudar atitude e pedir favores de animais (veja Diplomacia, na página 118). Caso receba esta habilidade novamente, recebe +2 em Adestramento."
+					}
+				]
+			},
+			{
+				"raceName": "Elfo",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Inteligência +2, Destreza +1, Constituição –1"
+					},
+					{
+						"raceAbilitiesName": "Graça de Glórienn",
+						"raceAbilitiesDescription": "Seu deslocamento é 12m (em vez de 9m)."
+					},
+					{
+						"raceAbilitiesName": "Sangue Mágico",
+						"raceAbilitiesDescription": "Você recebe +1 ponto de mana por nível."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Élficos",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e +2 em Misticismo e Percepção."
+					}
+				]
+			},
+			{
+				"raceName": "Goblin",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Inteligência +1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Engenhoso",
+						"raceAbilitiesDescription": "Você não sofre penalidades em testes de perícia por não usar ferramentas. Se usar a ferramenta necessária, recebe +2 no teste de perícia."
+					},
+					{
+						"raceAbilitiesName": "Espelunqueiro",
+						"raceAbilitiesDescription": "Você recebe visão no escuro e deslocamento de escalada igual ao seu deslocamento terrestre."
+					},
+					{
+						"raceAbilitiesName": "Peste Esguia.",
+						"raceAbilitiesDescription": "Seu tamanho é Pequeno (veja a página 106), mas seu deslocamento se mantém 9m. Apesar de pequenos, goblins são rápidos."
+					},
+					{
+						"raceAbilitiesName": "Rato das Ruas",
+						"raceAbilitiesDescription": "Você recebe +2 em Fortitude e sua recuperação de PV e PM nunca é inferior ao seu nível."
+					}
+				]
+			},
+			{
+				"raceName": "Lefou",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+1 em Três Atributos Diferentes (exceto Carisma), Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Cria da Tormenta",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo monstro e recebe +5 em testes de resistência contra efeitos causados por lefeu e pela Tormenta."
+					},
+					{
+						"raceAbilitiesName": "Deformidade",
+						"raceAbilitiesDescription": "Todo lefou possui defeitos físicos que, embora desagradáveis, conferem certas vantagens. Você recebe +2 em duas perícias a sua escolha. Cada um desses bônus conta como um poder da Tormenta (mas não causam perda de Carisma). Você pode trocar um desses bônus por um poder da Tormenta a sua escolha (isso também não causa perda de Carisma)."
+					}
+				]
+			},
+			{
+				"raceName": "Minotauro",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +2, Constituição +1, Sabedoria –1"
+					},
+					{
+						"raceAbilitiesName": "Chifres",
+						"raceAbilitiesDescription": "Você possui uma arma natural de chifres (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres."
+					},
+					{
+						"raceAbilitiesName": "Couro Rígido",
+						"raceAbilitiesDescription": "Sua pele é dura como a de um touro. Você recebe +1 na Defesa."
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você tem olfato apurado. Contra inimigos que não possa ver e em alcance curto, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha."
+					}
+				]
+			},
+			{
+				"raceName": "Qareen",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +2, Inteligência +1, Sabedoria –1"
+					},
+					{
+						"raceAbilitiesName": "Desejos",
+						"raceAbilitiesDescription": "Se lançar uma magia que alguém tenha pedido desde seu último turno, o custo da magia diminui em –1 PM. Fazer um desejo ao qareen é uma ação livre."
+					},
+					{
+						"raceAbilitiesName": "Resistência Elemental",
+						"raceAbilitiesDescription": "Conforme sua ascendência, você recebe redução 10 a um tipo de dano. Escolha uma: frio (qareen da água), eletricidade (do ar), fogo (do fogo), ácido (da terra), luz (da luz) ou trevas (qareen das trevas). "
+					},
+					{
+						"raceAbilitiesName": "Tatuagem Mística",
+						"raceAbilitiesDescription": "Você pode lançar uma magia de 1º círculo a sua escolha (atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM."
+					}
+				]
+			},
+			{
+				"raceName": "Golem",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +2, Constituição +1, Carisma -1"
+					},
+					{
+						"raceAbilitiesName": "Chassi",
+						"raceAbilitiesDescription": "Seu corpo artificial é resistente, mas rígido. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe +2 na Defesa, mas possui penalidade de armadura –2. Você leva um dia para vestir ou remover uma armadura (pois precisa acoplar as peças dela a seu chassi). Por ser acoplada, sua armadura não conta no limite de itens que você pode usar (mas você continua só podendo usar uma armadura)."
+					},
+					{
+						"raceAbilitiesName": "Criatura Artificial",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo construto. Recebe visão no escuro e imunidade a efeitos de cansaço, metabólicos e de veneno. Além disso, não precisa respirar, alimentar-se ou dormir, mas não se beneficia de cura mundana e de itens da categoria alimentação. Você precisa ficar inerte por oito horas por dia para recarregar sua fonte de energia. Se fizer isso, recupera PV e PM por descanso em condições normais (golens não são afetados por condições boas ou ruins de descanso). Por fim, a perícia Cura não funciona em você, mas Ofícios (artesanato) pode ser usada no lugar dela."
+					},
+					{
+						"raceAbilitiesName": "Propósito de Criação",
+						"raceAbilitiesDescription": "Você foi construído “pronto” para um propósito específico e não teve uma infância. Você não tem direito a escolher uma origem, mas recebe um poder geral a sua escolha."
+					},
+					{
+						"raceAbilitiesName": "Fonte Elemental",
+						"raceAbilitiesDescription": "Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico desse tipo, em vez disso cura PV em quantidade igual à metade do dano. Por exemplo, se um golem com espírito elemental do fogo é atingido por uma Bola de Fogo que causa 30 pontos de dano, em vez de sofrer esse dano, ele recupera 15 PV."
+					}
+				]
+			},
+			{
+				"raceName": "Hynne",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Carisma +1, Força –1"
+					},
+					{
+						"raceAbilitiesName": "Arremessador",
+						"raceAbilitiesDescription": "Quando faz um ataque à distância com uma funda ou uma arma de arremesso, seu dano aumenta em um passo."
+					},
+					{
+						"raceAbilitiesName": "Pequeno e Rechonchudo",
+						"raceAbilitiesDescription": "Seu tamanho é Pequeno (veja a página 106) e seu deslocamento é 6m. Você recebe +2 em Enganação e pode usar Destreza como atributo-chave de Atletismo (em vez de Força)."
+					},
+					{
+						"raceAbilitiesName": "Sorte Salvadora",
+						"raceAbilitiesDescription": "Quando faz um teste de resistência, você pode gastar 1 PM para rolar este teste novamente."
+					}
+				]
+			},
+			{
+				"raceName": "Kliren",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Inteligência +2, Carisma +1, Força –1"
+					},
+					{
+						"raceAbilitiesName": "Híbrido",
+						"raceAbilitiesDescription": "Sua natureza multifacetada fez com que você aprendesse conhecimentos variados. Você se torna treinado em uma perícia a sua escolha (não precisa ser da sua classe)."
+					},
+					{
+						"raceAbilitiesName": "Engenhosidade",
+						"raceAbilitiesDescription": "Quando faz um teste de perícia, você pode gastar 2 PM para somar sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque. Caso receba esta habilidade novamente, seu custo é reduzido em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Ossos Frágeis",
+						"raceAbilitiesDescription": "Você sofre 1 ponto de dano adicional por dado de dano de impacto. Por exemplo, se for atingido por uma clava (dano 1d6), sofre 1d6+1 pontos de dano. Se cair de 3m de altura (dano 2d6), sofre 2d6+2 pontos de dano."
+					},
+					{
+						"raceAbilitiesName": "Vanguardista",
+						"raceAbilitiesDescription": "Você recebe proficiência em armas de fogo e +2 em Ofício (um qualquer, a sua escolha)."
+					}
+				]
+			},
+			{
+				"raceName": "Medusa",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Carisma +1"
+					},
+					{
+						"raceAbilitiesName": "Cria de Megalokk",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo monstro e recebe visão no escuro."
+					},
+					{
+						"raceAbilitiesName": "Natureza Venenosa",
+						"raceAbilitiesDescription": "Você recebe resistência a veneno +5 e pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja usando. A arma causa perda de 1d12 pontos de vida. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro). Veneno."
+					},
+					{
+						"raceAbilitiesName": "Olhar Atordoante",
+						"raceAbilitiesDescription": "Você pode gastar uma ação de movimento e 1 PM para forçar uma criatura em alcance curto a fazer um teste de Fortitude (CD Car). Se a criatura falhar, fica atordoada por 1 rodada. Se passar, fica imune a esta habilidade por um dia."
+					}
+				]
+			},
+			{
+				"raceName": "Osteon",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+1 em Três Atributos Diferentes (exceto Constituição), Constituição –1"
+					},
+					{
+						"raceAbilitiesName": "Armadura Óssea",
+						"raceAbilitiesDescription": "Você recebe redução de corte, frio e perfuração 5."
+					},
+					{
+						"raceAbilitiesName": "Memória Póstuma",
+						"raceAbilitiesDescription": "Você se torna treinado em uma perícia (não precisa ser da sua classe) ou recebe um poder geral a sua escolha. Como alternativa, você pode ser um osteon de outra raça humanoide que não humano. Neste caso, você ganha uma habilidade dessa raça a sua escolha. Se a raça era de tamanho diferente de Médio, você também possui sua categoria de tamanho."
+					},
+					{
+						"raceAbilitiesName": "Natureza Esquelética",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo morto-vivo. Recebe visão no escuro e imunidade a efeitos de cansaço, metabólicos, de trevas e de veneno. Além disso, não precisa respirar, alimentar-se ou dormir. Por fim, habilidades mágicas de cura causam dano a você e você não se beneficia de itens da categoria alimentação, mas dano de trevas recupera seus PV. "
+					},
+					{
+						"raceAbilitiesName": "Preço da Não Vida",
+						"raceAbilitiesDescription": "Você precisa passar oito horas sob a luz de estrelas ou no subterrâneo. Se fizer isso, recupera PV e PM por descanso em condições normais (osteon não são afetados por condições boas ou ruins de descanso). Caso contrário, sofre os efeitos de fome."
+					}
+				]
+			},
+			{
+				"raceName": "Sereia/Tritão",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+1 em Três Atributos Diferentes"
+					},
+					{
+						"raceAbilitiesName": "Canção dos Mares",
+						"raceAbilitiesDescription": "Você pode lançar duas das magias a seguir: Amedrontar, Comando, Despedaçar, Enfeitiçar, Hipnotismo ou Sono (atributo-chave Carisma). Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Mestre do Tridente",
+						"raceAbilitiesDescription": "Para você, o tridente é uma arma simples. Além disso, você recebe +2 em rolagens de dano com azagaias, lanças e tridentes."
+					},
+					{
+						"raceAbilitiesName": "Transformação Anfíbia",
+						"raceAbilitiesDescription": "Você pode respirar debaixo d’água e possui uma cauda que fornece deslocamento de natação 12m. Quando fora d’água, sua cauda desaparece e dá lugar a pernas (deslocamento 9m). Se permanecer mais de um dia sem contato com água, você não recupera PM com descanso até voltar para a água (ou, pelo menos, tomar um bom banho!)."
+					}
+				]
+			},
+			{
+				"raceName": "Sílfide",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +2, Destreza +1, Força –2"
+					},
+					{
+						"raceAbilitiesName": "Asas de Borboleta",
+						"raceAbilitiesDescription": "Seu tamanho é Minúsculo. Você pode pairar a 1,5m do chão com deslocamento 9m. Isso permite que você ignore terreno difícil e o torna imune a dano por queda (a menos que esteja inconsciente). Você pode gastar 1 PM por rodada para voar com deslocamento de 12m."
+					},
+					{
+						"raceAbilitiesName": "Espírito da Natureza",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo espírito, recebe visão na penumbra e pode falar com animais livremente."
+					},
+					{
+						"raceAbilitiesName": "Magia das Fadas",
+						"raceAbilitiesDescription": "Você pode lançar duas das magias a seguir: Criar Ilusão, Enfeitiçar, Luz (como uma magia arcana) e Sono (atributo-chave Carisma). Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM."
+					}
+				]
+			},
+			{
+				"raceName": "Suraggel",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Sabedoria +2, Carisma +1 (Aggelus); Destreza +2, Inteligência +1 (Sulfure)."
+					},
+					{
+						"raceAbilitiesName": "Herança Divina",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo espírito e recebe visão no escuro."
+					},
+					{
+						"raceAbilitiesName": "Luz Sagrada (Aggelus)",
+						"raceAbilitiesDescription": "Você recebe +2 em Diplomacia e Intuição. Além disso, pode lançar Luz (como uma magia divina; atributo-chave Carisma). Caso aprenda novamente essa magia, seu custo diminui em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Sombras Profanas (Sulfure)",
+						"raceAbilitiesDescription": "Você recebe +2 em Enganação e Furtividade. Além disso, pode lançar Escuridão (como uma magia divina; atributo-chave Inteligência). Caso aprenda novamente essa magia, seu custo diminui em –1 PM."
+					}
+				]
+			},
+			{
+				"raceName": "Trog",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Força +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Mau Cheiro",
+						"raceAbilitiesDescription": "Você pode gastar uma ação padrão e 2 PM para expelir um gás fétido. Todas as criaturas (exceto trogs) em alcance curto devem passar em um teste de Fortitude contra veneno (CD Con) ou ficarão enjoadas durante 1d6 rodadas. Uma criatura que passe no teste de resistência fica imune a esta habilidade por um dia."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					},
+					{
+						"raceAbilitiesName": "Reptiliano",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo monstro e recebe visão no escuro, +1 na Defesa e, se estiver sem armadura ou roupas pesadas, +5 em Furtividade."
+					},
+					{
+						"raceAbilitiesName": "Sangue Frio",
+						"raceAbilitiesDescription": "Você sofre 1 ponto de dano adicional por dado de dano de frio."
+					}
+				]
+			},
+			{
+				"raceName": "Anão (Ghanor)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Inteligência +1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Busca pela Perfeição",
+						"raceAbilitiesDescription": "Você recebe +2 em Ofício e, se for treinado nesta perícia, pode fabricar itens superiores com uma melhoria (cumulativo com outras habilidades que permitam fabricar itens superiores)."
+					},
+					{
+						"raceAbilitiesName": "Devagar e Sempre",
+						"raceAbilitiesDescription": "Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga."
+					},
+					{
+						"raceAbilitiesName": "Moldado nas Rochas",
+						"raceAbilitiesDescription": "Você recebe visão no escuro e +1 ponto de vida por nível."
+					}
+				]
+			},
+			{
+				"raceName": "Elfo (Ghanor)", 
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Sabedoria +2, Destreza +1, Constituição –1"
+					},
+					{
+						"raceAbilitiesName": "Armas da Floresta",
+						"raceAbilitiesDescription": "Para você, todos os arcos são armas simples, e você recebe +2 em rolagens de dano com estas armas."
+					},
+					{
+						"raceAbilitiesName": "Magia Antiga",
+						"raceAbilitiesDescription": "Você recebe +1 ponto de mana por nível e usa Sabedoria como atributo-chave de Misticismo e de magias arcanas (em vez de Inteligência)."
+					},
+					{
+						"raceAbilitiesName": "Passo Leve",
+						"raceAbilitiesDescription": "Você recebe +2 em Furtividade e seu deslocamento é 12m (em vez de 9m)."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Élficos",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e +2 em Percepção."
+					},
+					{
+						"raceAbilitiesName": "Sentimentos Conflitantes",
+						"raceAbilitiesDescription": "Você sofre –5 em Diplomacia e Vontade. Consumir uma dose de de turlin (veja o Capítulo 3) anula esta penanalidade por uma cena."
+					}
+				]
+			},
+			{
+				"raceName": "Gigante (Ghanor)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +3, Constituição +2, Inteligência –2, Sabedoria –1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Grandão",
+						"raceAbilitiesDescription": "Seu tamanho é Grande (veja a página 71) e você soma sua Força em seu total de pontos de vida. Você pode usar armas normais ou aumentadas, mas só pode vestir armaduras especialmente feitas para seu tamanho."
+					},
+					{
+						"raceAbilitiesName": "Primitivo",
+						"raceAbilitiesDescription": "Você sofre –5 em Diplomacia, Intuição e Ofício e em testes de ataque com armas marciais ou exóticas."
+					}
+				]
+			},
+			{
+				"raceName": "Hobgoblin (Ghanor)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +1, Destreza +1, Constituição +1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Couro Duro",
+						"raceAbilitiesDescription": "Você recebe redução de dano igual a sua Constituição, limitada por seu nível."
+					},
+					{
+						"raceAbilitiesName": "Dependência de Liderança",
+						"raceAbilitiesDescription": "Você possui uma necessidade instintiva de seguir uma figura de liderança. Escolha outro personagem (geralmente aquele de maior Carisma) como o líder. Embora não seja forçado a obedecê-lo, você tem a tendência de ouvir os conselhos e opiniões do líder de maneira mais favorável. Você nunca age antes do líder, e sofre –1 em testes de perícia se estiver distante dele (além de alcance médio)."
+					},
+					{
+						"raceAbilitiesName": "Militarista",
+						"raceAbilitiesDescription": "Você recebe um poder de combate à sua escolha."
+					},
+					{
+						"raceAbilitiesName": "Natureza Bestial",
+						"raceAbilitiesDescription": "Você recebe visão no escuro e usa Constituição em Intimidação (em vez de Carisma)."
+					}					
+				]
+			},
+			{
+				"raceName": "Meio-Elfo (Ghanor)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +2, +1 em outro atributo"
+					},
+					{
+						"raceAbilitiesName": "Longa Infância",
+						"raceAbilitiesDescription": "Você escolhe uma origem adicional, recebendo o benefício mas não os itens desta segunda origem."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Ancestrais",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e +2 em Intuição e Percepção."
+					}
+				]
+			},
+			{
+				"raceName": "Aberrante (Ghanor)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma –2"
+					},
+					{
+						"raceAbilitiesName": "Mutações",
+						"raceAbilitiesDescription": "Escolha quatro mutações da lista a seguir. Quando recebe um novo poder de classe, pode trocar este poder por uma mutação. Cada mutação só pode ser escolhida uma vez.",
+						"raceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Ascético",
+								"raceAbilitiesOptionsDescription": "Você recebe +1 em Sabedoria e +3 PM."
+							},
+							{
+								"raceAbilitiesOptionsName": "Couro Rochoso",
+								"raceAbilitiesOptionsDescription": "Você recebe +2 em Defesa."
+							},
+							{
+								"raceAbilitiesOptionsName": "Magia Bizarra",
+								"raceAbilitiesOptionsDescription": "Você pode lançar uma magia arcana de 1o círculo a sua escolha (atributo-chave Inteligência ou Carisma). Se aprender novamente esta magia, seu custo diminui em –1 PM."
+							},
+							{
+								"raceAbilitiesOptionsName": "Metamorfose",
+								"raceAbilitiesOptionsDescription": "Você pode lançar Disfarce Ilusório (atributo-chave Carisma)."
+							},
+							{
+								"raceAbilitiesOptionsName": "Mordida",
+								"raceAbilitiesOptionsDescription": "Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma corpo a corpo, pode gastar 1 PM para fazer um ataque extra com a mordida."
+							},
+							{
+								"raceAbilitiesOptionsName": "Musculoso",
+								"raceAbilitiesOptionsDescription": "Você recebe +1 em Força e +5 de capacidade de carga."
+							},
+							{
+								"raceAbilitiesOptionsName": "Resistente",
+								"raceAbilitiesOptionsDescription": "Você recebe +1 em Constituição e resistência a magia +2."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sentidos Aguçados",
+								"raceAbilitiesOptionsDescription": "Você recebe visão no escuro e +2 em Percepção."
+							},
+							{
+								"raceAbilitiesOptionsName": "Veloz",
+								"raceAbilitiesOptionsDescription": "Você recebe +1 em Destreza e deslocamento +3m."
+							},
+							{
+								"raceAbilitiesOptionsName": "Venenoso",
+								"raceAbilitiesOptionsDescription": "Você recebe resistência a veneno +5 e pode gastar uma ação de movimento e 1 PM para envenenar uma arma que esteja empunhando. A arma causa perda de 1d12 pontos de vida. O veneno dura até você acertar um ataque ou até o fim da cena (o que acontecer primeiro)."
+							}
+						] 
+					}
+				]
+			},			
+			{
+				"raceName": "Felis (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +2, Destreza +1, Constituição –1"
+					},
+					{
+						"raceAbilitiesName": "Armas Naturais",
+						"raceAbilitiesDescription": "Garras Felinas 1d4. Utiliza seu bônus de Carisma ao invés de Força nas rolagens de dano com sua Arma Natural."
+					},
+					{
+						"raceAbilitiesName": "Sete Vidas",
+						"raceAbilitiesDescription": "Se seus PV chegarem a 0 você fica inconsciente, não sangra e também não precisa fazer o teste de Constituição. Esse efeito ocorre apenas 7 vezes, após isso a morte é inevitável."
+					},
+					{
+						"raceAbilitiesName": "Muito Fofinho",
+						"raceAbilitiesDescription": "Você recebe Aparência Inofensiva (veja a página 129)"
+					},
+					{
+						"raceAbilitiesName": "Bolinha de Pelo",
+						"raceAbilitiesDescription": "Seu tamanho é pequeno e seu deslocamento é 12m. Você sempre cai de pé e não sofre dano de queda."
+					}					
+				]
+			},
+			{
+				"raceName": "Gigante (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+4 em constituição, + 2 em força e -2 em sabedoria"
+					},
+					{
+						"raceAbilitiesName": "Grandão",
+						"raceAbilitiesDescription": "Seu tamanho é Grande (veja a página 106), mas seu deslocamento se mantém 9m. Apesar das pernas maiores, os Meio-Gigantes não são muito ágeis e bons de mira recebendo penalidade de -2 nos testes de acrobacia e pontaria."
+					},
+					{
+						"raceAbilitiesName": "Pisada",
+						"raceAbilitiesDescription": "Você possui um peso descomunal que com uma pisada com força pode causar tremores e derrubar diversas criaturas. (dano 1d4+Mod de força, crítico x2, impactante). gastando uma ação completa e 2 PM para forçar todas as criaturas a 3 metros a seu redor fazem um teste de equilíbrio (CD 10+mod de força), se falhar a criatura irá cair, em caso de sucesso as criaturas ficam Imune a esse efeito por 1 dia."
+					},
+					{
+						"raceAbilitiesName": "Competidor Nato",
+						"raceAbilitiesDescription": "Os Meio-Gigantes possuem uma natureza bruta e adoram uma competição, você deve fazer um teste de Vontade (CD dependente da situação), sempre que haver uma situação de se provar como o melhor (exemplo: se algum momento se o líder de seu grupo demonstrar fraqueza você irá tentar assumir o posto de novo líder)"
+					},
+					{
+						"raceAbilitiesName": "Linhagem Gigantica",
+						"raceAbilitiesDescription": "Você possui sangue de um gigante em suas veias e pode ter sido de uma linhagem diferente do comum, você tem 3 das linhagens possíveis gigantes do fogo(CD 5 fogo), do gelo (CD 5 frio), tempestade (CD 5 raio). Dependendo da sua linhagem você acrescentar 1d4 de dano do atributo de sua linhagem ao seu dano, antes de fazer ação de padrão você deve gastar 1PM para acrescentar esse atributo a sua arma."
+					}					
+				]
+			},
+			{
+				"raceName": "Golem (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+2 Força, -2 Carisma"
+					},
+					{
+						"raceAbilitiesName": "Criatura Artificial",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo construto. Recebe visão no escuro e imunidade a doenças, fadiga, sangramento, sono e venenos. Além disso, não precisa respirar, alimentar-se ou dormir, mas não se beneficia de cura mundana e de itens da categoria alimentação. Você precisa ficar inerte por oito horas por dia para recarregar sua fonte de energia. Se fizer isso, recupera PV e PM por descanso em condições normais (golens não são afetados por condições boas ou ruins de descanso). Por fim, a perícia Cura não funciona em você, mas Ofício (artesão) pode ser usada no lugar dela."
+					},
+					{
+						"raceAbilitiesName": "Propósito de Criação",
+						"raceAbilitiesDescription": "Você foi construído “pronto” para um propósito específico e não teve uma infância. Você não tem direito a escolher uma origem, mas recebe um poder geral a sua escolha."
+					},
+					{
+						"raceAbilitiesName": "Chassi",
+						"raceAbilitiesDescription": "Escolha o tipo de seu chassi, entre os descritos a seguir. Você leva um dia para vestir ou remover uma armadura (pois precisa acoplar as peças dela a seu chassi). Entretanto, por ser acoplada, sua armadura não conta no limite de itens que você pode usar (mas você só pode usar uma armadura).",
+						"raceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Bronze",
+								"raceAbilitiesOptionsDescription": "Você recebe +2 em dois atributos a sua escolha."
+							},
+							{
+								"raceAbilitiesOptionsName": "Ferro",
+								"raceAbilitiesOptionsDescription": "Você recebe +2 em Força e +2 em Constituição. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe +2 na Defesa, mas possui penalidade de armadura -2."
+							},
+							{
+								"raceAbilitiesOptionsName": "Pedra",
+								"raceAbilitiesOptionsDescription": "Você recebe +2 em Constituição. Você não pode correr e seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe resistência a corte, fogo e perfuração 5."
+							}
+						]
+					},
+					{
+						"raceAbilitiesName": "Fonte de Energia",
+						"raceAbilitiesDescription": "Escolha sua fonte de energia da lista abaixo.",
+						"raceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Alquímica",
+								"raceAbilitiesOptionsDescription": "Uma mistura alquímica gera a energia necessária à sua vida. Você pode gastar uma ação padrão para ingerir um item alquímico qualquer; se fizer isso, recupera 1 PM."
+							},
+							{
+								"raceAbilitiesOptionsName": "Elemental",
+								"raceAbilitiesOptionsDescription": "Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico desse tipo, em vez disso cura PV em quantidade igual à metade do dano. Por exemplo, se um golem com espírito elemental do fogo é atingido por uma Bola de Fogo que causa 30 pontos de dano, em vez de sofrer esse dano, ele recupera 15 PV."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sagrada",
+								"raceAbilitiesOptionsDescription": "Você foi animado por um texto ou símbolo sagrado depositado em seu corpo. Você pode lançar uma magia divina de 1o círculo a sua escolha (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em -1 PM. Alguém treinado em Religião pode trocar essa magia com um ritual que demora um dia e exige o gasto de um pergaminho mágico com a nova magia."
+							}
+						]
+					},
+					{
+						"raceAbilitiesName": "Tamanho",
+						"raceAbilitiesDescription": "Escolha seu tamanho da lista abaixo.",
+						"raceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Pequeno",
+								"raceAbilitiesOptionsDescription": "Recebe +2 em Destreza."
+							},
+							{
+								"raceAbilitiesOptionsName": "Médio",
+								"raceAbilitiesOptionsDescription": "Sem ajustes."
+							},
+							{
+								"raceAbilitiesOptionsName": "Grande",
+								"raceAbilitiesOptionsDescription": "Recebe -2 em Destreza."
+							}
+						]
+					}
+				]
+			},
+			{
+				"raceName": "HalfElf (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+1 em destreza e +1 em 2 outros atributos diferentes (exceto constituição)"
+					},
+					{
+						"raceAbilitiesName": "Herança Élfica",
+						"raceAbilitiesDescription": "Seu sangue elfo é tão forte que adquiriu olhos são aperfeiçoados que consegue enxergar na penumbra facilmente, a sua comunicação de mente e corpo é tão rápida que só em pensar você já está agindo recebendo +2 nos testes de reflexos."
+					},
+					{
+						"raceAbilitiesName": "Herança Humana",
+						"raceAbilitiesDescription": "Sua vontade herdada pela herança humana foi tão predominante e forte que você ganha 1 perícia adicional para ser treinado e irá ganhar +2 de bônus nos testes dela. Você pode trocar essa perícia adicional por um poder geral à sua escolha."
+					},
+					{
+						"raceAbilitiesName": "Genes Combinados",
+						"raceAbilitiesDescription": "Algo nos seus genes lhe deu uma capacidade ser mais ágil, rápido e preciso podendo se movimentar 12 metros, além disso você pode gastar uma ação de movimento e 1PM podendo ganhar +2 de pontaria por uma rodada."
+					}
+				]
+			},
+			{
+				"raceName": "Nagah (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+1 em destreza, +1 em força e -2 em carisma"
+					},
+					{
+						"raceAbilitiesName": "Variedade Nagahs",
+						"raceAbilitiesDescription": "Nagahs possuem 3 tipos de linhagem uma linhagem, todas possuem 5 RD de veneno e são consideradas criaturas grandes.",
+						"raceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Animalesca",
+								"raceAbilitiesOptionsDescription": "Possui uma aparência reptiliana na parte superior de seu corpo, por ser mais robusta possui um aumento de +2 na fortitude e resistência +5 a veneno, você tem um ataque natural de mordida (dano 1d6, crítico 2x, perfuração) que inocula veneno (dano 1d4 rodada). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. A criatura deve passar no teste de fortitude (CD 10+ metade do seu nível+mod de constituição) ou ficará envenenada por 2 rodadas, caso a criatura passe ficará imune ao efeito por 1 dia."
+							},
+							{
+								"raceAbilitiesOptionsName": "Braços extras",
+								"raceAbilitiesOptionsDescription": "Possui 2 braços extras que ficam no seu flanco. Quando usa a ação atacar, pode gastar 2PM para fazer um ataque extra corpo a corpo (dano 1d4, crítico 2x, impacto). Se possuir ambidestria ou estilo das duas armas, pode empunhar armas leves com esses braços extras, esses braços extras sofrem -3 e -4 de penalidade com os ataques usando armas leves. Apesar de você possuir braços extras, eles não são tão fortes e precisos quanto os seus superiores. Você pode erguer um arco longo com seus braços normais e usar os braços menores para atirar flechas, porém você recebe uma penalidade de -2 em todos os ataques."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sufocadores",
+								"raceAbilitiesOptionsDescription": "Você possui um ataque natural com a cauda que tem 2 funções podendo ser usado como um chicote ou para agarrar uma criatura média ou menor (dano 1d6, crítico 2x, cortante), (dano 1d6, crítico 2x, impacto). Você pode gastar ação de movimento para usar o ataque com a cauda, quando fizer isso pode gastar 1PM para realizar o ataque de chicote, 2PM para realizar o ataque agarrar. O oponente tem o direito a um teste de acrobacia (CD 10+ metade do seu nível +mod de força) para escapar do agarrão, caso seja agarrado começará ser esmagado e estará desprevenida. Você terá que sempre gastar uma ação de movimento no início de seu turno para manter a criatura agarrada e não poderá se deslocar caso contrário a criatura será solta. A criatura agarrada terá que fazer um teste de escapar (CD 11+ metade do seu nível+mod de força), caso contrário não conseguirá respirar. Você poderá gastar uma ação padrão e 1PM para causar dano esmagando a criatura novamente ( 1d6 de dano, crítico 2x, impacto). Caso a criatura escape durante o teste de acrobacia ou durante o teste de força, ela ficará imune a esse ataque por 1 dia."
+							}
+						]
+					},
+					{
+						"raceAbilitiesName": "Fraquezas das Nagahs",
+						"raceAbilitiesDescription": "Nagahs tem uma fraqueza por músicas ficando até mesmo em fascinada, Nagahs recebem -4 em qualquer teste de magia que tenha música envolvida, e recebe 1 adicional de frio por dado de dano e você não consegue montar."
+					},
+					{
+						"raceAbilitiesName": "Odiado nas Cidades",
+						"raceAbilitiesDescription": "A má fama dos Nagahs é conhecida por muitos, mesmo você podendo ser diferente da sua tribo, ainda todos têm medo de você, quando você entra em uma cidade e não está totalmente coberto poderá ser expulso ou até mesmo sendo caçado pelos guardas e moradores, teste de furtividade -2 caso não esteja coberto (CD 17 aldeia, 16 em uma vila, 15 em uma cidade, 14 em uma metrópole), sua fama poderá ser mudada conforme você seja reconhecido por atos heróicos."
+					},
+					{
+						"raceAbilitiesName": "Ataque com Rabo",
+						"raceAbilitiesDescription": "Você possui um ataque natural com a sua cauda que pode ser usado como um chicote (1d6, crítico 2x, impacto). Pode gastar 1PM para fazer um ataque extra corpo a corpo."
+					}					
+				]
+			},
+			{
+				"raceName": "Licantropo (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+1 em Três Atributos Diferentes (exceto Inteligência), Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Incontrolável",
+						"raceAbilitiesDescription": "Ao se torna um Licantropo você terá que cumprir algumas obrigações, por exemplo, em noites de Lua Cheia você terá que fazer um teste de Vontade (CD 20) se falhar ficará Confuso e se transformar involuntariamente na Forma Bestial."
+					},
+					{
+						"raceAbilitiesName": "Licantropismo",
+						"raceAbilitiesDescription": "Você recebe +2 em duas perícias a sua escolha. Cada um desses bônus conta como um poder de Licantropo. Você pode trocar um desses bônus por um poder de Licantropo a sua escolha. Esta habilidade não causa perda de Inteligência."
+					},
+					{
+						"raceAbilitiesName": "Dom da Maldição",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo Monstro, possui visão na penumbra e resistência a dano 5/Magia. Mesmo dormindo ao relento, sua recuperação de PV e PM nunca é inferior a seu próprio nível."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Você recebe uma arma natural de mordida (dano 1d6, crítico x2, perfurante). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					},
+					{
+						"raceAbilitiesName": "Forma Bestial",
+						"raceAbilitiesDescription": "Gastando uma ação completa e 3 PM, você se torna uma criatura selvagem ganhando +6 em Força ou em Destreza e +2 na Defesa, muda seu deslocamento para 12m, seu tamanho é Médio, duração uma cena (seu equipamento é deixado no local, não pode falar, atacar com armas ou lançar magias, nesta forma pessoas comuns poderão te atacar)."
+					},
+					{
+						"raceAbilitiesName": "Poderes de Licantropo",
+						"raceraceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Anatomia Predadora",
+								"raceAbilitiesOptionsDescription": "Você pode gasta 1 PM por rodada para receber deslocamento de escalada e natação de 12m, e seu salto é multiplicado por três. O seu deslocamento também aumenta em 1,5m para cada outro poderes de Licantropo que você possui. Pré-requisitos: dois outros poderes de Licantropo."
+							},
+							{
+								"raceAbilitiesOptionsName": "Agarrar Ferino",
+								"raceAbilitiesOptionsDescription": "Você pode gastar 1 PM para ganhar a habilidade de Agarrar Aprimorado. Até o final da cena, você recebe +1 em Luta. Este bônus aumenta em +1 para cada dois outros poderes de Licantropo que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Caçada Sangrenta",
+								"raceAbilitiesOptionsDescription": "Seus ataques naturais casam mais dano a criaturas que estão feridas, toda vez que acerta uma criatura que já sofreu dano, você causa 2d8 de dano com seus ataque naturais, Você só pode usar este poder uma vez por cena contra cada criatura específica. Pré-requisito: quatro outros poderes de Licantropo."
+							},
+							{
+								"raceAbilitiesOptionsName": "Couro Rígido",
+								"raceAbilitiesOptionsDescription": "Quando receber dano de ataque com arma, você recebe RD a dano em 1. Esta resistência aumenta em +1 para cada outro poder de Licantropo que você possui, porem armas encantadas e de prata ignoram esse poder."
+							},
+							{
+								"raceAbilitiesOptionsName": "Coerção Infinita",
+								"raceAbilitiesOptionsDescription": "Ao fazer um ataque natural, você pode fazer outro ataque em seguida contra o mesmo alvo, pagando uma quantidade de PM igual à quantidade de ataques já realizados no turno. Ou seja, pode fazer o primeiro ataque extra gastando 1 PM, um segundo ataque extra gastando mais 2 PM e assim por diante, até errar um ataque ou não ter mais pontos de mana. Pré-requisito: seis outros poderes."
+							},
+							{
+								"raceAbilitiesOptionsName": "Cura Acelerada",
+								"raceAbilitiesOptionsDescription": "Você recebe a habilidade de Cura Acelerada e recupera pontos de vida igual ao seu modificador de Constituição. Pré-requisito: seis outros poderes de Licantropo."
+							},
+							{
+								"raceAbilitiesOptionsName": "Derrubar",
+								"raceAbilitiesOptionsDescription": "Toda vez que acerta um ataque de mordida, pode fazer a manobra derrubar como ação livre. Você ganha um bônus de +1 para manobra derrubar a cada dois outros poderes de Licantropo que possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Euforia",
+								"raceAbilitiesOptionsDescription": "Seus ataques naturais agora aplicam Sangramento, uma vez por cena contra cada criatura.. Pré-requisito: Sede Eterna."
+							},
+							{
+								"raceAbilitiesOptionsName": "Familiar",
+								"raceAbilitiesOptionsDescription": "Você recebe um Aliado iniciante do tipo Combatente, Fortão, Guardião, Perseguidor, Vigilante ou um Lobo-das-Cavernas. Pré-requisito: treinado em Adestramento, Forma Atroz."
+							},
+							{
+								"raceAbilitiesOptionsName": "Ferocidade",
+								"raceAbilitiesOptionsDescription": "Você recebe +1 em Atletismo, Fortitude e Sobrevivência. Este bônus aumenta em +1 para cada dois outros poderes de Licantropo que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Fervor Selvagem",
+								"raceAbilitiesOptionsDescription": "Você recebe +1 em Percepção, Reflexos e Furtividade. Este bônus aumenta em +1 para cada dois outros poderes de Licantropo que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Forma Atroz",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação completa e 10 PM, você se torna uma besta selvagem, transformando-se em uma forma bestial e ganhando +10 em Força, +10 em Destreza e +5 na Defesa (-2 em Furtividade e +2 em manobra) muda seu deslocamento para 18m, seu tamanho muda para Grande, duração de uma cena (seu equipamento é deixado no local, não pode falar, atacar com armas ou lançar magias, nesta forma pessoas comuns poderão te atacar). Pré-requisito: seis outros poderes de Licantropo e Forma Hibrida."
+							},
+							{
+								"raceAbilitiesOptionsName": "Forma Feroz",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação padrão e 2 PM você pode se transforma em uma forma quadrúpede, recebe Destreza +10, seu tamanho é médio e recebe deslocamento de 18m, outras estatísticas não são alteradas, duração de uma cena (seu equipamento é deixado no local, não pode falar, atacar com armas e nem lançar magias)."
+							},
+							{
+								"raceAbilitiesOptionsName": "Forma Hibrida",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação completa e 6 PM, você se torna um meio humanoide, meio animal, transformando-se em uma forma hibrida, ganhando +10 Força ou Destreza, +2 na Defesa, outras estatísticas não são alteradas, duração de uma cena (nesta forma você pode usar seu equipamento, lançar magia e falar normalmente). Pré-requisito: seis outros poderes de Licantropo."
+							},
+							{
+								"raceAbilitiesOptionsName": "Frenesi Impiedoso",
+								"raceAbilitiesOptionsDescription": "Quando faz um ataque natural, você pode pagar 1 PM para somar seu modificador de Constituição (mínimo +1) à rolagem de dano de seus ataques naturais."
+							},
+							{
+								"raceAbilitiesOptionsName": "Fúria Implacável",
+								"raceAbilitiesOptionsDescription": "Você pode gastar 2 PM para invocar uma fúria selvagem, recebe +2 em testes de ataque, mas não pode fazer nenhuma ação que exija calma e concentração (como usar a perícia Furtividade ou lançar magias). A cada quatro níveis de Licantropo, pode gastar +2 PM para aumentar os bônus em +1. A Fúria Implacável termina se, ao fim da rodada, você não tiver atacado nem sido alvo de um efeito (ataque, habilidade, magia...) hostil."
+							},
+							{
+								"raceAbilitiesOptionsName": "Garras Afiadas",
+								"raceAbilitiesOptionsDescription": "Você recebe uma arma natural e gastando uma ação de movimento e 2 PM, você pode realizar dois ataques com suas garras em uma criatura corpo a corpo causando (dano 1d6, crítico x2, corte). O passo do dano aumenta a cada quatro outros poderes de Licantropo."
+							},
+							{
+								"raceAbilitiesOptionsName": "Imunidade Natural",
+								"raceAbilitiesOptionsDescription": "Você se torna imune a doenças, enjoado e exausto. Pré-requisito: dois outros poderes de Licantropo."
+							},
+							{
+								"raceAbilitiesOptionsName": "Mordida Aprimorada",
+								"raceAbilitiesOptionsDescription": "Você aumenta o dano em mais +1d6 de sua Mordida, esse dano aumenta em +1d6 a cada quatro outros poderes de Licantropo que você possui. Pré-requisito: qualquer outro poder de Licantropo."
+							},
+							{
+								"raceAbilitiesOptionsName": "Olfato Aguçado",
+								"raceAbilitiesOptionsDescription": "Você pode sentir o gosto do sangue em sua boca, você adquiri a habilidade Faro, contra inimigos em alcance médio que não possa ver."
+							},
+							{
+								"raceAbilitiesOptionsName": "Presa da Fera",
+								"raceAbilitiesOptionsDescription": "Você pode usar seu modificador de Sabedoria em vez de Carisma em testes de Enganação para Fintar e pode fintar como uma ação de movimento."
+							},
+							{
+								"raceAbilitiesOptionsName": "Presença Assustadora",
+								"raceAbilitiesOptionsDescription": "Você pode usar sua Reação e 2 PM, quando uma criatura ataca você, ela deve passar em um teste de Vontade contra seu Teste de Intimidação ou ficará abalada até o fim da cena. Pré-requisito: treinado em Intimidação."
+							},
+							{
+								"raceAbilitiesOptionsName": "Pelagem Robusta",
+								"raceAbilitiesOptionsDescription": "Sua pelagem possui mais rigidez dificultando os ataques. Você recebe +1 na Defesa. Este bônus aumenta em +1 para cada dois outros poderes de Licantropo que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sensibilidade Auditiva",
+								"raceAbilitiesOptionsDescription": "Você consegue ouvir os mais sutis sons, adquiri a habilidade natural de Percepções As Cegas em média distancia."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sede Eterna",
+								"raceAbilitiesOptionsDescription": "Os danos dos poderes de Licantropo, passam a ser mágicos, afim de superar resistências. Pré-Requisito: Mordida Aprimorada e Garras Afiadas."
+							},
+							{
+								"raceAbilitiesOptionsName": "Táticas de Alcateia",
+								"raceAbilitiesOptionsDescription": "Quando flanqueia um inimigo, você recebe +2 no teste de ataque e na rolagem de dano (além do bônus normal por flanquear, para um total de +4 no ataque e +2 no dano)."
+							},
+							{
+								"raceAbilitiesOptionsName": "Olhar Cruel",
+								"raceAbilitiesOptionsDescription": "Você recebe visão no escuro e +1 em Intimidação. Este bônus aumenta em +1 para cada dois outros poderes de Licantropo que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Uivo Primitivo",
+								"raceAbilitiesOptionsDescription": "Você pode gastar 5 PM para fazer um uivo assustador com alcance curto e duração até o fim da cena. Todos os inimigos que estiverem na área devem fazer um teste de Vontade contra seu teste de Intimidação ou ficam abalados até o fim da cena. Uma criatura que passe no teste de Vontade fica imune a esta habilidade por um dia. Pré-requisito: treinado em Intimidação, Olhar Cruel."
+							}
+						]
+					}
+				]
+			},
+			{
+				"raceName": "Vampiro (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+1 em Três Atributos Diferentes (exceto Constituição), Constituição –1"
+					},
+					{
+						"raceAbilitiesName": "Hábitos Noturnos",
+						"raceAbilitiesDescription": "Ao se torna um Vampiro você terá que cumprir algumas obrigações, por exemplo, terá que a cada 1d6 dias se alimentar de sangue com o Drenar Sangue, se não se alimentar ficará Fraco."
+					},
+					{
+						"raceAbilitiesName": "Sensibilidade ao Sol",
+						"raceAbilitiesDescription": "Por sua fraqueza ao sol você deve evitar expor sua pele diretamente sobre a luz do dia, caso contrario você ficará Ofuscado e sofrera e 1d6 pontos de vida para cada dois outros Poderes de Vampiro."
+					},
+					{
+						"raceAbilitiesName": "Puro Sangue",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo morto-vivo e recebe +5 em testes de resistência contra dano de trevas, mas recebe vulnerabilidade a dano de luz."
+					},
+					{
+						"raceAbilitiesName": "Dom da Maldição",
+						"raceAbilitiesDescription": "Por começar como Vampiro, você possui visão na penumbra. Você recebe +2 em furtividade e reflexos; Cada um desses bônus conta como um poder de Vampiro, mas não causa perda de Constituição."
+					},
+					{
+						"raceAbilitiesName": "Drenar Sangue",
+						"raceAbilitiesDescription": "Você recebe uma arma natural de mordida e pode fazer um ataque contra uma criatura corpo a corpo que estiver com condição: agarrada, atordoado, desprevenido, fascinado, inconsciente, indefeso, pasmo ou paralisado. Você causa (dano 1d6, crítico x2, perfurante) e você pode recupera os pontos de vida equivalente ao dano causado. Essa habilidade só poder ser usada contra criaturas vivas como humanoides, animais e monstros."
+					},
+					{
+						"raceAbilitiesName": "Poderes de Vampiro",
+						"raceraceAbilitiesOptions": 
+						[
+							{
+								"raceAbilitiesOptionsName": "Abraço apertado",
+								"raceAbilitiesOptionsDescription": "Você pode gastar 1 PM para ganhar a habilidade de Agarrar Aprimorado. Até o final da cena, você recebe +1 em Luta. Este bônus aumenta em +1 para cada dois outros poderes de Vampiro que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Coagulação",
+								"raceAbilitiesOptionsDescription": "Quando receber dano de ataque com arma, você recebe RD a dano em 1. Esta resistência aumenta em +1 para cada outro poder de Vampiro que você possui; porem armas encantadas ignoram esse poder."
+							},
+							{
+								"raceAbilitiesOptionsName": "Cria",
+								"raceAbilitiesOptionsDescription": "O Vampiro faz uma criatura morta pela habilidade Drenar Sangue se erguer como um Vampiro na noite seguinte. Em termos de regras você ganha um Aliado iniciante do tipo Assassino, Combatente, Fortão, Guardião, Perseguidor ou Vigilante. Pré-requisito: ser Vampiro de Puro Sangue."
+							},
+							{
+								"raceAbilitiesOptionsName": "Cura Acelerada",
+								"raceAbilitiesOptionsDescription": "Você recebe a habilidade de Cura Acelerada e recupera pontos de vida igual ao seu modificador de Carisma. Pré-requisito: seis outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Dobra de Sangue",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação e 3 PM você pode manipular o sangue do oponente em alcance curto e causando dano 2d8. A criatura deve fazer um teste de Fortitude (CD Car), se passar toma metade, se falha, também ficará Enredado por uma rodada."
+							},
+							{
+								"raceAbilitiesOptionsName": "Charme Eloquente",
+								"raceAbilitiesOptionsDescription": "Você recebe +1 em Diplomacia, Enganação e Nobreza. Este bônus aumenta em +1 para cada dois outros poderes de Vampiro que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Fervor Sanguinário",
+								"raceAbilitiesOptionsDescription": "Você recebe +1 em Reflexos, Acrobacia e Furtividade. Este bônus aumenta em +1 para cada dois outros poderes de Vampiro que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Forma da Névoa",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação de movimento e 2 PM você pode se transforma em névoa, ficando Incorpóreo durante 1d4 turnos mas poderá volta a sua forma original a qualquer momento, inimigos em alcance corpo a corpo ficam Ofuscados. Nesta forma não poderá realizar qualquer ação, somente se movimentar."
+							},
+							{
+								"raceAbilitiesOptionsName": "Fisiologia sobrenatural",
+								"raceAbilitiesOptionsDescription": "Você pode gasta 1 PM por rodada para receber deslocamento de escalada 9m, podendo andar na vertical e no teto sem problemas e seu salto é multiplicado por três. O deslocamento aumenta em 1,5m para cada outro poderes de Vampiro que você possui. Pré-requisitos: quatro outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Hemopraga",
+								"raceAbilitiesOptionsDescription": "Você infecta o sangue dos inimigos próximos, Gastando uma ação completa e 5 PM você infecta criaturas em alcance curto, causando 1d6 para cada poder de Vampiro, as criaturas devem fazer um teste de Reflexo (CD Car) se passar tomarão metade do dano, se falharem também ficarão Fatigada até o final da rodada. Só pode usar uma vez durante a cena. Pré-requisito: seis outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Hemorragia",
+								"raceAbilitiesOptionsDescription": "Seus ataques desarmados agora causam Sangramento. Pré-requisito: Glóbulos Mágicos."
+							},
+							{
+								"raceAbilitiesOptionsName": "Gangrenar",
+								"raceAbilitiesOptionsDescription": "Você aprende e pode lançar a magia Toque Vampírico. Pré-Requisito: quatro outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Garras Afiadas",
+								"raceAbilitiesOptionsDescription": "Você recebe uma arma natural de garras em alcance corpo a corpo causando (dano 1d4, crítico x2, corte). O passo do dano aumenta a cada dois outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Glóbulos Mágicos",
+								"raceAbilitiesOptionsDescription": "Os danos dos poderes de Vampiro, passam a ser mágicos, afim de superar resistências. Pré-Requisito: Mordida Aprimorada."
+							},
+							{
+								"raceAbilitiesOptionsName": "Imortalidade",
+								"raceAbilitiesOptionsDescription": "Você não pode morrer naturalmente e nem sofrerá com envelhecimento, sempre que morrer, poderá voltar a vida após 3d6 dias. Pré-requisito: ser Vampiro de Puro Sangue e quatro outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Imunidade Natural",
+								"raceAbilitiesOptionsDescription": "Você se torna imune a doenças, venenos e sangramentos, Pré-requisito: dois outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Lorde",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação completa e 5 PM, você se torna um Vampiro original transformando-se em uma forma animalesca e ganhando +2 em força, +3 em destreza, +5 na Defesa e seu personagem adquiri um par de asas ganhando deslocamento de voo em 9m, diminuindo o custo de suas habilidades de Vampiro diminuem em -1 PM, duração de uma cena, nesta forma pessoas comuns poderão te atacar. Pré-requisito: ser Vampiro de Puro Sangue e quatro outro poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Maré de Sangue",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação padrão e 2 PM, você pode sacrificar 2d6 de vida para causar dano a uma criatura em alcance curto equivalente a vida perdida, esse dano aumenta em +1d6 de dano para cada dois poderes de Vampiro que possua. Pré-requisito: quatro outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Mordida Aprimorada",
+								"raceAbilitiesOptionsDescription": "Você aumenta o dano em mais 1d6 do Drenar Sangue, a cada quatro outros poderes de Vampiro que você possui. Pré-requisito: qualquer outro poder de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Olhar Sombrio",
+								"raceAbilitiesOptionsDescription": "Você aprende e pode lançar a magia Hipnotismo e Amedrontar. Pré-requisito: Charme Vampírico."
+							},
+							{
+								"raceAbilitiesOptionsName": "Olhos Escuros",
+								"raceAbilitiesOptionsDescription": "Você recebe visão no escuro e +1 em Intimidação. Este bônus aumenta em +1 para cada dois outros poderes de Vampiro que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Pacto vermelho",
+								"raceAbilitiesOptionsDescription": "Você soma seu modificador de Carisma aos seus danos de poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Poça De Sangue",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação padrão e 3 PM, você se transforma uma poça de sangue ganhando uma ação de movimento extra, se tornando imune e ocupando um espaço de 1,5m de raio, todas as criaturas por onde passar ficam Lentas por uma rodada, essa habilidade acaba no final do seu turno atual."
+							},
+							{
+								"raceAbilitiesOptionsName": "Presença Majestosa",
+								"raceAbilitiesOptionsDescription": "Você pode usar sua Reação e 3 PM, quando uma criatura ataca você, ela deve passar em um teste de Vontade (CD Car) ou não conseguirá machucá-lo e perderá a ação. Pré-Requisito: quatro outros poderes de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Resistência Sanguínea",
+								"raceAbilitiesOptionsDescription": "Você recebe resistência a ácido, eletricidade, fogo, frio, e trevas 2. Esta RD aumenta em +2 para cada dois outros poderes de Vampiro que você possui."
+							},
+							{
+								"raceAbilitiesOptionsName": "Revoada",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação padrão e 3 PM, Transformando-se em uma criatura Minúscula (+5 em Furtividade, –5 em testes de manobra) recebendo deslocamento de voo até 12m e deixando inimigos Desprevenidos ao seu próximo ataque corpo a corpo, você pode manter essa condição gastando e 1 PM a cada turno, mas termina caso faça um ataque, lance uma magia ou sofra dano."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sedução vampírica",
+								"raceAbilitiesOptionsDescription": "Você aprende e pode lançar a magia enfeitiçar. Pré-requisito: qualquer outro poder de Vampiro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Transfusão",
+								"raceAbilitiesOptionsDescription": "Gastando uma ação padrão e 3 PM, você causa 2d6 pontos de dano em uma criatura em alcance curto e você recupera pontos de vida iguais a metade do dano causado. Você pode usar em você, e cura aliado com toque. Esse dano aumenta em +1d6 para cada dois outro poderes de Vampiro que possua."
+							},
+							{
+								"raceAbilitiesOptionsName": "Transformação Vampiresca",
+								"raceAbilitiesOptionsDescription": "Você se transforma em um Vampiro original ganhando a habilidade racial de Puro Sangue e passa a ser uma criatura do tipo morto-vivo. Pré-requisito: -1 no modificador de Constituição."
+							},
+							{
+								"raceAbilitiesOptionsName": "Transferência Vital",
+								"raceAbilitiesOptionsDescription": "Você agora passa a somar seus pontos de mana que ganharia por nível também a sua vida por nível. Pré-requisitos: ser Vampiro de Puro Sangue."
+							}							
+						]
+					}
+				]
+			},
+			{
+				"raceName": "Amorfático (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Destreza +1, Força –1"
+					},
+					{
+						"raceAbilitiesName": "Absorver",
+						"raceAbilitiesDescription": "Você gasta 1 hora para absorver uma criatura derrotada (com 0 de PV ou menos) do tipo humanoide, animal ou monstro e receber o ND dela em PV temporário e metade do ND em PM temporário pelo dia e não acumulativo com ela mesmo."
+					},
+					{
+						"raceAbilitiesName": "Criatura Amorfa",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo monstro, tem tamanho pequeno, recebe uma arma natural de pancada (1d6, crítico x2, impacto), visão no escuro e imuni­dade a ácido, sangramento, venenos e a condição caído e é vulnerável a eletricidade. Você não tem forma fixa, mas deve se adaptar ao equipamento e ferramentas que está usando, senão não pode usá-las, contudo você pode passar por locais humanamente impossíveis ( a critério do mestre ), mas deve ter pelo menos 2 centímetros de espaço e não pode entrar em criaturas conscientes. Teto e parede contam como terreno difícil para você e você pode passar por inimigos."
+					},
+					{
+						"raceAbilitiesName": "Tipos de Slime",
+						"raceAbilitiesDescription": "Você escolhe um desses tipos na criação do personagem.",
+						"raceAbilitiesOptions": 
+						[
+							{
+								"raceAbilitiesOptionsName": "Água",
+								"raceAbilitiesOptionsDescription": "Você ganha a magia Área Escorregadia, se aprender de novo diminui em 1PM."
+							},
+							{
+								"raceAbilitiesOptionsName": "Ácido",
+								"raceAbilitiesOptionsDescription": "Você pode gastar 2PM durante uma investida para causar “enjoado” a criatura que você acertar o ataque por um turno."
+							},
+							{
+								"raceAbilitiesOptionsName": "Lava",
+								"raceAbilitiesOptionsDescription": "Se não estiver usando armadura, todo ataque que receber você dá 1 de dano, ignorando RD, na arma do atacante."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sangue",
+								"raceAbilitiesOptionsDescription": "Toda cena você roda 1d8 para descobrir com qual doença você está infectado ( tabela de doenças na página 303 ), você pode gastar 2PM e uma ação de movimento para sujar a sua arma de sangue, dura um golpe, e se acertar o alvo fica infectado com a doença. Essa habilidade pode ser utilizada para outros objetivos a critério do mestre."
+							},
+							{
+								"raceAbilitiesOptionsName": "Mana",
+								"raceAbilitiesOptionsDescription": "Sua vida e sua mana são as mesmas e seu descanso é sempre confortável. E você não pode ser curado por nenhum método, além de receber transfusão de mana de outras pessoas, ele precisa de uma ação padrão e tocar o alvo, precisa ser consentido."
+							}
+						]
+					}
+				]
+			},
+			{
+				"raceName": "Ceratops (Povo-Trovão)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Força +1, Destreza −1, Inteligência −1"
+					},
+					{
+						"raceAbilitiesName": "Chifres",
+						"raceAbilitiesDescription": "Você possui uma arma natural de chifres (dano 1d8, crítico x2, perfuração). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres."
+					},
+					{
+						"raceAbilitiesName": "Papel Tribal",
+						"raceAbilitiesDescription": "Você é treinado em uma das seguintes perícias, a sua escolha: Cura, Intimidação, Ofício ou Sobrevivência."
+					},
+					{
+						"raceAbilitiesName": "Paquidérmico",
+						"raceAbilitiesDescription": "Seu tamanho é Grande, mas seu deslocamento é 9m. Você recebe +1 na Defesa e usa o modificador de Força para Intimidação (em vez de Carisma)."
+					},
+					{
+						"raceAbilitiesName": "Medo de Altura",
+						"raceAbilitiesDescription": "Se estiver adjacente a uma queda de 3m ou mais de altura (como um buraco ou penhasco), você fica abalado."
+					}
+				]
+			},
+			{
+				"raceName": "Pteros (Povo-Trovão)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Sabedoria +2, Destreza +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Ligação Natural",
+						"raceAbilitiesDescription": "Cada ptero é mentalmente ligado a um parceiro(a), que pode ser um personagem jogador ou NPC. Um voador e seu parceiro(a) podem comunicar-se mentalmente em alcance visual, e um sempre saberá em que direção e distância pode encontrar o outro."
+					},
+					{
+						"raceAbilitiesName": "Pés Rapinantes",
+						"raceAbilitiesDescription": "Seus pés funcionam como uma arma natural de garras (dano 1d6, crítico x2, corte). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com as garras."
+					},
+					{
+						"raceAbilitiesName": "Senhor dos Céus",
+						"raceAbilitiesDescription": "Você pode pairar a 1,5m do chão com deslocamento 9m. Isso permite que você ignore terreno difícil e o torna imune a dano por queda (a menos que esteja inconsciente). Você pode gastar 1 PM por rodada para voar com deslocamento de 12m. Quando abre suas asas para pairar ou voar, você ocupa o espaço de uma criatura de tamanho Grande. Você não pode usar as asas se estiver vestindo armadura."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Rapinantes",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e +2 em Percepção e Sobrevivência."
+					},
+					{
+						"raceAbilitiesName": "Mãos Rudimentares",
+						"raceAbilitiesDescription": "Você recebe –2 em Ladinagem, Ofício e em testes de ataque feitos com as mãos. A critério do mestre, esta penalidade pode se aplicar a outros testes que exijam habilidade manual."
+					}
+				]
+			},
+			{
+				"raceName": "Velocis (Povo-Trovão)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Sabedoria +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Através de Espinheiros",
+						"raceAbilitiesDescription": "Você recebe resistência a corte e perfuração 2 e não sofre redução em seu deslocamento por terreno difícil natural."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Selvagens",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra, faro (não fica desprevenido e sofre apenas camuflagem, em vez de camuflagem total, contra inimigos em alcance curto que não possa ver) e +2 em Sobrevivência."
+					},
+					{
+						"raceAbilitiesName": "Velocista da Planície",
+						"raceAbilitiesDescription": "Seu deslocamento é 12m. Você usa o modificador de Destreza para Atletismo (em vez de Força) e recebe +5 em testes desta perícia para correr e saltar."
+					}
+				]
+			},
+			{
+				"raceName": "Voracis (Povo-Trovão)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Constituição +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Garras",
+						"raceAbilitiesDescription": "Suas mãos são duas armas naturais de garras (dano 1d4, crítico x2, corte). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com uma garra. Alternativamente, se possuir os poderes Ambidestria e/ou Estilo de Duas Armas, você pode atacar com ambas as garras com as penalidades aplicáveis. Você só pode atacar com uma garra se não estiver empunhando nada com aquela mão."
+					},
+					{
+						"raceAbilitiesName": "Rainha da Selva",
+						"raceAbilitiesDescription": "Você recebe deslocamento de escalada 9m, +2 em Atletismo e sua recuperação de PV é sempre um nível melhor que sua condição de descanso (por exemplo, três vezes o nível em condição confortável, quatro vezes o nível em condição luxuosa)."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Selvagens",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra, faro (não fica desprevenido e sofre apenas camuflagem, em vez de camuflagem total, contra inimigos em alcance curto que não possa ver) e +2 em Sobrevivência."
+					}
+				]
+			},
+			{
+				"raceName": "Búfalo (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Chifres",
+						"raceAbilitiesDescription": "Arma natural de chifres (dano 1d6, crítico x2, perfuração). Além disso, quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com os chifres."
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você não fica desprevenido e sofre apenas metade da camuflagem (em vez de camuflagem total) contra inimigos em alcance curto que não possa ver."
+					},
+					{
+						"raceAbilitiesName": "Marrada Impressionante",
+						"raceAbilitiesDescription": "+2 em testes para empurrar e ataques em investida. Usa o bônus de Força para Intimidação (em vez de Carisma)."
+					}
+				]
+			},
+			{
+				"raceName": "Coelho (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Pés Ligeiros",
+						"raceAbilitiesDescription": "Deslocamento 12m (em vez de 9m). Quando faz a ação correr, você não precisa percorrer uma linha reta."
+					},
+					{
+						"raceAbilitiesName": "Saltador",
+						"raceAbilitiesDescription": "+10 em testes de Atletismo para saltar."
+					},
+					{
+						"raceAbilitiesName": "Senso de Preservação",
+						"raceAbilitiesDescription": "Visão na penumbra, +2 em Percepção e Reflexos."
+					}
+				]
+			},
+			{
+				"raceName": "Coruja (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Sabedoria +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Espreitador",
+						"raceAbilitiesDescription": "Visão no escuro, +2 em Furtividade e Vontade."
+					},
+					{
+						"raceAbilitiesName": "Garras",
+						"raceAbilitiesDescription": "Armas naturais de garras (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, se tiver uma das mãos livres, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com uma garra."
+					},
+					{
+						"raceAbilitiesName": "Predador",
+						"raceAbilitiesDescription": "+1 na margem de ameaça em ataques contra alvos desprevenidos."
+					}
+				]
+			},
+			{
+				"raceName": "Crocodilo (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Couro Rígido",
+						"raceAbilitiesDescription": "Sua pele é dura e escamosa. +1 na Defesa."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Arma natural de mordida (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					},
+					{
+						"raceAbilitiesName": "Predador Aquático",
+						"raceAbilitiesDescription": "Deslocamento de natação 6m. +2 em Furtividade e em testes de manobra para derrubar."
+					}
+				]
+			},
+			{
+				"raceName": "Gato (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Garras",
+						"raceAbilitiesDescription": "Armas naturais de garras (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, se tiver uma das mãos livres, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com uma garra."
+					},
+					{
+						"raceAbilitiesName": "Graciosidade",
+						"raceAbilitiesDescription": "Você soma seu modificador de Carisma em Acrobacia e, quando cai de qualquer altura, se estiver consciente, cai de pé."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Furtivos",
+						"raceAbilitiesDescription": "Visão na penumbra, +2 em Furtividade e Percepção."
+					}
+				]
+			},
+			{
+				"raceName": "Hiena (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Sabedoria +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Carniceiro Prevalecido",
+						"raceAbilitiesDescription": "+2 em Fortitude e rolagens de dano contra oponentes que esteja flanqueando."
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você não fica desprevenido e sofre apenas metade da camuflagem (em vez de camuflagem total) contra inimigos em alcance curto que não possa ver."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Arma natural de mordida (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					}
+				]
+			},
+			{
+				"raceName": "Leão (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Garras",
+						"raceAbilitiesDescription": "Armas naturais de garras (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, se tiver uma das mãos livres, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com uma garra."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Arma natural de mordida (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					},
+					{
+						"raceAbilitiesName": "Sentidos da Realeza",
+						"raceAbilitiesDescription": "Visão na penumbra, +2 em Intimidação e Percepção."
+					}
+				]
+			},
+			{
+				"raceName": "Lobo (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você não fica desprevenido e sofre apenas metade da camuflagem (em vez de camuflagem total) contra inimigos em alcance curto que não possa ver."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Arma natural de mordida (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					},
+					{
+						"raceAbilitiesName": "Táticas de Matilha",
+						"raceAbilitiesDescription": "+2 na rolagem de dano e margem de ameaça em ataques contra oponentes que esteja flanqueando."
+					}
+				]
+			},
+			{
+				"raceName": "Morcego (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Asas",
+						"raceAbilitiesDescription": "Quando se move, você pode se deslocar pairando a 1,5m do chão com deslocamento 9m. Isso permite ignorar terreno difícil e torna imune a dano por queda (exceto quando inconsciente). Você pode gastar 1 PM por rodada para voar com deslocamento de 12m."
+					},
+					{
+						"raceAbilitiesName": "Cavaleiro das Trevas",
+						"raceAbilitiesDescription": "Visão no escuro, +5 em Furtividade e Percepção apenas no escuro."
+					}
+				]
+			},
+			{
+				"raceName": "Raposa (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Inteligência +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Agarra-me se Puderes",
+						"raceAbilitiesDescription": "Deslocamento 12m (em vez de 9m), +2 em Furtividade e Reflexos."
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você não fica desprevenido e sofre apenas metade da camuflagem (em vez de camuflagem total) contra inimigos em alcance curto que não possa ver."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Astutos",
+						"raceAbilitiesDescription": "Visão na penumbra, +2 em Intuição e Percepção."
+					}
+				]
+			},
+			{
+				"raceName": "Serpente (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Inteligência +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Arborícola",
+						"raceAbilitiesDescription": "Deslocamento de escalada 6m, +2 em Furtividade."
+					},
+					{
+						"raceAbilitiesName": "Constritor",
+						"raceAbilitiesDescription": "+2 em testes para agarrar e rolagens de dano contra criaturas que estiver agarrando."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Traiçoeiros",
+						"raceAbilitiesDescription": "Visão no escuro, +2 em Iniciativa e Ladinagem."
+					}
+				]
+			},
+			{
+				"raceName": "Urso (Moreau)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Abraço de Urso",
+						"raceAbilitiesDescription": "+2 em Fortitude, Intimidação e testes para agarrar."
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você não fica desprevenido e sofre apenas metade da camuflagem (em vez de camuflagem total) contra inimigos em alcance curto que não possa ver."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Arma natural de mordida (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					}
+				]
+			},
+			{
+				"raceName": "Dampiro (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +2, Força +1, Sabedoria –1"
+					},
+					{
+						"raceAbilitiesName": "Herança Vampírica",
+						"raceAbilitiesDescription": "Você recebe resistência 10 a dano de Trevas, visão no escuro e +2 em Diplomacia e Furtividade."
+					},
+					{
+						"raceAbilitiesName": "Olhar Hipnótico",
+						"raceAbilitiesDescription": "Você pode lançar duas das magias a seguir: Amedrontar, Comando, Enfeitiçar, Escuridão, Infligir Ferimentos ou Hipnotismo (atributo-chave Carisma). Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Presas da Morte",
+						"raceAbilitiesDescription": "Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Quando realizar um ataque com sua mordida, você pode gastar 2 PM para causar 2d6 de dano de Trevas adicionais."
+					},
+					{
+						"raceAbilitiesName": "Fotofobia",
+						"raceAbilitiesDescription": "Você sofre 2 pontos de dano adicional por dado de dano de Luz."
+					}
+				]
+			},
+			{
+				"raceName": "Draconato (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Carisma +1, Sabedoria –1"
+					},
+					{
+						"raceAbilitiesName": "Ressonância dos Dragões Ancestrais",
+						"raceAbilitiesDescription": "Conforme sua ascendência, você recebe resistência 10 a um tipo de dano. Escolha uma: eletricidade (draconato azul ou de cobre), frio (draconato branco ou de prata), ácido (draconato negro ou de ouro), veneno (draconato verde ou de mercúrio) ou fogo (draconato vermelho ou de bronze). Além disso, você recebe +1 de Defesa."
+					},
+					{
+						"raceAbilitiesName": "Silhueta Aterradora",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e +2 em Intimidação."
+					},
+					{
+						"raceAbilitiesName": "Sopro Dracônico",
+						"raceAbilitiesDescription": "Você pode gastar 2 PM para fazer um ataque em cone de 6 metros. Criaturas afetadas sofrem 2d6 de dano de acordo com sua Ressonância dos Dragões Ancestrais (Reflexos reduz a metade, CD Carisma). Você só pode usar essa habilidade uma vez por cena. Você pode gastar +1 PM para aumentar o dano em +1d6."
+					}
+				]
+			},
+			{
+				"raceName": "Aasimar (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Sabedoria +2, Carisma +1, Inteligência -1 (Protetor); Destreza +2, Inteligência +1, Sabedoria -1 (Caído)."
+					},
+					{
+						"raceAbilitiesName": "Herança Divina",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo espírito e recebe visão na penumbra."
+					},
+					{
+						"raceAbilitiesName": "Benção dos Céus (Protetor)",
+						"raceAbilitiesDescription": "Você recebe +2 em Diplomacia e Intuição. Além disso, pode lançar Luz (como uma magia divina; atributo-chave Carisma) e mais duas das magias a seguir: Arma Mágica, Comando, Orientação ou Santuário. Caso aprenda novamente essas magias, o custo para lançá-las diminui em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Corpo Profanado (Caído)",
+						"raceAbilitiesDescription": "Você recebe +2 em Enganação e Furtividade. Além disso, pode lançar Escuridão (como uma magia divina; atributo-chave Inteligência) e mais duas das magias a seguir: Arma Mágica, Compreensão, Enfeitiçar ou Perdição. Caso aprenda novamente essas magias, o custo para lançá-las diminui em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Aparência Alienígena",
+						"raceAbilitiesDescription": "Você pode até se parecer com um humanoide qualquer, mas, graças a sua origem extraplanar, você possui características muito marcantes que pode facilmente lhe diferenciar das pessoas comuns. Escolha duas das características apresentadas para serem aquelas que distinguem você dos demais.",
+						"raceAbilitiesOptions": 
+						[
+							{
+								"raceAbilitiesOptionsDescription": "Você possui quatro olhos, ao invés de dois."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Suas escleras são totalmente negras ou outro tom estranho para outros."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Seu tom de pele é bem diferente do habitual: azul, vermelho, branco, etc."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Inscritos em uma língua exótica, como Celestial ou Infernal, recobrem seu corpo."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Você possui chifres. Quantos quiser."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Você possui dois polegares em cada mão."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Seu porte físico é maior e mais largo que o normal."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Quem encara suas pupilas vê as estrelas e as nebulosas."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Você possui uma cauda proeminente."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Chamas incandescentes parecem queimar entre seus cabelos."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Você possui asas vestigiais ou cicatrizes profundas no seu lugar em suas costas."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Uma leve auréola de luz ou escuridão sempre circunda sua cabeça."
+							}
+						]
+					}
+				]
+			},
+			{
+				"raceName": "Duplo (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +2, Destreza +1, Constituição –1"
+					},
+					{
+						"raceAbilitiesName": "Multiplicidade",
+						"raceAbilitiesDescription": "Você é capaz de assumir diferentes formas e alterar a sua própria aparência. Isso inclui altura, peso, tom de pele, cor de cabelo, timbre de voz, etc. Você não recebe novas habilidades (você pode ficar parecido com outra raça, mas não ganhará as habilidades dela), nem é capaz de alterar a aparência dos equipamentos que esteja vestindo ou carregando. Você recebe +2 em Diplimacia e Enganação."
+					},
+					{
+						"raceAbilitiesName": "Arte do Disfarce",
+						"raceAbilitiesDescription": "Você pode alterar-se para formas especfíficas afim de conseguir vantagens pontuais, como impressionar alguém, assumir outra identidade ou se mesclar na multidão. Você pode gastar 2 PM para receber +10 em testes de Diplomacia para mudar atitude, em testes de Enganação para disfarce ou testes de Furtividade para esconder-se até o final da cena (esse bônus não se acumula com o bônus oferecido pelo poder Multiplicidade)."
+					},
+					{
+						"raceAbilitiesName": "Natureza Flexível",
+						"raceAbilitiesDescription": "Você recebe +5 em testes de resistência contra efeitos de Paralisia."
+					}
+				]
+			},
+			{
+				"raceName": "Gnome (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Inteligência +2, Sabedoria +1, Força –1"
+					},
+					{
+						"raceAbilitiesName": "Engenhosidade",
+						"raceAbilitiesDescription": "Quando faz um teste de perícia, você pode gastar 2 PM para somar sua Inteligência no teste. Você não pode usar esta habilidade em testes de ataque. Caso receba esta habilidade novamente, seu custo é reduzido em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Pequenas Grandes Mentes",
+						"raceAbilitiesDescription": "Seu tamanho é Pequeno (veja a página 106) e seu deslocamento é 6m."
+					},
+					{
+						"raceAbilitiesName": "Vanguardista",
+						"raceAbilitiesDescription": "Você recebe proficiência em armas de fogo e +2 em Ofício (um qualquer, a sua escolha)."
+					},
+					{
+						"raceAbilitiesName": "Predição Gnômica",
+						"raceAbilitiesDescription": "Uma vez no começo de cada dia, você pode rolar um d20 e guardar o valor obtido. A qualquer momento, você pode substituir o número rolado em um teste de perícia feito por você ou por outra pessoa em alcance curto por esse vaor."
+					}
+				]
+			},
+			{
+				"raceName": "Harpia (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Sabedoria +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Olhos de Rapina",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e +2 em Percepção e Reflexos."
+					},
+					{
+						"raceAbilitiesName": "Asas",
+						"raceAbilitiesDescription": "Quando se move, você pode se deslocar pairando a 1,5m do chão com deslocamento 9m. Isso permite ignorar terreno difícil e torna imune a dano por queda (exceto quando inconsciente ou sob efeito de paralisia). Você pode  gastar 1 PM por rodada para voar com deslocamento de 12m."
+					},
+					{
+						"raceAbilitiesName": "Garras Afiadas",
+						"raceAbilitiesDescription": "Você possui uma arma natural de garras (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com as garras."
+					}
+				]
+			},
+			{
+				"raceName": "Kobold (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Inteligência +1, Força –1"
+					},
+					{
+						"raceAbilitiesName": "Um oitavo Dragão",
+						"raceAbilitiesDescription": "Conforme sua ascendência, você recebe resistência 5 a um tipo de dano. Escolha uma: eletricidade (kobold azul ou de cobre), frio (kobold branco ou de prata), ácido (kobold negro ou de ouro), veneno (kobold verde ou de mercúrio) ou fogo (kobold vermelho ou de bronze). Além disso, você recebe visâo no escuro e +5 em testes de resistência contra efeitos de medo."
+					},
+					{
+						"raceAbilitiesName": "Abaixo da Linha de Visão",
+						"raceAbilitiesDescription": "Seu tamanho é Pequeno, mas seu deslocamento se mantém 9m. Além disso, você recebe +2 em Percepção e Furtividade."
+					},
+					{
+						"raceAbilitiesName": "Técnicas de Guerrilha",
+						"raceAbilitiesDescription": "Você recebe +2 em rolagens de acerto e de dano contra alvos que estejam adjacentes a um aliado seu que esteja consciente."
+					}
+				]
+			},
+			{
+				"raceName": "Herança do Camundongo (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Olhos de Ratinho",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e +2 em Investigação e Furtividade."
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você tem olfato apurado. Você não fica desprevenido contra inimigos que não possa ver e camuflagem total lhe causa apenas 20% de chance de falha."
+					},
+					{
+						"raceAbilitiesName": "Dentes Fortes",
+						"raceAbilitiesDescription": "Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação atacar, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					}
+				]
+			},
+			{
+				"raceName": "Herança do Macaco (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Inteligência +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Atleta Natural",
+						"raceAbilitiesDescription": "Você recebe deslocamento de escalada igual ao seu deslocamento terrestre e +2 em Acrobacia e Atletismo."
+					},
+					{
+						"raceAbilitiesName": "Cauda Preênsil",
+						"raceAbilitiesDescription": "Você pode usar suas cauda como uma mão inábil. Ela pode segurar objetos, armas simples e escudos, realizar ataques desarmados e conjurar magias, mas não pode manejar armas marciais ou exóticas nem executar ataques ou ações adicionais."
+					},
+					{
+						"raceAbilitiesName": "Memorização Rápida",
+						"raceAbilitiesDescription": "Você pode se tornar treinado em uma perícia a sua escolha até o fim deste dia desde que você já tenha visto outra pessoa realizando um teste daquela mesma perícia nesse dia."
+					},
+					{
+						"raceAbilitiesName": "Arremessador Simiesco (Regra Opcional)",
+						"raceAbilitiesDescription": "Se você não tiver cauda, pode substituir a habilidade Cauda Preênsil por Arremessador Simiesco: O alcance ds suas armas de arremesso aumenta em um passo e objetos e armas improvisadas são considerados itens dessa categoria para você. Alem disso, você recebe +2 em acerto e dano com armas de arremesso."
+					}
+				]
+			},
+			{
+				"raceName": "Herança do Pato (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Ave Lacustre",
+						"raceAbilitiesDescription": "Você recebe deslocamento de natação igual ao seu deslocamento terrestre e +2 em Intimidação e Vontade."
+					},
+					{
+						"raceAbilitiesName": "Migratória",
+						"raceAbilitiesDescription": "Você se torna imune a dano por queda (exceto quando inconsciente ou sob algum efeito de paralisia) e recebe +10 em testes de Sobrevivência para se orientar."
+					},
+					{
+						"raceAbilitiesName": "Voando Baixo",
+						"raceAbilitiesDescription": "Você recebe +2 em acerto e dano quando realizar uma investida ou estiver atacando um alvo que foi assustado ou abalado por você."
+					}
+				]
+			},
+			{
+				"raceName": "Herança da Tartaruga (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Sabedoria +1, +1 em qualquer atributo"
+					},
+					{
+						"raceAbilitiesName": "Carapaça Rígida",
+						"raceAbilitiesDescription": "Você recebe +2 em Defesa e pode somar o seu bônus de Constituição ao invés de Destreza em sua Defesa e recebe resistência 5 a dano de Corte e Perfuração, mas qualquer armadura precisa ser adaptada para você e esse processo custa 50% do preço base do item (sem contar melhorias e encantamentos)."
+					},
+					{
+						"raceAbilitiesName": "Sabio da Natureza",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e +2 em Intuição e Fortitude."
+					},
+					{
+						"raceAbilitiesName": "Devagar e Sempre",
+						"raceAbilitiesDescription": "Seu deslocamento é 6m (em vez de 9m). Porém, seu deslocamento não é reduzido por uso de armadura ou excesso de carga."
+					},
+					{
+						"raceAbilitiesName": "Com casa nas costas (Regra Opcional)",
+						"raceAbilitiesDescription": "Você pode substituir a habilidade Devagar e Sempre por Com casa nas costas: Seu casco é adaptado para ajudar você em situações de perigo e você não hesita em se encolher dentro dele se necessário. Você recebe deslocamento de nado igual seu deslocamento normal e pode realizar testes de Fortitude ao invés de Reflexos."
+					}
+				]
+			},
+			{
+				"raceName": "Oni (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +2, Sabedoria +1, Constituição –1"
+					},
+					{
+						"raceAbilitiesName": "Herança do Além",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo espírito e recebe visão na penumbra e +2 em Intuição e Vontade."
+					},
+					{
+						"raceAbilitiesName": "Canalização Sobrenatural",
+						"raceAbilitiesDescription": "Você pode lançar duas das magias a seguir: Amedrontar, Concentração de Combate, Enfeitiçar, Orientação ou Visão Mística (atributo-chave Carisma). Caso aprenda novamente uma dessas magias, seu custo diminui em –1 PM."
+					},
+					{
+						"raceAbilitiesName": "Toque Sobrenatural",
+						"raceAbilitiesDescription": "Como um Oni, você possui forte ligação com os espíritos das natureza e com os planos de Faeria e Umbra, o que lhe oferece traços bem característicos que lhe diferenciam de outros humanoides. Escolha três das características apresentadas para serem aquelas que distinguem você dos demais",
+						"raceAbilitiesOptions": 
+						[
+							{
+								"raceAbilitiesOptionsDescription": "Suas orelhas possuem formas e pelugem animal."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Suas escleras são totalmente negras ou outro tom estranho para outros."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Seu tom de pele é bem diferente do habitual: azul, vermelho, branco, etc."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Tatuagens e padrões estranhos cobrem todo seu corpo."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Você possui chifres. Quantos quiser."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Suas unhas são longas e se parecem com garras."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Seu porte físico é maior e mais largo que o normal."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Você possui caninos proeminentes como presas de animais selvagens."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Você possui uma cauda ou mais caudas."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Seus cabelos e roupa então sempre ao vento como se uma leve brisa estivesse os balançando."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Sua temperatura corporal é mais baixa e sua pele é fria ao toque."
+							},
+							{
+								"raceAbilitiesOptionsDescription": "Sua sombra projeta uma imagem diferente da sua forma aparente."
+							}
+						]
+					}
+				]
+			},
+			{
+				"raceName": "Orc (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +2, Constituição +1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Olhar da Horda",
+						"raceAbilitiesDescription": "Você carrega o sangue dos temidos guerreiros perfeitos e dos mercenários da Grande Horda. Você é uma criatura do tipo monstro e recebe visão na penumbra e +2 em Intimidação. Além disso, você pode somar seu bônus de Força ao invés de Carisma em testes de Intimidação."
+					},
+					{
+						"raceAbilitiesName": "Chamado às Armas",
+						"raceAbilitiesDescription": "Você sabe como ser lettal em combate desde seus primeiros passos. Para você, todos os machados são armas simples e você recebe +2 em ataques com machados, clavas e tacapes."
+					},
+					{
+						"raceAbilitiesName": "Pele Calejada",
+						"raceAbilitiesDescription": "Você recebe resistência 2 a dano de Corte e Impacto."
+					}
+				]
+			},
+			{
+				"raceName": "Meio-Elfo (Arym)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Carisma +1, +1 em outros dois atributos a sua escolha"
+					},
+					{
+						"raceAbilitiesName": "Versatilidade Comercial",
+						"raceAbilitiesDescription": "Você cresceu entre comerciantes, navios mercantes e guildas de aventureiros. Você se torna treinado em Jogatina, Pilotagem ou um Ofício a sua escolha."
+					},
+					{
+						"raceAbilitiesName": "Lábia Élfica",
+						"raceAbilitiesDescription": "VOcê recebe +2 em Diplomacia e Percepção e recebe +1 PM adicional a cada nível par. Além disso, você pode gastar 2 PM para adicionar seu bônus de Carisma em testes de Conhecimento, Investigação ou Ofício."
+					}
+				]
+			},
+			{
+				"raceName": "Kaijin (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +2, Constituição +1, Carisma -2"
+					},
+					{
+						"raceAbilitiesName": "Couraça Rubra",
+						"raceAbilitiesDescription": "Você recebe redução de dano 2. Sua couraça conta como um poder da Tormenta, exceto para perda de Carisma."
+					},
+					{
+						"raceAbilitiesName": "Cria da Tormenta",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo monstro e recebe +5 em testes de resistência contra efeitos causados por lefeu e pela Tormenta."
+					},
+					{
+						"raceAbilitiesName": "Disforme",
+						"raceAbilitiesDescription": "Por sua anatomia anômala, você não pode empunhar ou vestir itens mundanos, a menos que sejam especialmente adaptados para você (isso demora um dia e custa 50% do valor do item, sem contar melhorias). Os itens recebidos por sua origem ou habilidade são adaptados para você."
+					},
+					{
+						"raceAbilitiesName": "Terror Vivo",
+						"raceAbilitiesDescription": "Você pode usar Força como atributo-chave de Intimidação (em vez de Carisma) e recebe um poder da Tormenta à sua escolha, que não conta para perda de Carisma."
+					}
+				]
+			},
+			{
+				"raceName": "Kappa (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Constituição +1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Anfíbio",
+						"raceAbilitiesDescription": "Você tem deslocamento de natação igual ao seu deslocamento terrestre."
+					},
+					{
+						"raceAbilitiesName": "Carapaça Kappa",
+						"raceAbilitiesDescription": "Você não pode ser flanqueado e recebe cobertura leve se estiver submerso ou caído. Além disso, você soma sua Constituição na Defesa, limitado pelo seu nível, mas apenas se não estiver usando armaduras pesadas."
+					},
+					{
+						"raceAbilitiesName": "Cura das Águas",
+						"raceAbilitiesDescription": "Você pode lançar a magia Curar Ferimentos (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Você não pode usar essa habilidade se a água de sua cabeça estiver derramada."
+					},
+					{
+						"raceAbilitiesName": "Tigela D'água",
+						"raceAbilitiesDescription": "Quando é agarrado, derrubado ou empurrado, você deve fazer um teste de Reflexos (CD 15 mais a diferença pela qual você falhou no teste para evitar a condição, se houve). Se falhar, derrama a água de sua cabeça e fica enjoado até encher a tigela novamente. Encher sua tigela é uma ação padrão."
+					}
+				]
+			},
+			{
+				"raceName": "Nezumi (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Destreza +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Empunhadura Poderosa",
+						"raceAbilitiesDescription": "Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2. Caso receba esta habilidade novamente, a penalidade diminui para 0."
+					},
+					{
+						"raceAbilitiesName": "Pequeno, mas não metade",
+						"raceAbilitiesDescription": "Seu tamanho é Pequeno, mas seu deslocamento se mantém 9m e você recebe +2 em Intimidação e resistência a medo +5 contra criaturas maiores que você."
+					},
+					{
+						"raceAbilitiesName": "Roedor",
+						"raceAbilitiesDescription": "Você possui uma arma natural de mordida (dano 1d4, crítico x2, corte). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida. Além disso, quando faz um acerto crítico com sua mordida, você deixa a armadura da vítima avariada ou, se ela estiver sem armadura, aumenta em +1 o multiplicador desse crítico."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Murídeos",
+						"raceAbilitiesDescription": "Você recebe faro e visão na penumbra."
+					}
+				]
+			},
+			{
+				"raceName": "Tengu (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Inteligência +1"
+					},
+					{
+						"raceAbilitiesName": "Asas Desorientadoras",
+						"raceAbilitiesDescription": "Quando estão livres, suas asas podem ser usadas para distrair seus oponentes. Se não estiver voando, você recebe os benefícios de Finta Aprimorada. Se tiver esse poder, em vez disso, o bônus em Enganação para fintar aumenta para +5."
+					},
+					{
+						"raceAbilitiesName": "Caminhante do Céu",
+						"raceAbilitiesDescription": "Você pode pairar a 1,5m do chão com deslocamento 9m. Isso permite que você ignore terreno difícil e o torna imune a dano por queda (a menos que esteja inconsciente). Você pode gastar 1 PM por rodada para voar com deslocamento de 12m. Você precisa de espaço para abrir suas asas; quando paira ou voa, ocupa o espaço de uma criatura de uma categoria de tamanho maior que a sua."
+					},
+					{
+						"raceAbilitiesName": "Sentidos Corvinos",
+						"raceAbilitiesDescription": "Você recebe visão no escuro e +2 em Percepção."
+					}
+				]
+			},
+			{
+				"raceName": "Meio-Orc (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +1, +1 em outro atributo (Exceto Carisma)"
+					},
+					{
+						"raceAbilitiesName": "Adaptável",
+						"raceAbilitiesDescription": "Você se torna treinado em uma perícia a sua escolha."
+					},
+					{
+						"raceAbilitiesName": "Criatura das Profundezas",
+						"raceAbilitiesDescription": "Você recebe visão no escuro e +2 em Percepção e Sobrevivência realizados no subterrâneo."
+					},
+					{
+						"raceAbilitiesName": "Sangue Orc",
+						"raceAbilitiesDescription": "Você recebe +2 em Intimidação e é considerado um orc para efeitos relacionados à raça."
+					}
+				]
+			},
+			{
+				"raceName": "Orc (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +2, Constituição +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Feroz",
+						"raceAbilitiesDescription": "Uma vez por rodada, quando sofre dano, você recebe +2 em testes de ataque e rolagens de dano corpo a corpo até o fim do seu próximo turno."
+					},
+					{
+						"raceAbilitiesName": "Habitante das Cavernas",
+						"raceAbilitiesDescription": "Você recebe visão no escuro e +2 em testes de Percepção e Sobrevivência realizados no subterrâneo. Entretanto, quando exposto à luz do sol ou similar, você fica ofuscado."
+					},
+					{
+						"raceAbilitiesName": "Vigor Brutal",
+						"raceAbilitiesDescription": "Você recebe +2 em Fortitude e soma sua Força em seu total de pontos de vida."
+					}
+				]
+			},
+			{
+				"raceName": "Tabrachi (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Força +1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Batráquio",
+						"raceAbilitiesDescription": "Você recebe visão na penumbra e deslocamento de natação igual ao seu deslocamento terrestre."
+					},
+					{
+						"raceAbilitiesName": "Linguarudo",
+						"raceAbilitiesDescription": "Sua língua é uma arma natural que pode atacar inimigos a até 3m (dano 1d4, crítico x2, impacto). Ela é uma arma versátil, fornecendo +2 em testes para desarmar e derrubar. Uma vez por rodada, quando usa a ação agredir com outra arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com a língua."
+					},
+					{
+						"raceAbilitiesName": "Saltador",
+						"raceAbilitiesDescription": "Você recebe +10 em testes de Atletismo para saltar."
+					}
+				]
+			},
+			{
+				"raceName": "Trog (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Força +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Mau Cheiro",
+						"raceAbilitiesDescription": "Você pode gastar uma ação padrão para expelir um gás fétido. Todas as criaturas (exceto trogs) em alcance curto ficam enjoadas por 1d6 rodadas (Fortitude evita). Uma criatura que passe no teste de resistência fica imune a esta habilidade por um dia. Veneno."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					},
+					{
+						"raceAbilitiesName": "Reptiliano",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo monstro e recebe visão no escuro, +1 na Defesa e, se estiver sem armadura ou roupas pesadas, +5 em Furtividade."
+					},
+					{
+						"raceAbilitiesName": "Sangue Frio",
+						"raceAbilitiesDescription": "O trog sofre 1 ponto de dano adicional por dado de dano de frio."
+					}
+				]
+			},
+			{
+				"raceName": "Trog Anão (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Força +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Mau Cheiro",
+						"raceAbilitiesDescription": "Você pode gastar uma ação padrão para expelir um gás fétido. Todas as criaturas (exceto trogs) em alcance curto ficam enjoadas por 1d6 rodadas (Fortitude evita). Uma criatura que passe no teste de resistência fica imune a esta habilidade por um dia. Veneno."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					},
+					{
+						"raceAbilitiesName": "Trog Anão",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo monstro e recebe visão no escuro. Além disso, seu deslocamento é 6m (em vez se 9m), porém seu deslocamento não é reduzido por uso de armadura ou excesso de carga."
+					},
+					{
+						"raceAbilitiesName": "Sangue Frio",
+						"raceAbilitiesDescription": "O trog sofre 1 ponto de dano adicional por dado de dano de frio."
+					}
+				]
+			},
+			{
+				"raceName": "Ogro (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +2, Constituição +1, Inteligência –1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Quanto maior o tamanho...",
+						"raceAbilitiesDescription": "Você é um gigante; seu tamanho é Grande e você recebe visão na penumbra."
+					},
+					{
+						"raceAbilitiesName": "...maior a Porrada!",
+						"raceAbilitiesDescription": "Quando faz um ataque corpo a corpo, você pode gastar 1 PM para causar um dado extra de dano do mesmo tipo, se acertar."
+					},
+					{
+						"raceAbilitiesName": "Camada de Ingenuidade",
+						"raceAbilitiesDescription": "Você sofre –5 em Intuição e Vontade."
+					}
+				]
+			},
+			{
+				"raceName": "Bugbear (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +2, Destreza +1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Empunhadura Poderosa",
+						"raceAbilitiesDescription": "Ao usar uma arma feita para uma categoria de tamanho maior que a sua, a penalidade que você sofre nos testes de ataque diminui para –2. Caso receba esta habilidade novamente, a penalidade diminui para 0 e você pode também usar armas de até duas categorias de tamanho maiores que a sua com uma penalidade de –5 nos testes de ataque."
+					},
+					{
+						"raceAbilitiesName": "Saborear Pavor",
+						"raceAbilitiesDescription": "Você pode usar Força como atributo-chave de Intimidação (em vez de Carisma). Além disso, se estiver em alcance curto de uma criatura abalada ou apavorada, você recebe um bônus em testes de ataque igual à penalidade causada pela condição."
+					},
+					{
+						"raceAbilitiesName": "Sentidos de Predador",
+						"raceAbilitiesDescription": "Você recebe faro e visão no escuro."
+					}
+				]
+			},
+			{
+				"raceName": "Hobgoblin (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Destreza +1, Carisma –1"
+					},
+					{
+						"raceAbilitiesName": "Arte da Guerra",
+						"raceAbilitiesDescription": "Você é treinado em Guerra e recebe proficiência em armas marciais. Se receber proficiência em armas marciais novamente, em vez disso recebe +2 em rolagens de dano com essas armas."
+					},
+					{
+						"raceAbilitiesName": "Metalurgia Hogoblin",
+						"raceAbilitiesDescription": "Você recebe +2 em Ofício (armeiro) e, se for treinado nesta perícia, pode fabricar armas e armaduras superiores com uma melhoria."
+					},
+					{
+						"raceAbilitiesName": "Táticas de Guerrilha",
+						"raceAbilitiesDescription": "Você recebe visão no escuro e +2 em Furtividade."
+					}
+				]
+			},
+			{
+				"raceName": "Gnoll (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Constituição +2, Sabedoria +1, Inteligência –1."
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você tem olfato apurado. Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha."
+					},
+					{
+						"raceAbilitiesName": "Mordida",
+						"raceAbilitiesDescription": "Você possui uma arma natural de mordida (dano 1d6, crítico x2, perfuração). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com a mordida."
+					},
+					{
+						"raceAbilitiesName": "Pelagem Espessa",
+						"raceAbilitiesDescription": "Sua pele é coberta por pelos grossos. Você recebe +1 na Defesa."
+					},
+					{
+						"raceAbilitiesName": "Rendição",
+						"raceAbilitiesDescription": "Você possui inclinação a se render e aceitar rendições. Quando um inimigo se rende, você recebe 1d4 PM temporários cumulativos. Da mesma forma, quando é reduzido a um quarto de seus PV ou menos, seu instinto é se render. Caso continue lutando, fica alquebrado."
+					}
+				]
+			},
+			{
+				"raceName": "Golem (Homebrew)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +1, Carisma -1"
+					},
+					{
+						"raceAbilitiesName": "Chassi",
+						"raceAbilitiesDescription": "Você leva um dia para vestir ou remover uma armadura (pois precisa acoplar as peças dela a seu chassi). Entretanto, por ser acoplada, sua armadura não conta no limite de itens que você pode usar (mas você só pode usar uma armadura). Além disso, escolha um material para seu chassi entre os abaixo.",
+						"raceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Barro",
+								"raceAbilitiesOptionsDescription": "Constituição +2. Seu deslocamento não é afetado por terreno difícil e passa automaticamente em testes de Acrobacia para passar por espaços apertados. Se permanecer mais de um dia sem contato com água, você não recupera PM com descanso até voltar para a água."
+							},
+							{
+								"raceAbilitiesOptionsName": "Bronze",
+								"raceAbilitiesOptionsDescription": "+1 em dois atributos a sua escolha. Seu deslocamento não é reduzido por armaduras pesadas ou excesso de carga. Sua armadura não é acoplada em seu corpo; você pode removê-la e colocá-la no tempo normal, mas ela conta em seu limite de itens vestidos."
+							},
+							{
+								"raceAbilitiesOptionsName": "Carne",
+								"raceAbilitiesOptionsDescription": "Constituição +2, Força +1, Carisma –1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a metamorfose e trevas, mas não pode escolher elemental (água ou fogo) ou vapor como sua fonte de energia e dano mágico de fogo e frio o deixa lento por 1d4 rodadas."
+							},
+							{
+								"raceAbilitiesOptionsName": "Espelhos",
+								"raceAbilitiesOptionsDescription": "Carisma +2, Sabedoria +1, Constituição –1. Quando uma criatura em alcance curto usa uma habilidade de classe que você possa ver, você pode gastar 1 PM para copiar essa habilidade. Até o fim do seu próximo turno, você pode usá-la como uma habilidade de raça (se ela usar um atributo para algo, use seu Carisma). Se espelhar outra habilidade, você perde a anterior."
+							},
+							{
+								"raceAbilitiesOptionsName": "Ferro",
+								"raceAbilitiesOptionsDescription": "Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe +2 na Defesa, mas possui penalidade de armadura –2."
+							},
+							{
+								"raceAbilitiesOptionsName": "Gelo Eterno",
+								"raceAbilitiesOptionsDescription": "Constituição +2. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe imunidade a frio, redução de fogo 10, mas não pode escolher elemental (fogo) ou vapor como sua fonte de energia. Veja golem de Nor em Uivantes."
+							},
+							{
+								"raceAbilitiesOptionsName": "Pedra",
+								"raceAbilitiesOptionsDescription": "Constituição +2. Você não pode correr e seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Você recebe redução de corte, fogo e perfuração 5."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sucata",
+								"raceAbilitiesOptionsDescription": "Força +1 e Constituição +1. Seu deslocamento é 6m, mas não é reduzido por uso de armadura ou excesso de carga. Quando recebe cuidados prolongados com a perícia Ofício (artesão), sua recuperação de PV aumenta em +2 por nível nesse dia (ao invés de +1)."
+							},
+							{
+								"raceAbilitiesOptionsName": "Mashin (Chassi Especial)", 
+								"raceAbilitiesOptionsDescription": "+1 em dois atributos a sua escolha. Você se torna treinado em duas perícias a sua escolha, e pode substituir uma dessas perícias por uma maravilha mecânica.",
+								"raceAbilitiesOptions": 
+								[
+									{
+										"raceAbilitiesOptionsName": "Maravilha Mecânica",
+										"raceAbilitiesOptionsDescription": "Se escolher uma maravilha mecânica, você recebe uma das habilidades a seguir. Uma vez por patamar, você pode escolher uma maravilha mecânica no lugar de um poder de classe."
+									},
+									{
+										"raceAbilitiesOptionsName": "Adaptação Elemental",
+										"raceAbilitiesOptionsDescription": "Se sofrer dano de ácido, eletricidade, fogo, frio, luz ou trevas, você pode transformar o dano adicional de seu canhão energético nesse tipo até o fim da cena. Pré-requisito: Canhão Energético."
+									},
+									{
+										"raceAbilitiesOptionsName": "Arma Acoplada",
+										"raceAbilitiesOptionsDescription": "Você possui uma arma acoplada ao seu corpo. Ela fica recolhida em um compartimento, pode ser empunhada ou guardada com uma ação livre e não pode ser desarmada. A arma pode ser substituída com uma hora de trabalho e um teste de Ofício (artesão) com CD 20."
+									},
+									{
+										"raceAbilitiesOptionsName": "Arma Elemental",
+										"raceAbilitiesOptionsDescription": "Você pode gastar uma ação de movimento e 2 PM para fazer uma arma que esteja empunhando causar +1d6 pontos de dano do tipo de sua fonte elemental até o fim da cena. Pré-requisito: Fonte de Energia (elemental)."
+									},
+									{
+										"raceAbilitiesOptionsName": "Auxílio de Mira",
+										"raceAbilitiesOptionsDescription": "Quando faz um ataque à distância, você pode pagar 1 PM para aumentar em +2 a margem de ameaça desse ataque."
+									},
+									{
+										"raceAbilitiesOptionsName": "Caminho de Perfeição",
+										"raceAbilitiesOptionsDescription": "Escolha uma de suas perícias treinadas. Você recebe +2 nessa perícia."
+									},
+									{
+										"raceAbilitiesOptionsName": "Canalizar Reparos",
+										"raceAbilitiesOptionsDescription": "Como uma ação completa, você pode gastar pontos de mana para recuperar pontos de vida, à taxa de 5 PV por PM."
+									},
+									{
+										"raceAbilitiesOptionsName": "Dínamo de Mana",
+										"raceAbilitiesOptionsDescription": "Escolha uma de suas habilidades com um custo em PM. Você pode gastar uma ação de movimento para canalizar seu mana. Quando faz isso, até o final do seu turno, o custo do próximo uso dessa habilidade escolhida é reduzido em –1 PM."
+									},
+									{
+										"raceAbilitiesOptionsName": "Pernas Aprimoradas",
+										"raceAbilitiesOptionsDescription": "Você pode gastar 1 PM para receber +6m em seu deslocamento e +5 em Atletismo até o fim da cena."
+									},
+									{
+										"raceAbilitiesOptionsName": "Reservatório Alquímico",
+										"raceAbilitiesOptionsDescription": "Você possui um reservatório em seu corpo que pode armazenar até duas doses de preparados alquímicos. Uma vez por rodada, você pode usar um desses preparados ou pode consumí-lo para sua fonte de energia. Carregar seu reservatório exige uma ação completa e o gasto dos itens com os quais você quiser carregá-lo. Pré-requisito: Fonte de Energia (alquímica)."
+									}
+								]
+							}
+						]
+					},
+					{
+						"raceAbilitiesName": "Criatura Artificial",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo construto. Recebe visão no escuro e imunidade a efeitos de cansaço, metabólicos e de veneno. Além disso, não precisa respirar, alimentar-se ou dormir, mas não se beneficia de cura mundana e de itens da categoria alimentação. Você precisa ficar inerte por oito horas por dia para recarregar sua fonte de energia. Se fizer isso, recupera PV e PM por descanso em condições normais (golens não são afetados por condições boas ou ruins de descanso). Por fim, a perícia Cura não funciona em você, mas Ofício (artesão) pode ser usada no lugar dela."
+					},
+					{
+						"raceAbilitiesName": "Fonte de Energia",
+						"raceAbilitiesDescription": "Escolha sua fonte de energia da lista abaixo.",
+						"raceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Alquímica",
+								"raceAbilitiesOptionsDescription": "Uma mistura alquímica gera a energia necessária à sua vida. Você pode gastar uma ação padrão para ingerir um item alquímico qualquer; se fizer isso, recupera 1 PM."
+							},
+							{
+								"raceAbilitiesOptionsName": "Elemental",
+								"raceAbilitiesOptionsDescription": "Você possui um espírito elemental preso em seu corpo. Escolha entre água (frio), ar (eletricidade), fogo (fogo) e terra (ácido). Você é imune a dano desse tipo. Se fosse sofrer dano mágico deste tipo, em vez disso cura PV em quantidade igual à metade do dano."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sagrada",
+								"raceAbilitiesOptionsDescription": "Você foi animado por um texto ou símbolo sagrado depositado em seu corpo. Você pode lançar uma magia divina de 1o círculo a sua escolha (atributo-chave Sabedoria). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Alguém treinado em Religião pode trocar essa magia com um ritual que demora um dia e exige o gasto de um pergaminho mágico com outra magia de 1° círculo."
+							},
+							{
+								"raceAbilitiesOptionsName": "Vapor",
+								"raceAbilitiesOptionsDescription": "Seu corpo é movido por vapor e engrenagens. Você é imune a dano de fogo; se fosse sofrer dano mágico desse tipo, ao invés disso seu deslocamento aumenta em 4,5m por uma rodada. Entretanto, dano de frio deixa você lento por uma rodada. Você pode gastar uma ação padrão e PM para soprar um jato de vapor escaldante em um cone de 4,5m. Para cada PM que você gastar, criaturas na área sofrem 1d6 pontos de dano de fogo (Reflexos CD Con reduz à metade)."
+							}
+						]
+					},
+					{
+						"raceAbilitiesName": "Propósito de Criação",
+						"raceAbilitiesDescription": "Você foi construído “pronto” para um propósito específico e não teve uma infância. Você não tem direito a escolher uma origem, mas recebe um poder geral a sua escolha."
+					},
+					{
+						"raceAbilitiesName": "Tamanho",
+						"raceAbilitiesDescription": "Escolha seu tamanho da lista abaixo.",
+						"raceAbilitiesOptions": [
+							{
+								"raceAbilitiesOptionsName": "Pequeno",
+								"raceAbilitiesOptionsDescription": "Destreza +1."
+							},
+							{
+								"raceAbilitiesOptionsName": "Médio",
+								"raceAbilitiesOptionsDescription": "Sem ajustes."
+							},
+							{
+								"raceAbilitiesOptionsName": "Grande",
+								"raceAbilitiesOptionsDescription": "Destreza -1."
+							}
+						]
+					}
+				]
+			},
+			{
+				"raceName": "Kallyanach (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "+2 em um Atributo ou +1 em dois atributos a sua escolha"
+					},
+					{
+						"raceAbilitiesName": "Herança Dracônica",
+						"raceAbilitiesDescription": "Escolha um elemento entre ácido, eletricidade, fogo e frio. Você recebe redução de dano 5 contra esse elemento."
+					},
+					{
+						"raceAbilitiesName": "Benção de Kallyadranoch",
+						"raceAbilitiesDescription": "Escolha duas das bênçãos a seguir. Quando ganha um poder de classe, você pode trocá-lo por uma dessas bênçãos, até o limite de uma troca por patamar. (Cada bênção é uma habilidade separada.)",
+						"raceAbilitiesOptions": 
+						[
+							{
+								"raceAbilitiesOptionsName": "Armamento Kallyanach",
+								"raceAbilitiesOptionsDescription": "Você possui uma arma natural (dano 1d6, crítico x2) escolhida entre cauda (impacto), chifres (perfuração) ou mordida (corte). Uma vez por rodada, quando usa a ação agredir para atacar com outra arma, pode gastar 1 PM para fazer um ataque corpo a corpo extra com essa arma."
+							},
+							{
+								"raceAbilitiesOptionsName": "Asas Dracônicas",
+								"raceAbilitiesOptionsDescription": "Você pode gastar 1 PM por rodada para voar com deslocamento de 9m. Enquanto estiver voando desta forma, você fica vulnerável."
+							},
+							{
+								"raceAbilitiesOptionsName": "Escamas Elementais",
+								"raceAbilitiesOptionsDescription": "Sua pele é recoberta de escamas resistentes e brilhantes, que fornecem +2 na Defesa e aumentam a RD de sua Herança Dracônica para 10."
+							},
+							{
+								"raceAbilitiesOptionsName": "Prática Arcana",
+								"raceAbilitiesOptionsDescription": "Escolha uma magia arcana de 1o círculo que cause dano do mesmo tipo de sua Herança Dracônica. Você aprende e pode lançar essa magia (atributo-chave Inteligência). Caso aprenda novamente essa magia, seu custo diminui em –1 PM. Você pode escolher esta bênção mais de uma vez."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sentidos Dracônicos",
+								"raceAbilitiesOptionsDescription": "Seus sentidos são impregnados com poder dracônico. Você recebe faro e visão no escuro."
+							},
+							{
+								"raceAbilitiesOptionsName": "Sopro de Dragão",
+								"raceAbilitiesOptionsDescription": "Você pode gastar uma ação padrão e 1 PM para soprar um cone de 6m que causa 1d12 pontos de dano do tipo de sua Herança Dracônica (Reflexos CD Constituição reduz à metade). A cada quatro níveis, você pode gastar +1 PM para aumentar o dano do sopro em +1d12."
+							},
+							{
+								"raceAbilitiesOptionsName": "Importante: Kallyanach Feiticeiros Dracônicos",
+								"raceAbilitiesOptionsDescription": "o kallyanach feiticeiro dracônico pode escolher Carisma como atributo-chave de seu Sopro de Dragão e das magias recebidas por Prática Dracônica. Além disso, seu Sopro de Dragão conta como uma magia de feiticeiro para efeitos de habilidades e itens que beneficiem suas magias."
+							}
+							
+						]
+					}
+				]
+			},
+			{
+				"raceName": "Minauro (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Força +1, +1 em dois atributo quaisquer."
+					},
+					{
+						"raceAbilitiesName": "Faro",
+						"raceAbilitiesDescription": "Você tem olfato apurado. Contra inimigos em alcance curto que não possa ver, você não fica desprevenido e camuflagem total lhe causa apenas 20% de chance de falha."
+					},
+					{
+						"raceAbilitiesName": "Mente Aberta",
+						"raceAbilitiesDescription": "Você recebe +2 em Diplomacia e Investigação."
+					},
+					{
+						"raceAbilitiesName": "Plurivalente",
+						"raceAbilitiesDescription": "Você recebe um poder geral à sua escolha."
+					}
+				]
+			},
+			{
+				"raceName": "Harpia (Ameaças)",
+				"raceAbilities": 
+				[
+					{
+						"raceAbilitiesName": "Atributos",
+						"raceAbilitiesDescription": "Destreza +2, Carisma +1, Inteligência –1"
+					},
+					{
+						"raceAbilitiesName": "Asas de Abutre",
+						"raceAbilitiesDescription": "Você possui asas no lugar dos braços e mãos. Você pode pairar a 1,5m do chão com deslocamento 9m. Isso permite que você ignore terreno difícil e o torna imune a dano por queda (a menos que esteja inconsciente). Se não estiver usando armadura pesada, você pode gastar 1 PM por rodada para voar com deslocamento de 18m."
+					},
+					{
+						"raceAbilitiesName": "Cria de Masmorra",
+						"raceAbilitiesDescription": "Você é uma criatura do tipo monstro e recebe visão no escuro e +2 em Intimidação e Sobrevivência."
+					},
+					{
+						"raceAbilitiesName": "Grito Aterrorizante",
+						"raceAbilitiesDescription": "Você pode gastar uma ação padrão e 1 PM para emitir um grito estridente. Criaturas em alcance curto ficam abaladas (Vontade CD Car evita)."
+					},
+					{
+						"raceAbilitiesName": "Pés Rapinantes",
+						"raceAbilitiesDescription": "Você pode usar seus pés para realizar tarefas que normalmente seriam executadas com as mãos, como empunhar armas e gesticular para lançar magias. Eles também funcionam como duas armas naturais de garras (dano 1d6 cada, crítico x2, corte). Uma vez por rodada, quando usa a ação agredir para atacar com uma arma, você pode gastar 1 PM para fazer um ataque corpo a corpo extra com uma das garras, desde que ela esteja livre e não tenha sido usada para atacar neste turno. Se possuir Ambidestria e/ou Estilo de Duas Armas, você pode atacar com ambas as garras com as penalidades aplicáveis."
+					}
+				]
+			}
+		]
+	},
+	
+	{
+		"class":
+		[
+			{
+				"className": "Arcanista (T20)",
+				"classCharacteristics": 
+				[
+					{
+						"classCharacteristicsInitialPV": 8, 
+						"classCharacteristicsLevelPV": 2,
+						"classCharacteristicsPM": 6,
+						"classCharacteristicsSkills": "Misticismo, Vontade",
+						"classCharacteristicsSkillsOptions": 
+						[
+							{
+								"classCharacteristicsSkillsOptionsQty": 2,
+								"classCharacteristicsSkillsOptions": "Conhecimento, Diplomacia, Enganação, Guerra, Iniciativa, Intimidação, Intuição, Investigação, Nobreza, Ofício, Percepção"
+							}
+						],
+						"classCharacteristicsProficiency": "Nenhuma" 
+					}
+				],
+				"classAbilities":
+				[
+					{
+						"classAbilitiesLevelRequire": 1,
+						"classAbilitiesName": "Caminho do Arcanista",
+						"classAbilitiesDescription": "A magia é um poder incrível, capaz de alterar a realidade. Esse poder tem fontes distintas e cada uma opera conforme suas próprias regras. Escolha uma das opções a seguir. Uma vez feita, essa escolha não pode ser mudada.",
+						"classAbilitiesOptions": 
+						[
+							{
+								"classAbilitiesOptionsName": "Bruxo",
+								"classAbilitiesOptionsDescription": "Você lança magias através de um foco — uma varinha, cajado, chapéu... Para lançar uma magia, você precisa segurar o foco com uma mão (e gesticular com a outra) ou fazer um teste de Misticismo (CD 20 + o custo em PM da magia; se falhar, a magia não funciona, mas você gasta os PM mesmo assim). O foco tem redução de dano 10 e PV iguais à metade dos seus, independentemente de seu material ou forma. Se for danificado, é totalmente restaurado na próxima vez que você recuperar seus PM. Se for destruído (reduzido a 0 PV), você fica atordoado por uma rodada. Você pode recuperar um foco destruído ou perdido com uma semana de trabalho e T$ 100. Seu atributo-chave para magias é Inteligência."
+							},
+							{
+								"classAbilitiesOptionsName": "Feiticeiro",
+								"classAbilitiesOptionsDescription": "Você lança magias através de um poder inato que corre em seu sangue. Escolha uma linhagem como origem de seus poderes (veja a página 39). Você recebe a herança básica da linhagem escolhida. Você não depende de nenhum item ou estudo, mas sua capacidade de aprender magias é limitada — você aprende uma magia nova a cada nível ímpar (3o, 5o, 7o etc.), em vez de a cada nível. Seu atributo-chave para magias é Carisma."
+							},
+							{
+								"classAbilitiesOptionsName": "Mago",
+								"classAbilitiesOptionsDescription": "Você lança magias através de estudo e memorização de fórmulas arcanas. Você só pode lançar magias memorizadas; suas outras magias não podem ser lançadas, mesmo que você tenha pontos de mana para tal. Para memorizar magias, você precisa estudar seu grimório por uma hora. Quando faz isso, escolhe metade das magias que conhece (por exemplo, se conhece 7 magias, escolhe 3). Essas serão suas magias memorizadas. Você pode memorizar magias uma vez por dia. Caso não possa estudar (por não ter tempo, por ter perdido o grimório...), não poderá trocar suas magias memorizadas. Um grimório tem as mesmas estatísticas de um foco (veja acima) e pode ser recuperado da mesma forma. Você começa com uma magia adicional (para um total de 4) e, sempre que ganha acesso a um novo círculo de magias, aprende uma magia adicional daquele círculo. Seu atributo-chave para magias é Inteligência."
+							}
+						]
+					},
+					{
+						"classAbilitiesLevelRequire": 1,
+						"classAbilitiesName": "Magias",
+						"classAbilitiesDescription": "Você pode lançar magias arcanas de 1º círculo. A cada quatro níveis, pode lançar magias de um círculo maior (2o círculo no 5o nível, 3o círculo no 9o nível e assim por diante). Você começa com três magias de 1o círculo. A cada nível, aprende uma magia de qualquer círculo que possa lançar. Seu atributo-chave para lançar magias é definido pelo seu Caminho (veja acima) e você soma o bônus do atributo-chave no seu total de PM. Veja o Capítulo 4 para as regras de magia."
+					},
+					{
+						"classAbilitiesLevelRequire": 2,
+						"classAbilitiesName": "Poder de Arcanista",
+						"classAbilitiesDescription": "No 2º nível, e a cada nível seguinte, você escolhe um dos poderes a seguir.",
+						"classAbilitiesOptions": 
+						[
+							{
+								"classAbilitiesOptionsName": "Arcano de Batalha",
+								"classAbilitiesOptionsDescription": "Quando lança uma magia ou usa Raio Arcano (caso o possua), você soma seu atributo-chave na rolagem de dano.", 
+								"classAbilitiesOptionsRequirement": "-"
+							},
+							{
+								"classAbilitiesOptionsName": "Aumento de Atributo",
+								"classAbilitiesOptionsDescription": "Você recebe +1 em um atributo. Você pode escolher este poder várias vezes, mas apenas duas vezes para um mesmo atributo.", 
+								"classAbilitiesOptionsRequirement": "-"
+							},
+							{
+								"classAbilitiesOptionsName": "Caldeirão do Bruxo",
+								"classAbilitiesOptionsDescription": "Você pode criar poções, como se tivesse o poder geral Preparar Poção. Se tiver ambos, pode criar poções de até 5o círculo.", 
+								"classAbilitiesOptionsRequirement": "Bruxo, treinado em Ofício (alquimista)."
+							},
+							{
+								"classAbilitiesOptionsName": "Conhecimento Mágico",
+								"classAbilitiesOptionsDescription": "Você aprende duas magias de qualquer círculo que possa lançar. Você pode escolher este poder quantas vezes quiser.", 
+								"classAbilitiesOptionsRequirement": "-"
+							},
+							{
+								"classAbilitiesOptionsName": "Contramágica Aprimorada",
+								"classAbilitiesOptionsDescription": "Uma vez por rodada, você pode fazer uma contramágica como uma reação (veja a página 173).", 
+								"classAbilitiesOptionsRequirement": "Dissipar Magia"
+							},
+							{
+								"classAbilitiesOptionsName": "Envolto em Mistério",
+								"classAbilitiesOptionsDescription": "Sua aparência e postura assombrosas o permitem manipular e assustar pessoas ignorantes ou supersticiosas. O mestre define o que exatamente você pode fazer e quem se encaixa nessa descrição. Como regra geral, você recebe +5 em Enganação e Intimidação contra pessoas não treinadas em Conhecimento ou Misticismo.", 
+								"classAbilitiesOptionsRequirement": "-"
+							},
+							{
+								"classAbilitiesOptionsName": "Escriba Arcano",
+								"classAbilitiesOptionsDescription": "Você pode aprender magias copiando os textos de pergaminhos e grimórios de outros magos. Aprender uma magia dessa forma exige um dia de trabalho e T$ 250 em matérias-primas por PM necessário para lançar a magia. Assim, aprender uma magia de 3o círculo (6 PM) exige 6 dias de trabalho e o gasto de T$ 1.500.", 
+								"classAbilitiesOptionsRequirement": "Mago, treinado em Conhecimento."
+							},
+							{
+								"classAbilitiesOptionsName": "Especialista em Escola",
+								"classAbilitiesOptionsDescription": "Escolha uma escola de magia. A CD para resistir a suas magias dessa escola aumenta em +2.", 
+								"classAbilitiesOptionsRequirement": "Bruxo ou Mago."
+							},
+							{
+								"classAbilitiesOptionsName": "Familiar",
+								"classAbilitiesOptionsDescription": "Você possui um animal de estimação mágico. Um familiar é uma criatura mágica. Em termos de jogo, é um parceiro especial com o qual você pode se comunicar telepaticamente em alcance longo. Ele obedece a suas ordens, mas ainda está limitado ao que uma criatura de sua espécie pode fazer. Se ele morrer, você fica atordoado por uma rodada. Você pode invocar um novo familiar com um ritual que exige um dia e T$ 100 em ingredientes.", 
+								"classAbilitiesOptionsOptions": 
+								[
+									{
+										"classAbilitiesOptionsOptionsName": "Borboleta",
+										"classAbilitiesOptionsOptionsDescription": ". A CD dos testes de Vontade para resistir a suas magias aumenta em +1."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Cobra",
+										"classAbilitiesOptionsOptionsDescription": "A CD dos testes de Fortitude para resistir a suas magias aumenta em +1."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Coruja",
+										"classAbilitiesOptionsOptionsDescription": "Quando lança uma magia com alcance de toque, você pode pagar +1 PM para estender seu alcance para curto."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Corvo",
+										"classAbilitiesOptionsOptionsDescription": "Quando faz um teste de Misticismo ou Vontade, você pode pagar 1 PM para rolar dois dados e usar o melhor resultado."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Falcão",
+										"classAbilitiesOptionsOptionsDescription": "Você nunca fica desprevenido."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Gato",
+										"classAbilitiesOptionsOptionsDescription": "Você recebe visão no escuro e +2 em Furtividade."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Lagarto",
+										"classAbilitiesOptionsOptionsDescription": "A CD dos testes de Reflexos para resistir a suas magias aumenta em +1."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Morcego",
+										"classAbilitiesOptionsOptionsDescription": "Você adquire percepção às cegas em alcance curto."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Rato",
+										"classAbilitiesOptionsOptionsDescription": "Você pode usar seu atributo-chave em Fortitude, no lugar de Constituição."
+									},
+									{
+										"classAbilitiesOptionsOptionsName": "Sapo",
+										"classAbilitiesOptionsOptionsDescription": "Você soma o bônus de seu atributo-chave ao total de pontos de vida."
+									}
+								],
+								"classAbilitiesOptionsRequirement": "-"
+							},
+							{
+								"classAbilitiesOptionsName": "Fluxo de Mana",
+								"classAbilitiesOptionsDescription": "Você pode manter dois efeitos sustentados ativos simultaneamente com apenas uma ação livre, pagando o custo de cada efeito separadamente.", 
+								"classAbilitiesOptionsRequirement": "10º nível de arcanista."
+							},
+							{
+								"classAbilitiesOptionsName": "Foco Vital",
+								"classAbilitiesOptionsDescription": "Se você estiver segurando seu foco e sofrer dano que o levaria a 0 PV ou menos, você fica com 1 PV e o foco perde pontos de vida igual ao valor excedente, até ser destruído.", 
+								"classAbilitiesOptionsRequirement": "Bruxo."
+							},
+							{
+								"classAbilitiesOptionsName": "Fortalecimento Arcano",
+								"classAbilitiesOptionsDescription": "A CD para resistir a suas magias aumenta em +1. Se você puder lançar magias de 4º círculo, em vez disso ela aumenta em +2.", 
+								"classAbilitiesOptionsRequirement": "5º nível de arcanista."
+							},
+							{
+								"classAbilitiesOptionsName": "Herança Aprimorada",
+								"classAbilitiesOptionsDescription": "Você recebe a herança aprimorada de sua linhagem sobrenatural.", 
+								"classAbilitiesOptionsRequirement": "Feiticeiro, 6º nível de arcanista."
+							},
+							{
+								"classAbilitiesOptionsName": "Herança Superior",
+								"classAbilitiesOptionsDescription": "Você recebe a herança superior de sua linhagem sobrenatural.", 
+								"classAbilitiesOptionsRequirement": "Herança Aprimorada, 11º nível de arcanista."
+							},
+							{
+								"classAbilitiesOptionsName": "Magia Pungente",
+								"classAbilitiesOptionsDescription": "Quando lança uma magia, você pode pagar 1 PM para aumentar em +2 a CD para resistir a ela.", 
+								"classAbilitiesOptionsRequirement": "-"
+							},
+							{
+								"classAbilitiesOptionsName": "Mestre em Escola",
+								"classAbilitiesOptionsDescription": "Escolha uma escola de magia. O custo para lançar magias dessa escola diminui em –1 PM.", 
+								"classAbilitiesOptionsRequirement": "Especialista em Escola com a escola escolhida, 8º nível de arcanista."
+							},
+							{
+								"classAbilitiesOptionsName": "Poder Mágico",
+								"classAbilitiesOptionsDescription": "Você recebe +1 ponto de mana por nível de arcanista. Quando sobe de nível, os PM que recebe por este poder aumentam de acordo. Por exemplo, se escolher este poder no 4o nível, recebe 4 PM. Quando subir para o 5o nível, recebe +1 PM e assim por diante. Você pode escolher este poder uma segunda vez, para um total de +2 PM por nível.", 
+								"classAbilitiesOptionsRequirement": "-"
+							},
+							{
+								"classAbilitiesOptionsName": "Raio Arcano",
+								"classAbilitiesOptionsDescription": "Você pode gastar uma ação padrão para disparar um raio num alvo em alcance curto que causa 1d6 pontos de dano de essência. Esse dano aumenta em +1d6 para cada círculo de magia acima do 1o que você puder lançar. O alvo pode fazer um teste de Reflexos (CD atributo-chave) para reduzir o dano à metade.", 
+								"classAbilitiesOptionsRequirement": "-"
+							},
+							{
+								"classAbilitiesOptionsName": "Raio Elemental",
+								"classAbilitiesOptionsDescription": "Quando usa Raio Arcano, você pode pagar 1 PM para que ele cause dano de um tipo de energia a sua escolha, entre ácido, eletricidade, fogo, frio ou trevas. Se o alvo falhar no teste de Reflexos, sofre uma condição, de acordo com o tipo de energia. Veja a descrição das condições no Apêndice. Ácido: vulnerável por uma rodada. Eletricidade: ofuscado por uma rodada. Fogo: fica em chamas. Frio: lento por uma rodada. Trevas: não pode ser curado por uma rodada.", 
+								"classAbilitiesOptionsRequirement": "Raio Arcano."
+							},
+							{
+								"classAbilitiesOptionsName": "Raio Poderoso",
+								"classAbilitiesOptionsDescription": "Os dados de dano do seu Raio Arcano aumentam para d8 e o alcance dele aumenta para médio.", 
+								"classAbilitiesOptionsRequirement": "Raio Arcano"
+							},
+							{
+								"classAbilitiesOptionsName": "Tinta do Mago",
+								"classAbilitiesOptionsDescription": "Você pode criar pergaminhos, como se tivesse o poder Escrever Pergaminho. Se tiver ambos, seu custo para criar pergaminhos é reduzido à metade.", 
+								"classAbilitiesOptionsRequirement": "Mago, treinado em Ofício (escriba)."
+							}
+						]
+					},
+					{
+						"classAbilitiesLevelRequire": 20,
+						"classAbilitiesName": "Alta Arcana",
+						"classAbilitiesDescription": "No 20º nível, seu domínio das artes arcanas é total. O custo em PM de suas magias arcanas é reduzido à metade (após aplicar aprimoramentos e quaisquer outros efeitos que reduzam custo)."
+					},
+					{
+						"classAbilitiesLevelRequire": 1,
+						"classAbilitiesName": "Linhagens Sobranaturais",
+						"classAbilitiesDescription": "O poder de um feiticeiro vem de seu sangue — mais precisamente, do sangue de um antepassado sobrenatural, como um dragão ou uma fada. Além da capacidade de lançar magias, o feiticeiro herda desse antepassado uma fração de seu poder natural, que ele pode desenvolver ao longo de sua vida. Ao escolher o caminho do feiticeiro, escolha uma linhagem da lista a seguir. Você recebe a herança básica de sua linhagem e pode desenvolver as demais através de poderes de arcanista.",
+						"classAbilitiesOptions": 
+						[
+							{
+								"classAbilitiesOptionsName": "Linhagem Dracônica",
+								"classAbilitiesOptionsDescription": "Um de seus antepassados foi um majestoso dragão. Escolha um tipo de dano entre ácido, eletricidade, fogo ou frio.",
+								"classAbilitiesOptionsDescriptionBasic": "Você soma seu Carisma em seus pontos de vida iniciais e recebe redução de dano 5 ao tipo escolhido.",
+								"classAbilitiesOptionsDescriptionAdvanced": "Suas magias do tipo escolhido custam –1 PM e causam +1 ponto de dano por dado.",
+								"classAbilitiesOptionsDescriptionSuperior": "Você passa a somar o dobro do seu Carisma em seus pontos de vida iniciais e se torna imune a dano do tipo escolhido. Além disso, sempre que reduz um ou mais inimigos a 0 PV ou menos com uma magia do tipo escolhido, você recebe uma quantidade de PM temporários igual ao círculo da magia."
+							},
+							{
+								"classAbilitiesOptionsName": "Linhagem Feérica",
+								"classAbilitiesOptionsDescription": "Seu sangue foi tocado pelas fadas.",
+								"classAbilitiesOptionsDescriptionBasic": "Você se torna treinado em Enganação e aprende uma magia de 1o círculo de encantamento ou ilusão, arcana ou divina, a sua escolha.",
+								"classAbilitiesOptionsDescriptionAdvanced": "A CD para resistir a suas magias de encantamento e ilusão aumenta em +2 e suas magias dessas escolas custam –1 PM.",
+								"classAbilitiesOptionsDescriptionSuperior": "Você recebe +2 em Carisma. Se uma criatura passar no teste de resistência contra uma magia de encantamento ou ilusão lançada por você, você fica alquebrado até o final da cena."
+							},
+							{
+								"classAbilitiesOptionsName": "Linhagem Rubra",
+								"classAbilitiesOptionsDescription": "Seu sangue foi corrompido pela Tormenta.",
+								"classAbilitiesOptionsDescriptionBasic": "Você recebe um poder da Tormenta. Quando perde Carisma por adquirir poderes da Tormenta, pode aplicar a perda a outro atributo. Sua relação com a invasão aberrante lhe permite sacrificar partes específicas de seu ser.",
+								"classAbilitiesOptionsDescriptionAdvanced": "Escolha uma magia para cada poder da Tormenta que você possui. Essas magias custam –1 PM. Sempre que recebe um novo poder da Tormenta, você pode escolher uma nova magia. Esta herança conta como um poder da Tormenta.",
+								"classAbilitiesOptionsDescriptionSuperior": "Você recebe +4 PM para cada poder da Tormenta que tiver. Esta herança conta como um poder da Tormenta."
+							}
+						]
+					}
+				]
+			}
+		]
+	}
+]
+

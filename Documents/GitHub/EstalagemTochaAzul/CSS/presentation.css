@@ -1,0 +1,36 @@
+.presentation {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;    
+}
+
+.presentation__title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.presentation__text {
+    line-height: 1.2rem;
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.presentation__text2 {
+    line-height: 1.2rem;
+    margin-top: .8rem;
+    text-align: justify;
+}
+
+.presentation__text2-item {
+    margin-top: .5rem;
+}
+
+.tocha-azul {
+    color: var(--cabecalho-azul);
+    font-weight: bold;
+}
+
+.presentation__link {
+    text-decoration: underline;
+}

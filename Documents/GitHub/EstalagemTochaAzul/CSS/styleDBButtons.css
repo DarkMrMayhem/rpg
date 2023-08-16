@@ -1,0 +1,29 @@
+/*Import de todas paginas*/
+@import url("../CSS/navbar.css");
+@import url("../CSS/footer.css");
+/*Import do Inicio*/
+/* @import url("");*/
+
+.db__botoes {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.db__botoes button {
+    cursor: pointer;
+}
+
+.db__bt {
+    background-color: var(--fundo-ficha-TC);
+    border: solid 0.16rem var(--rodape-azul-escuro);
+    color: var(--text-color-TC);
+    
+    border-radius: 0.5rem;
+    font-weight: bold;
+    height: 100px;
+    margin: 1rem;
+    padding: 2rem;
+    width: 100px;
+}

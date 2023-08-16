@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/styleAbout.css">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="../JS/darkmode.js" defer></script>
+    <title>Database da Estalagem da Tocha Azul</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <img class="navbar__logo" src="../IMG/Logo_Disc_Menor.png" alt="logo da masmorra da tocha azul">
+        <div class="navbar__links">
+            <a class="navbar__links-item" href="./index.html">Início</a>
+            <a class="navbar__links-item" href="./fichas.html">Fichas</a>
+            <a class="navbar__links-item" href="./db-original.html">Database</a>
+            <a class="navbar__links-item" href="./db-homebrew.html">Homebrew</a>
+            <a class="navbar__links-item" href="./changelog.html">Changelog</a>
+            <a class="navbar__links-item" href="./about.html">Sobre Nós</a>
+        </div>
+        <div class="navbar__chk">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="about__section">
+            <h2 class="about__section-title">Sobre Nós</h2>
+            <p class="about__section-text">Esse projeto foi feito para um servidor com uma parceria de amigos que jogam RPG juntos desde 2020. Contando com 8 amigos iniciais e hoje reunindo mais de 50.</p>
+            <table class="about__table">
+                <tr class="about__table-row about__table-cabecalho">
+                    <th colspan="2"  class="about__table-col">First 8</th>
+                </tr>
+                <tr class="about__table-row">
+                    <td class="about__table-col"><li class="about__table-gado">Gado (gadodelenin)</li></td>
+                    <td class="about__table-col"><li class="about__table-lucas">Lucas (mocolucas)</li></td>
+                </tr>
+                <tr class="about__table-row">
+                    <td class="about__table-col"><li class="about__table-dark">Dark (darkswipper)</li></td>
+                    <td class="about__table-col"><li class="about__table-binho">Binho (fabiomarsz)</li></td>
+                </tr>
+                <tr class="about__table-row">
+                    <td class="about__table-col"><li class="about__table-diego">Diego (diegu1381)</li></td>
+                    <td class="about__table-col"><li class="about__table-northeus">Northeus (northeus324)</li></td>
+                </tr>
+                <tr class="about__table-row">
+                    <td class="about__table-col"><li class="about__table-augusto">Augusto (augustogike)</li></td>
+                    <td class="about__table-col"><li class="about__table-ramom">Ramom (o_ramom)</li></td>
+                </tr>
+            </table>
+        </div>
+            <div class="light-button">
+                <a href="https://discord.gg/UY2PDSkkP5" target="_blank"><button class="bt">
+                    <div class="light-holder">
+                        <div class="dot"></div>
+                        <div class="light"></div>
+                    </div>
+                    <div class="button-holder">
+                        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"></path>
+                        </svg>
+                        <p>Discord</p>
+                    </div>
+                </button></a>
+            </div>
+        <div class="about__section">
+            <h2 class="about__section-title">Sobre o Projeto</h2>
+            <p class="about__section-text">Esse projeto foi criado em 01/08/2023, com base no site <a class="rodape__link" href="https://fichasdenimb.com.br/" target="_blank">Fichas de Nimb</a> e com o objetivo de facilitar a criação de fichas, após acontecer uma mesa onde o mestre e os jogadores precisaram fazer fichas de nível alto.</p>
+            <table class="about__table">
+                <tr class="about__table-row about__table-cabecalho">
+                    <th colspan="2"  class="about__table-col">Envolvidos no Projeto</th>
+                </tr>
+                <tr class="about__table-row">
+                    <td class="about__table-col">Desenvolvimento:</td>
+                    <td class="about__table-col"><li><a href="https://www.linkedin.com/in/wesley-arthur-batista/" class="about__section-detalhe" target="_blank">darkswipper</a></li></td>
+                </tr>
+                <tr class="about__table-row">
+                    <td class="about__table-col">Arte:</td>
+                    <td class="about__table-col"><li><a href="https://www.behance.net/lucasjmoco" class="about__section-detalhe" target="_blank">mocolucas</a> e <a href="https://twitter.com/nandoesg" class="about__section-detalhe" target="_blank">nandoesg</a></li></td>
+                </tr>
+                <tr class="about__table-row">
+                    <td class="about__table-col">Consultoria:</td>
+                    <td class="about__table-col"><li><a href="https://www.linkedin.com/in/davilt/" class="about__section-detalhe" target="_blank">lo_miguelito</a></li></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__text"><b class="strong">Tormenta20</b> é um produto da Jambô Editora e seus respectivos criadores, todos os direitos reservados.</p>
+        <p class="rodape__text"><a class="rodape__link" href="https://jamboeditora.com.br/" target="_blank">https://jamboeditora.com.br/</a></p>
+        <p class="rodape__text">Este é um projeto de fãs e não possui fins lucrativos</p>
+    </footer>
+</body>
+</html>

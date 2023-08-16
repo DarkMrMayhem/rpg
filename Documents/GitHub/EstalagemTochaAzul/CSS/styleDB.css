@@ -1,0 +1,59 @@
+/*Import de todas paginas*/
+@import url("../CSS/navbar.css");
+@import url("../CSS/footer.css");
+/*Import do Inicio*/
+@import url("../CSS/styleDBButtons.css");
+
+:root {
+    /*Tema Escuro*/
+    --fundo-TE: #282424;
+    --fundo-ficha-TE: #363636;
+    --fundo-botão-TE: #363636;
+    --fundo-botão-borda-TE: #232323;
+    --fundo-botão-texto-TE: #FFF;
+    --text-color-TE: #FFF;
+    /*Tema Claro*/
+    --fundo-TC: #EBEBEB;
+    --fundo-ficha-TC: #C0C0C0;
+    --fundo-botão-TC: #FFF;
+    --fundo-botão-borda-TC: #232323;
+    --fundo-botão-texto-TC: #000;
+    --text-color-TC: #000;
+    /*Others*/
+    --cabecalho-azul: #3272D1;
+    --rodape-azul-escuro: #0A52BD;
+    --sol: #EEB522;
+    --lua: #AEA5A5;
+    /*Moedas*/
+    --dourado-moeda: #9A7311;
+    --dourado-borda: #6B4F09;
+    --prateado-moeda: #AEA5A5;
+    --prateado-borda: #686464;
+    --bronze-moeda: #BC6D24;
+    --bronze-borda: #964F0C;
+}
+
+/*---------------------------------------------------------------------------*/
+
+body {
+    background-color: var(--fundo-TC);
+    font-family: 'Alegreya Sans', sans-serif;
+    
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    width: 100%;
+    
+    transition: background 0.2s linear;
+}
+
+/*Infos Gerais*/
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}

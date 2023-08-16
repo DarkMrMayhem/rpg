@@ -1,0 +1,20 @@
+.rodape {
+    background-color: var(--rodape-azul-escuro);
+    color: var(--text-color-TE);
+    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.rodape__text {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.rodape__link {
+    text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+.navbar, 
+.navbar__links, 
+.navbar__chk {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.navbar {
+    background-color: var(--cabecalho-azul);
+    
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.navbar__logo {
+    border-radius: 50px;
+    height: auto;
+    max-width: 60px; 
+}
+
+.navbar__links-item {
+    color: var(--text-color-TC);
+    
+    margin-right: 2rem;
+    text-decoration: none;
+}
+
+/*Tema Claro - Escuro*/
+
+.checkbox {
+    opacity: 0;
+    position: relative;
+}
+
+.fas {
+    font-size: 1.3rem;
+}
+
+.label {
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    
+    height: 26px;
+    width: 26px;
+    
+    transform: scale(1.5);
+}
+
+.fa-sun {
+    color: var(--sol);
+
+    opacity: initial;
+}
+
+.fa-moon {
+    opacity: 0;
+}
+
+/*Dark Mode*/
+
+.dark {
+    background: var(--fundo-TE);
+    color: var(--text-color-TE);
+}
+
+.dark .fa-sun {
+    opacity: 0;
+}
+
+.dark .fa-moon {
+    color: var(--lua);
+    
+    opacity: initial;
+}

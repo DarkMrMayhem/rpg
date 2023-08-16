@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/styleFichas.css">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>    
+    <script src="../JS/darkmode.js" defer></script>
+    <title>Database da Estalagem da Tocha Azul</title>
+</head>
+
+<body onload="carregar();">
+    <header class="navbar">
+        <img class="navbar__logo" src="../IMG/Logo_Disc_Menor.png" alt="logo da masmorra da tocha azul">
+        <div class="navbar__links">
+            <a class="navbar__links-item" href="./index.html">Início</a>
+            <a class="navbar__links-item" href="./fichas.html">Fichas</a>
+            <a class="navbar__links-item" href="./db-original.html">Database</a>
+            <a class="navbar__links-item" href="./db-homebrew.html">Homebrew</a>
+            <a class="navbar__links-item" href="./changelog.html">Changelog</a>
+            <a class="navbar__links-item" href="./about.html">Sobre Nós</a>
+        </div>
+        <div class="navbar__chk">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </label>
+        </div>
+    </header>
+    
+    <main>
+        <form class="menuSuspenso" onsubmit="submeter();">
+            <div class="menuSuspenso__div">
+                <label for="level">Escolha seu Nível: </label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="level">
+                    <option value=""></option>
+                    <option value="level__1">1</option>
+                    <option value="level__2">2</option>
+                    <option value="level__3">3</option>
+                    <option value="level__4">4</option>
+                    <option value="level__5">5</option>
+                    <option value="level__6">6</option>
+                    <option value="level__7">7</option>
+                    <option value="level__8">8</option>
+                    <option value="level__9">9</option>
+                    <option value="level__10">10</option>
+                    <option value="level__11">11</option>
+                    <option value="level__12">12</option>
+                    <option value="level__13">13</option>
+                    <option value="level__14">14</option>
+                    <option value="level__15">15</option>
+                    <option value="level__16">16</option>
+                    <option value="level__17">17</option>
+                    <option value="level__18">18</option>
+                    <option value="level__19">19</option>
+                    <option value="level__20">20</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="atributes" multiple="false">Escolha seus Atributos:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="atributes">
+                    <option value=""></option>
+                    <option value="atr__choose1">4, 4, -1, -1, -1, -1</option>
+                    <option value="atr__choose2">4, 3, 0, 0, 0, -1</option>
+                    <option value="atr__choose3">4, 2, 2, 0, 0, -1</option>
+                    <option value="atr__choose4">4, 2, 1, 0, 0, 0</option>
+                    <option value="atr__choose5">3, 3, 3, 0, -1, -1</option>
+                    <option value="atr__choose6">3, 2, 2, 1, 0, -1</option>
+                    <option value="atr__choose7">3, 3, 2, 0, 0, 0</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="races" multiple="false">Escolha sua Raça:</label>
+                <select class="menuSuspenso__div-select" id="races" name="menuSuspenso__criaFicha" required>
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__humano">Humano</option>
+                    <option value="t20__anao">Anão</option>
+                    <option value="t20__dahllan">Dahllan</option>
+                    <option value="t20__elfo">Elfo</option>
+                    <option value="t20__goblin">Goblin</option>
+                    <option value="t20__lefou">Lefou</option>
+                    <option value="t20__minotauro">Minotauro</option>
+                    <option value="t20__qareen">Qareen</option>
+                    <option value="t20__golem">Golem</option>
+                    <option value="t20__hynne">Hynne</option>
+                    <option value="t20__kliren">Kliren</option>
+                    <option value="t20__medusa">Medusa</option>
+                    <option value="t20__osteon">Osteon</option>
+                    <option value="t20__sereia">Sereia/tritão</option>
+                    <option value="t20__silfide">Sílfide</option>
+                    <option value="t20__suraggel">Suraggel</option>
+                    <option value="t20__trog">Trog</option>
+                    <!-- Ghanor --> 
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ghanor</option>
+                    <option value="ghanor__anao">Anão</option>
+                    <option value="ghanor__elfo">Elfo</option>
+                    <option value="ghanor__gigante">Gigante</option>
+                    <option value="ghanor__hobgoblin">Hobgoblin</option>
+                    <option value="ghanor__meioElfo">Meio-Elfo</option>
+                    <option value="ghanor__aberrante">Aberrante</option>
+                    <!-- Homebrew -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Homebrew</option>
+                    <option value="homebrew__felis">Felis</option>
+                    <option value="homebrew__gigante">Gigante</option>
+                    <option value="homebrew__golem">Golem</option>
+                    <option value="homebrew__halfElf">HalfElf</option>
+                    <option value="homebrew__nagah">Nagah</option>
+                    <option value="homebrew__licantropo">Licantropo</option>
+                    <option value="homebrew__vampiro">Vampiro</option>
+                    <option value="homebrew__amorfatico">Amorfático</option>
+                    <!-- Povo-Trovão -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Povo-Trovão</option>
+                    <option value="povoTrovao__ceratops">Ceratops</option>
+                    <option value="povoTrovao__pteros">Pteros</option>
+                    <option value="povoTrovao__velocis">Velocis</option>
+                    <option value="povoTrovao__voracis">Voracis</option>
+                    <!-- Moreau -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Moreau</option>
+                    <option value="moreau__bufalo">Búfalo</option>
+                    <option value="moreau__coelho">Coelho</option>
+                    <option value="moreau__coruja">Coruja</option>
+                    <option value="moreau__crocodilo">Crocodilo</option>
+                    <option value="moreau__gato">Gato</option>
+                    <option value="moreau__hiena">Hiena</option>
+                    <option value="moreau__leao">Leão</option>
+                    <option value="moreau__lobo">Lobo</option>
+                    <option value="moreau__morcego">Morcego</option>
+                    <option value="moreau__raposa">Raposa</option>
+                    <option value="moreau__serpente">Serpente</option>
+                    <option value="moreau__urso">Urso</option>
+                    <!-- Arym -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Arym</option>
+                    <option value="arym__dampiro">Dampiro</option>
+                    <option value="arym__draconato">Draconato</option>
+                    <option value="arym__aasimar">Aasimar</option>
+                    <option value="arym__duplo">Duplo</option>
+                    <option value="arym__gnomo">Gnomo</option>
+                    <option value="arym__harpia">Harpia</option>
+                    <option value="arym__kobold">Kobold</option>
+                    <option value="arym__camundongo">Her. do Camundongo</option>
+                    <option value="arym__macaco">Her. do Macaco</option>
+                    <option value="arym__pato">Her. do Pato</option>
+                    <option value="arym__tartaruga">Her. da Tartaruga</option>
+                    <option value="arym__oni">Oni</option>
+                    <option value="arym__orc">Orc</option>
+                    <option value="arym__meioElfo">Meio-Elfo</option>
+                    <!-- Ameaças (0.4) -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ameaças (0.4)</option>
+                    <option value="ameacas__kaijin">Kaijin</option>
+                    <option value="ameacas__kappa">Kappa</option>
+                    <option value="ameacas__mashin">Mashin</option>
+                    <option value="ameacas__nezumi">Nezumi</option>
+                    <option value="ameacas__tengu">Tengu</option>
+                    <option value="ameacas__meioOrc">Meio-Orc</option>
+                    <option value="ameacas__orc">Orc</option>
+                    <option value="ameacas__tabrachi">Tabrachi</option>
+                    <option value="ameacas__trog">Trog</option>
+                    <option value="ameacas__trogAnao">Trog Anão</option>
+                    <option value="ameacas__ogro">Ogro</option>
+                    <option value="ameacas__bugbear">Bugbear</option>
+                    <option value="ameacas__hobgoblin">Hobgoblin</option>
+                    <option value="ameacas__gnoll">Gnoll</option>
+                    <option value="ameacas__golem">Golem</option>
+                    <option value="ameacas__kallyanach">Kallyanach</option>
+                    <option value="ameacas__minauro">Minauro</option>
+                    <option value="ameacas__harpia">Harpia</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="class" multiple="false">Escolha sua Classe:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="class">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__arcanista">Arcanista</option>
+                    <option value="t20__barbaro">Bárbaro</option>
+                    <option value="t20__bardo">Bardo</option>
+                    <option value="t20__bucaneiro">Bucaneiro</option>
+                    <option value="t20__cacador">Caçador</option>
+                    <option value="t20__cavaleiro">Cavaleiro</option>
+                    <option value="t20__clerigo">Clérigo</option>
+                    <option value="t20__druida">Druida</option>
+                    <option value="t20__guerreiro">Guerreiro</option>
+                    <option value="t20__inventor">Inventor</option>
+                    <option value="t20__ladino">Ladino</option>
+                    <option value="t20__lutador">Lutador</option>
+                    <option value="t20__nobre">Nobre</option>
+                    <option value="t20__paladino">Paladino</option>
+                    <!-- Ghanor -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ghanor</option>
+                    <option value="ghanor__barbaro">Bárbaro</option>
+                    <option value="ghanor__bardo">Bardo</option>
+                    <option value="ghanor__bucaneiro">Bucaneiro</option>
+                    <option value="ghanor__cacador">Caçador</option>
+                    <option value="ghanor__cavaleiro">Cavaleiro</option>
+                    <option value="ghanor__clerigo">Clérigo</option>
+                    <option value="ghanor__druida">Druida</option>
+                    <option value="ghanor__ladino">Ladino</option>
+                    <option value="ghanor__mago">Mago</option>
+                    <option value="ghanor__nobre">Nobre</option>
+                    <option value="ghanor__soldado">Soldado</option>
+                    <!-- Homebrew -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Homebrew</option>
+                    <option value="homebrew__astrologian">Astrologian</option>
+                    <option value="homebrew__atirador">Atirador</option>
+                    <option value="homebrew__comandante">Comandante</option>
+                    <option value="homebrew__darkKnight">Dark Knight</option>
+                    <option value="homebrew__dragoon">Dragoon</option>
+                    <option value="homebrew__gunbreaker">Gunbreaker</option>
+                    <option value="homebrew__monge">Monge</option>
+                    <option value="homebrew__onimusha">Onimusha</option>
+                    <option value="homebrew__redMage">Red Mage</option>
+                    <option value="homebrew__samurai">Samurai</option>
+                    <option value="homebrew__usurpador">Usurpador</option>
+                    <option value="homebrew__witcher">Witcher</option>
+                    <!-- DB -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Dragão Brasil</option>
+                    <option value="db__mistico">Místico</option>
+                    
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="origin" multiple="false">Escolha sua Origem:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="origin">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__">Origem1</option>
+                    <option value="t20__">Origem2</option>
+                    <option value="t20__">Origem3</option>
+                    <option value="t20__">Origem4</option>
+                    <!-- Ghanor -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ghanor</option>
+                    <option value="ghanor__">Origem1</option>
+                    <option value="ghanor__">Origem2</option>
+                    <option value="ghanor__">Origem3</option>
+                    <option value="ghanor__">Origem4</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="devotion" multiple="false">Escolha sua Devoção:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="devotion">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__">Devoção1</option>
+                    <option value="t20__">Devoção2</option>
+                    <option value="t20__">Devoção3</option>
+                    <option value="t20__">Devoção4</option>
+                    <!-- Homebrew -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Homebrew</option>
+                    <option value="hombrew__">Devoção1</option>
+                    <option value="hombrew__">Devoção2</option>
+                    <option value="hombrew__">Devoção3</option>
+                    <option value="hombrew__">Devoção4</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="skill" multiple="true">Escolha suas Perícias:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="skill">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__">Pericia1</option>
+                    <option value="t20__">Pericia2</option>
+                    <option value="t20__">Pericia3</option>
+                    <option value="t20__">Pericia4</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="generalPower" multiple="true">Escolha seus Poderes Gerais:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="generalPower">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__">PoderGeral1</option>
+                    <option value="t20__">PoderGeral2</option>
+                    <option value="t20__">PoderGeral3</option>
+                    <option value="t20__">PoderGeral4</option>
+                    <!-- Ghanor -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ghanor</option>
+                    <option value="ghanor__">PoderGeral1</option>
+                    <option value="ghanor__">PoderGeral2</option>
+                    <option value="ghanor__">PoderGeral3</option>
+                    <option value="ghanor__">PoderGeral4</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="equipment" multiple="true">Escolha seu Equipamento:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="equipment">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__">Equip1</option>
+                    <option value="t20__">Equip2</option>
+                    <option value="t20__">Equip3</option>
+                    <option value="t20__">Equip4</option>
+                    <!-- Ghanor -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ghanor</option>
+                    <option value="ghanor__">Equip1</option>
+                    <option value="ghanor__">Equip2</option>
+                    <option value="ghanor__">Equip3</option>
+                    <option value="ghanor__">Equip4</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="spell" multiple="true">Escolha suas Magias:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="spell">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__">Magia1</option>
+                    <option value="t20__">Magia2</option>
+                    <option value="t20__">Magia3</option>
+                    <option value="t20__">Magia4</option>
+                    <!-- Ghanor -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ghanor</option>
+                    <option value="ghanor__">Magia1</option>
+                    <option value="ghanor__">Magia2</option>
+                    <option value="ghanor__">Magia3</option>
+                    <option value="ghanor__">Magia4</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="distinction" multiple="true">Escolha suas Distinções:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="distinction">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__">Distinção1</option>
+                    <option value="t20__">Distinção2</option>
+                    <option value="t20__">Distinção3</option>
+                    <option value="t20__">Distinção4</option>
+                    <!-- Ghanor -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ghanor</option>
+                    <option value="ghanor__">Distinção1</option>
+                    <option value="ghanor__">Distinção2</option>
+                    <option value="ghanor__">Distinção3</option>
+                    <option value="ghanor__">Distinção4</option>
+                </select>
+            </div>
+            
+            <div class="menuSuspenso__div">
+                <label for="disadvantage" multiple="false">Escolha sua Desvantagem:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="disadvantage">
+                    <!-- T20 -->
+                    <option value=""></option>
+                    <option value="" disabled="true">Tormenta20</option>
+                    <option value="t20__">Desvantagem1</option>
+                    <option value="t20__">Desvantagem2</option>
+                    <option value="t20__">Desvantagem3</option>
+                    <option value="t20__">Desvantagem4</option>
+                    <!-- Ghanor -->
+                    <option value="" disabled="true"></option>
+                    <option value="" disabled="true">Ghanor</option>
+                    <option value="ghanor__">Desvantagem1</option>
+                    <option value="ghanor__">Desvantagem2</option>
+                    <option value="ghanor__">Desvantagem3</option>
+                    <option value="ghanor__">Desvantagem4</option>
+                </select>
+            </div>
+            <div></div>
+            <div class="menuSuspenso__div-btn">
+                <button class="btn btn-reset" type="reset">Resetar</button>
+                <button class="btn btn-gerarFicha" type="submit">Gerar Ficha</button>
+            </div>
+            <div></div>
+        </form>
+        
+        <div class="resumoFicha">
+            <div class="resumoFicha__part1">
+                <div class="resumoFicha__resumo">
+                    <input type="text" name="nomePersonagem" id="nomePersonagem">
+                    <div class="resumoFicha__resumo-p1">
+                        <p>Raça — Classe (Nível) — Distinção</p>
+                    </div>
+                    <div class="resumoFicha__resumo-p2">
+                        <p>Origem — Devoção — Nativo — Desvantagem</p>
+                    </div>
+                </div>
+                <div class="resumoFicha__attributes">
+                    <div class="resumoFicha__attributes-case">
+                        <h3>PV</h3>
+                        <p>XXX</p>
+                    </div>
+                    <div class="resumoFicha__attributes-case">
+                        <h3>PM</h3>
+                        <p>XXX</p>
+                    </div>
+                    <div class="resumoFicha__attributes-case">
+                        <h3>Def</h3>
+                        <p>XXX</p>
+                    </div>
+                    <div class="resumoFicha__attributes-case">
+                        <h3>Desl.</h3>
+                        <p>XXX</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="resumoFicha__part2">
+                <div class="resumoFicha__case">
+                    <h3>FOR</h3>
+                    <p>+X</p>
+                    <h4>00</h4>
+                </div>
+                <div class="resumoFicha__case">
+                    <h3>DEX</h3>
+                    <p>+X</p>
+                    <h4>00</h4>
+                </div>
+                <div class="resumoFicha__case">
+                    <h3>CON</h3>
+                    <p>+X</p>
+                    <h4>00</h4>
+                </div>
+                <div class="resumoFicha__case">
+                    <h3>INT</h3>
+                    <p>+X</p>
+                    <h4>00</h4>
+                </div>
+                <div class="resumoFicha__case">
+                    <h3>SAB</h3>
+                    <p>+X</p>
+                    <h4>00</h4>
+                </div>
+                <div class="resumoFicha__case">
+                    <h3>CAR</h3>
+                    <p>+X</p>
+                    <h4>00</h4>
+                </div>
+            </div>
+            
+            <div class="resumoFicha__part3">
+                <div class="resumoFicha__powers">
+                    <div class="resumoFicha__powers-atk">
+                        <table>
+                            <thead>
+                                <th>Ataques</th>
+                                <th>Bônus</th>
+                                <th>Dano</th>
+                                <th>Crítico</th>
+                                <th>Tipo</th>
+                                <th>Alcance</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="resumoFicha__powers-armor">
+                        <table>
+                            <thead>
+                                <th>Armadura & Escudo</th>
+                                <th>BD</th>
+                                <th>PA</th>
+                                <th>Tipo</th>
+                            </thead>
+                            <tbody></tbody>
+                            <tfoot></tfoot>
+                        </table>
+                    </div>
+                    <div class="resumoFicha__powers-power">
+                        <table>
+                            <thead>
+                                <th>Poderes</th>
+                                <th>Tipo</th>
+                                <th>Custo</th>
+                                <th>Execução</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="resumoFicha__powers-cd">
+                        <!-- <p>CD de Magias: 22 = 22 + select(int)</p> -->
+                    </div>
+                    <div class="resumoFicha__powers-spell">
+                        <table>
+                            <thead>
+                                <th>Magias</th>
+                                <th>Escola</th>
+                                <th>Ativação</th>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <div class="resumoFicha__powers-others">
+                        <!-- <p>Tamanho: select()</p>
+                            <p>Resistências: Fogo, Frio</p>
+                            <p>Imunidades: Ácido, Veneno</p>
+                            <p>Sentidos: Faro</p>
+                            <p>Proficiências: Arma Simples</p> -->
+                        </div>
+                        <div class="resumoFicha__powers-notes">
+                            <!-- <p>Notas</p>
+                                <input type="text"> -->
+                            </div>
+                            <div class="resumoFicha__powers-equips">
+                                <table>
+                                    <thead>
+                                        <th>Equipamentos</th>
+                                        <th>Quantidade</th>
+                                        <th>Espaço</th>
+                                        <th>Vestido</th>
+                                    </thead>
+                                    <tbody></tbody>
+                                    <tfoot></tfoot>
+                                </table>
+                            </div>
+                            <div class="resumoFicha__powers-weight">
+                                <!-- <p>barra de carga</p> -->
+                            </div>
+                            <div class="resumoFicha__powers-tibar">
+                                <div class="resumoFicha__powers-tibarGold">
+                                    <img src="../IMG/SVG/coins-dourado.svg">
+                                </div>
+                                <div class="resumoFicha__powers-tibarSilver">
+                                    <img src="../IMG/SVG/coins-prateado.svg">
+                                </div>
+                                <div class="resumoFicha__powers-tibarBronze">
+                                    <img src="../IMG/SVG/coins-bronze.svg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="resumoFicha__pericias">
+                            <div class="resumoFicha__pericias-casePrincipal">
+                                <p class="resumoFicha__pericias-casePrincipal_pt0"></p>
+                                <p class="resumoFicha__pericias-casePrincipal_pt1">Perícia (Atr.)</p>
+                                <p class="resumoFicha__pericias-casePrincipal_pt2">Total</p>
+                                <p class="resumoFicha__pericias-casePrincipal_pt3">½ Nível + Treino + Outros</p>
+                            </div>
+                            <!-- Acrobacia (Dex) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__acro" style="display: none;">
+                                    <label for="treino__acro" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Acrobacia (Dex)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Adestramento (Car) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__ades" style="display: none;">
+                                    <label for="treino__ades" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Adestramento (Car)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Atletismo (For) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__atle" style="display: none;">
+                                    <label for="treino__atle" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Atletismo (For)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Atuação (Car) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__atua" style="display: none;">
+                                    <label for="treino__atua" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Atuação (Car)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Cavalgar (Dex) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__cava" style="display: none;">
+                                    <label for="treino__cava" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Cavalgar (Dex)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Conhecimento (Int) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__conh" style="display: none;">
+                                    <label for="treino__conh" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Conhecimento (Int)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Cura (Sab) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__cura" style="display: none;">
+                                    <label for="treino__cura" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Cura (Sab)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Diplomacia (Car) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__dipl" style="display: none;">
+                                    <label for="treino__dipl" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Diplomacia (Car)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Enganação (Car) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__enga" style="display: none;">
+                                    <label for="treino__enga" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Enganação (Car)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Fortitude (Con) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__fort" style="display: none;">
+                                    <label for="treino__fort" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Fortitude (Con)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Furtividade (Dex) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__furt" style="display: none;">
+                                    <label for="treino__furt" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Furtividade (Dex)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Guerra (Int) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__guer" style="display: none;">
+                                    <label for="treino__guer" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Guerra (Int)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Iniciativa (Dex) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__inic" style="display: none;">
+                                    <label for="treino__inic" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Iniciativa (Dex)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Intimidação (Car) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__inti" style="display: none;">
+                                    <label for="treino__inti" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Intimidação (Car)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Intuição (Sab) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__intu" style="display: none;">
+                                    <label for="treino__intu" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Intuição (Sab)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Investigação (Int) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__inve" style="display: none;">
+                                    <label for="treino__inve" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Investigação (Int)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Jogatina (Car) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__joga" style="display: none;">
+                                    <label for="treino__joga" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Jogatina (Car)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Ladinagem (Dex) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__ladi" style="display: none;">
+                                    <label for="treino__ladi" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Ladinagem (Dex)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Luta (For) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__luta" style="display: none;">
+                                    <label for="treino__luta" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Luta (For)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Misticismo (Int) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__mist" style="display: none;">
+                                    <label for="treino__mist" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Misticismo (Int)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Nobreza (Int) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__nobr" style="display: none;">
+                                    <label for="treino__nobr" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Nobreza (Int)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Ofício (Int) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__ofic" style="display: none;">
+                                    <label for="treino__ofic" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Ofício (Int)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Percepção (Sab) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__perc" style="display: none;">
+                                    <label for="treino__perc" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Percepção (Sab)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Pilotagem (Dex) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__pilo" style="display: none;">
+                                    <label for="treino__pilo" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Pilotagem (Dex)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Pontaria (Dex) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__pont" style="display: none;">
+                                    <label for="treino__pont" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Pontaria (Dex)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Reflexos (Dex) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__refl" style="display: none;">
+                                    <label for="treino__refl" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Reflexos (Dex)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Religião (Sab) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__reli" style="display: none;">
+                                    <label for="treino__reli" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Religião (Sab)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Sobrevivência (Sab) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__sobr" style="display: none;">
+                                    <label for="treino__sobr" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Sobrevivência (Sab)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                            <!-- Vontade (Sab) -->
+                            <div class="resumoFicha__pericias-case">
+                                <div class="resumoFicha__pericias_pt0">
+                                    <input type="checkbox" class="resumoFicha__pericias-chk" id="treino__vont" style="display: none;">
+                                    <label for="treino__vont" class="resumoFicha__pericias-chk__container">
+                                        <svg viewBox="0 0 18 18">
+                                            <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                            <polyline points="1 9 7 14 15 4"></polyline>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="resumoFicha__pericias_pt1">
+                                    <h3>Vontade (Sab)</h3>
+                                </div>
+                                <div class="resumoFicha__pericias_pt2">
+                                    <p>+00</p>
+                                </div>
+                                <div class="resumoFicha__pericias_pt3">
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                    <p>+</p>
+                                    <input class="resumoFicha__pericias-bonuses" type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            
+            <footer class="rodape">
+                <p class="rodape__text"><b class="strong">Tormenta20</b> é um produto da Jambô Editora e seus respectivos criadores, todos os direitos reservados.</p>
+                <p class="rodape__text"><a class="rodape__link" href="https://jamboeditora.com.br/" target="_blank">https://jamboeditora.com.br/</a></p>
+                <p class="rodape__text">Este é um projeto de fãs e não possui fins lucrativos</p>
+            </footer>
+            
+            <script src="../JS/index.js"></script>
+        </body>
+        </html>
