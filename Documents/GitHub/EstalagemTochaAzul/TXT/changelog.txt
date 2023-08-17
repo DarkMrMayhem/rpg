@@ -1,0 +1,38 @@
+Changelog
+
+html
+<!-- 
+<ul class="presentation__text-lista">
+  <li class="presentation__text-item">Nível ❌</li>
+  <li class="presentation__text-item">Atributos (presets) ❌</li>
+  <li class="presentation__text-item">Raça ❌</li>
+  <li class="presentation__text-item">Classe ❌</li>
+  <li class="presentation__text-item">Origem ❌</li>
+  <li class="presentation__text-item">Devoção ❌</li>
+  <li class="presentation__text-item">Distinção ❌</li>
+  <li class="presentation__text-item">Poderes ❌</li>
+  <li class="presentation__text-item">Magia ❌</li>
+  <li class="presentation__text-item">Equipamento ❌</li>
+  <li class="presentation__text-item">Desvantagem ❌</li>
+</ul> 
+-->
+
+
+css
+/* 
+.presentation__text-lista {
+  color: var(--text-color-TC);
+  list-style: initial;
+  font-weight: bold;
+  margin-left: -65%;
+  margin-top: 1rem;
+}
+
+.presentation__text-item {
+  text-align: left;
+  margin-top: .1rem;
+} 
+*/
+
+
+#212121

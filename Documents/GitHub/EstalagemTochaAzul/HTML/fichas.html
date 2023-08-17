@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/styleFichas.css">
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>    
-    <script src="../JS/darkmode.js" defer></script>
+    <script src="../JS/controllers/darkmode.js" defer></script>
     <title>Database da Estalagem da Tocha Azul</title>
 </head>
 
@@ -36,7 +36,7 @@
     </header>
     
     <main>
-        <form class="menuSuspenso" onsubmit="submeter();">
+        <form class="menuSuspenso" onsubmit="submeter(); fichaControl.adiciona(event)">
             <div class="menuSuspenso__div">
                 <label for="level">Escolha seu Nível: </label>
                 <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="level">
@@ -80,7 +80,8 @@
             
             <div class="menuSuspenso__div">
                 <label for="races" multiple="false">Escolha sua Raça:</label>
-                <select class="menuSuspenso__div-select" id="races" name="menuSuspenso__criaFicha" required>
+                <!-- select abaixo pode receber o required -->
+                <select class="menuSuspenso__div-select" id="races" name="menuSuspenso__criaFicha">
                     <!-- T20 -->
                     <option value=""></option>
                     <option value="" disabled="true">Tormenta20</option>
@@ -185,8 +186,8 @@
             </div>
             
             <div class="menuSuspenso__div">
-                <label for="class" multiple="false">Escolha sua Classe:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="class">
+                <label for="classes" multiple="false">Escolha sua Classe:</label>
+                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="classes">
                     <!-- T20 -->
                     <option value=""></option>
                     <option value="" disabled="true">Tormenta20</option>
@@ -1297,6 +1298,11 @@
                 <p class="rodape__text">Este é um projeto de fãs e não possui fins lucrativos</p>
             </footer>
             
-            <script src="../JS/index.js"></script>
+            <script src="../JS/models/CriaFicha.js"></script>
+            <script src="../JS/models/history.js"></script>
+            <script src="../JS/controllers/FichaController.js"></script>
+            <script>
+                let fichaControl = new FichaController();
+            </script>
         </body>
         </html>

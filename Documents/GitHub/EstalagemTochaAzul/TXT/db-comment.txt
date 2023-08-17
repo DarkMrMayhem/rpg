@@ -37,13 +37,13 @@
 #       "Licantropo"
 #       "Vampiro"
 #       "Amorfático" 
-		
+    
 #   "Povo-Trovão": 
 #       "Ceratops"
 #       "Pteros"
 #       "Velocis"
 #       "Voracis"
-	
+  
 #   "Moreau": 
 #       "Búfalo"
 #       "Coelho"
@@ -57,7 +57,7 @@
 #       "Raposa"
 #       "Serpente"
 #       "Urso"
-	
+  
 #   "Arym": 
 #       "Dampiro"
 #       "Draconato"
@@ -138,24 +138,24 @@ Desvantagem
 
 ---------------------------------------------------------------------------------------------------------------
 {
-		"origin":
-		[
-			{
-				"className": "-",
-				"raceAbilities": 
-				[
-					{
-						"abilitiesName": "Atributos",
-						"abilitiesDescription": "+1 em Três Atributos Diferentes"
-					},
-					{
-						"abilitiesName": "Versátil",
-						"abilitiesDescription": "Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha."
-					}
-				]
-			}
-		]
-	}
+    "origin":
+    [
+      {
+        "className": "-",
+        "raceAbilities": 
+        [
+          {
+            "abilitiesName": "Atributos",
+            "abilitiesDescription": "+1 em Três Atributos Diferentes"
+          },
+          {
+            "abilitiesName": "Versátil",
+            "abilitiesDescription": "Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha."
+          }
+        ]
+      }
+    ]
+  }
 ---------------------------------------------------------------------------------------------------------------
 
 
@@ -273,13 +273,20 @@ Glitch: https://uiverse.io/212004ALJI/fat-eagle-24
 
 
 
-
-
-
-
-
-
-
+// id's
+level
+atributes
+races
+classes
+origin
+devotion
+skill
+generalPower
+equipment
+spell
+distinction
+disadvantage
+//
 
 Nível (1 - 20)
 Atributos 
@@ -292,6 +299,35 @@ Atributos
   [ 3, 3,  2,  0,  0,  0 ] -> 8
 Raça (1 - 79)
 Classe (1 - xx)
+  <!-- T20 -->
+    Arcanista
+    Bárbaro
+    Bardo
+    Bucaneiro
+    Caçador
+    Cavaleiro
+    Clérigo
+    Druida
+    Guerreiro
+    Inventor
+    Ladino
+    Lutador
+    Nobre
+    Paladino
+
+  <!-- Homebrew -->
+    Astrologian
+    Atirador
+    Comandante
+    Dark Knight
+    Dragoon
+    Gunbreaker
+    Monge
+    Onimusha
+    Red Mage
+    Samurai
+    Usurpador
+    Witcher
 Origem (1 - xx)
 Devoção (1 - 2x)
 Perícia (1 - 29)

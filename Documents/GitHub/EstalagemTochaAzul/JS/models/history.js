@@ -1,43 +1,10 @@
-var campos = [
-    document.querySelector('#races'),
-    document.querySelector('#class'),
-    document.querySelector('#origin'),
-    document.querySelector('#devotion')
-];
-
-console.log(campos);
-
-var tbody = document.querySelector('table tbody');
-
-
-document.querySelector('.menuSuspenso').addEventListener('submit', function(event){
-    var tr = document.createElement('tr');
-
-    campos.forEach(function(campo) {
-        var td = document.createElement('td');
-        td.textContent = campo.value;
-        tr.appendChild(td);
-    });
-
-    tbody.appendChild(tr);
-
-
-});
-
-
-
-
-
-
-// Histórico
-
 function carregar (){
     document.getElementById("nomePersonagem").value=localStorage.getItem("nomePersonagem");
     // Form de Criação
     document.getElementById("level").value=localStorage.getItem("level");
     document.getElementById("atributes").value=localStorage.getItem("atributes");
     document.getElementById("races").value=localStorage.getItem("races");
-    document.getElementById("class").value=localStorage.getItem("class");
+    document.getElementById("classes").value=localStorage.getItem("classes");
     document.getElementById("origin").value=localStorage.getItem("origin");
     document.getElementById("devotion").value=localStorage.getItem("devotion");
     document.getElementById("skill").value=localStorage.getItem("skill");
@@ -54,7 +21,7 @@ function submeter (){
     localStorage.setItem("level", document.getElementById("level").value);
     localStorage.setItem("atributes", document.getElementById("atributes").value);
     localStorage.setItem("races", document.getElementById("races").value);
-    localStorage.setItem("class", document.getElementById("class").value);
+    localStorage.setItem("classes", document.getElementById("classes").value);
     localStorage.setItem("origin", document.getElementById("origin").value);
     localStorage.setItem("devotion", document.getElementById("devotion").value);
     localStorage.setItem("skill", document.getElementById("skill").value);
