@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/styleFichas.css">
+    <!-- Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+    <!---->
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>    
     <script src="../JS/controllers/darkmode.js" defer></script>
     <title>Database da Estalagem da Tocha Azul</title>
 </head>
 
-<body onload="carregar();">
+<body onload="carregar(); atualizaMod();">
     <header class="navbar">
         <img class="navbar__logo" src="../IMG/Logo_Disc_Menor.png" alt="logo da masmorra da tocha azul">
         <div class="navbar__links">
@@ -37,369 +42,378 @@
     
     <main>
         <form class="menuSuspenso" onsubmit="submeter(); fichaControl.adiciona(event)">
-            <div class="menuSuspenso__div">
-                <label for="level">Escolha seu Nível: </label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="level">
-                    <option value=""></option>
-                    <option value="level__1">1</option>
-                    <option value="level__2">2</option>
-                    <option value="level__3">3</option>
-                    <option value="level__4">4</option>
-                    <option value="level__5">5</option>
-                    <option value="level__6">6</option>
-                    <option value="level__7">7</option>
-                    <option value="level__8">8</option>
-                    <option value="level__9">9</option>
-                    <option value="level__10">10</option>
-                    <option value="level__11">11</option>
-                    <option value="level__12">12</option>
-                    <option value="level__13">13</option>
-                    <option value="level__14">14</option>
-                    <option value="level__15">15</option>
-                    <option value="level__16">16</option>
-                    <option value="level__17">17</option>
-                    <option value="level__18">18</option>
-                    <option value="level__19">19</option>
-                    <option value="level__20">20</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="atributes" multiple="false">Escolha seus Atributos:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="atributes">
-                    <option value=""></option>
-                    <option value="atr__choose1">4, 4, -1, -1, -1, -1</option>
-                    <option value="atr__choose2">4, 3, 0, 0, 0, -1</option>
-                    <option value="atr__choose3">4, 2, 2, 0, 0, -1</option>
-                    <option value="atr__choose4">4, 2, 1, 0, 0, 0</option>
-                    <option value="atr__choose5">3, 3, 3, 0, -1, -1</option>
-                    <option value="atr__choose6">3, 2, 2, 1, 0, -1</option>
-                    <option value="atr__choose7">3, 3, 2, 0, 0, 0</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="races" multiple="false">Escolha sua Raça:</label>
-                <!-- select abaixo pode receber o required -->
-                <select class="menuSuspenso__div-select" id="races" name="menuSuspenso__criaFicha">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__humano">Humano</option>
-                    <option value="t20__anao">Anão</option>
-                    <option value="t20__dahllan">Dahllan</option>
-                    <option value="t20__elfo">Elfo</option>
-                    <option value="t20__goblin">Goblin</option>
-                    <option value="t20__lefou">Lefou</option>
-                    <option value="t20__minotauro">Minotauro</option>
-                    <option value="t20__qareen">Qareen</option>
-                    <option value="t20__golem">Golem</option>
-                    <option value="t20__hynne">Hynne</option>
-                    <option value="t20__kliren">Kliren</option>
-                    <option value="t20__medusa">Medusa</option>
-                    <option value="t20__osteon">Osteon</option>
-                    <option value="t20__sereia">Sereia/tritão</option>
-                    <option value="t20__silfide">Sílfide</option>
-                    <option value="t20__suraggel">Suraggel</option>
-                    <option value="t20__trog">Trog</option>
-                    <!-- Ghanor --> 
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ghanor</option>
-                    <option value="ghanor__anao">Anão</option>
-                    <option value="ghanor__elfo">Elfo</option>
-                    <option value="ghanor__gigante">Gigante</option>
-                    <option value="ghanor__hobgoblin">Hobgoblin</option>
-                    <option value="ghanor__meioElfo">Meio-Elfo</option>
-                    <option value="ghanor__aberrante">Aberrante</option>
-                    <!-- Homebrew -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Homebrew</option>
-                    <option value="homebrew__felis">Felis</option>
-                    <option value="homebrew__gigante">Gigante</option>
-                    <option value="homebrew__golem">Golem</option>
-                    <option value="homebrew__halfElf">HalfElf</option>
-                    <option value="homebrew__nagah">Nagah</option>
-                    <option value="homebrew__licantropo">Licantropo</option>
-                    <option value="homebrew__vampiro">Vampiro</option>
-                    <option value="homebrew__amorfatico">Amorfático</option>
-                    <!-- Povo-Trovão -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Povo-Trovão</option>
-                    <option value="povoTrovao__ceratops">Ceratops</option>
-                    <option value="povoTrovao__pteros">Pteros</option>
-                    <option value="povoTrovao__velocis">Velocis</option>
-                    <option value="povoTrovao__voracis">Voracis</option>
-                    <!-- Moreau -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Moreau</option>
-                    <option value="moreau__bufalo">Búfalo</option>
-                    <option value="moreau__coelho">Coelho</option>
-                    <option value="moreau__coruja">Coruja</option>
-                    <option value="moreau__crocodilo">Crocodilo</option>
-                    <option value="moreau__gato">Gato</option>
-                    <option value="moreau__hiena">Hiena</option>
-                    <option value="moreau__leao">Leão</option>
-                    <option value="moreau__lobo">Lobo</option>
-                    <option value="moreau__morcego">Morcego</option>
-                    <option value="moreau__raposa">Raposa</option>
-                    <option value="moreau__serpente">Serpente</option>
-                    <option value="moreau__urso">Urso</option>
-                    <!-- Arym -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Arym</option>
-                    <option value="arym__dampiro">Dampiro</option>
-                    <option value="arym__draconato">Draconato</option>
-                    <option value="arym__aasimar">Aasimar</option>
-                    <option value="arym__duplo">Duplo</option>
-                    <option value="arym__gnomo">Gnomo</option>
-                    <option value="arym__harpia">Harpia</option>
-                    <option value="arym__kobold">Kobold</option>
-                    <option value="arym__camundongo">Her. do Camundongo</option>
-                    <option value="arym__macaco">Her. do Macaco</option>
-                    <option value="arym__pato">Her. do Pato</option>
-                    <option value="arym__tartaruga">Her. da Tartaruga</option>
-                    <option value="arym__oni">Oni</option>
-                    <option value="arym__orc">Orc</option>
-                    <option value="arym__meioElfo">Meio-Elfo</option>
-                    <!-- Ameaças (0.4) -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ameaças (0.4)</option>
-                    <option value="ameacas__kaijin">Kaijin</option>
-                    <option value="ameacas__kappa">Kappa</option>
-                    <option value="ameacas__mashin">Mashin</option>
-                    <option value="ameacas__nezumi">Nezumi</option>
-                    <option value="ameacas__tengu">Tengu</option>
-                    <option value="ameacas__meioOrc">Meio-Orc</option>
-                    <option value="ameacas__orc">Orc</option>
-                    <option value="ameacas__tabrachi">Tabrachi</option>
-                    <option value="ameacas__trog">Trog</option>
-                    <option value="ameacas__trogAnao">Trog Anão</option>
-                    <option value="ameacas__ogro">Ogro</option>
-                    <option value="ameacas__bugbear">Bugbear</option>
-                    <option value="ameacas__hobgoblin">Hobgoblin</option>
-                    <option value="ameacas__gnoll">Gnoll</option>
-                    <option value="ameacas__golem">Golem</option>
-                    <option value="ameacas__kallyanach">Kallyanach</option>
-                    <option value="ameacas__minauro">Minauro</option>
-                    <option value="ameacas__harpia">Harpia</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="classes" multiple="false">Escolha sua Classe:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="classes">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__arcanista">Arcanista</option>
-                    <option value="t20__barbaro">Bárbaro</option>
-                    <option value="t20__bardo">Bardo</option>
-                    <option value="t20__bucaneiro">Bucaneiro</option>
-                    <option value="t20__cacador">Caçador</option>
-                    <option value="t20__cavaleiro">Cavaleiro</option>
-                    <option value="t20__clerigo">Clérigo</option>
-                    <option value="t20__druida">Druida</option>
-                    <option value="t20__guerreiro">Guerreiro</option>
-                    <option value="t20__inventor">Inventor</option>
-                    <option value="t20__ladino">Ladino</option>
-                    <option value="t20__lutador">Lutador</option>
-                    <option value="t20__nobre">Nobre</option>
-                    <option value="t20__paladino">Paladino</option>
-                    <!-- Ghanor -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ghanor</option>
-                    <option value="ghanor__barbaro">Bárbaro</option>
-                    <option value="ghanor__bardo">Bardo</option>
-                    <option value="ghanor__bucaneiro">Bucaneiro</option>
-                    <option value="ghanor__cacador">Caçador</option>
-                    <option value="ghanor__cavaleiro">Cavaleiro</option>
-                    <option value="ghanor__clerigo">Clérigo</option>
-                    <option value="ghanor__druida">Druida</option>
-                    <option value="ghanor__ladino">Ladino</option>
-                    <option value="ghanor__mago">Mago</option>
-                    <option value="ghanor__nobre">Nobre</option>
-                    <option value="ghanor__soldado">Soldado</option>
-                    <!-- Homebrew -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Homebrew</option>
-                    <option value="homebrew__astrologian">Astrologian</option>
-                    <option value="homebrew__atirador">Atirador</option>
-                    <option value="homebrew__comandante">Comandante</option>
-                    <option value="homebrew__darkKnight">Dark Knight</option>
-                    <option value="homebrew__dragoon">Dragoon</option>
-                    <option value="homebrew__gunbreaker">Gunbreaker</option>
-                    <option value="homebrew__monge">Monge</option>
-                    <option value="homebrew__onimusha">Onimusha</option>
-                    <option value="homebrew__redMage">Red Mage</option>
-                    <option value="homebrew__samurai">Samurai</option>
-                    <option value="homebrew__usurpador">Usurpador</option>
-                    <option value="homebrew__witcher">Witcher</option>
-                    <!-- DB -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Dragão Brasil</option>
-                    <option value="db__mistico">Místico</option>
+            <div></div>
+            <button class="btn btn-modal" type="button"><a href="#menuSuspenso__div-modal" rel="modal:open">Iniciar Criação de Ficha</a></button>
+            <div></div>
+            <div id="menuSuspenso__div-modal" class="modal">
+                <div class="menuSuspenso__modal">
+                    <div class="menuSuspenso__div">
+                        <label for="level">Escolha seu Nível: </label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="level">
+                            <option value=""></option>
+                            <option value="level__1">1</option>
+                            <option value="level__2">2</option>
+                            <option value="level__3">3</option>
+                            <option value="level__4">4</option>
+                            <option value="level__5">5</option>
+                            <option value="level__6">6</option>
+                            <option value="level__7">7</option>
+                            <option value="level__8">8</option>
+                            <option value="level__9">9</option>
+                            <option value="level__10">10</option>
+                            <option value="level__11">11</option>
+                            <option value="level__12">12</option>
+                            <option value="level__13">13</option>
+                            <option value="level__14">14</option>
+                            <option value="level__15">15</option>
+                            <option value="level__16">16</option>
+                            <option value="level__17">17</option>
+                            <option value="level__18">18</option>
+                            <option value="level__19">19</option>
+                            <option value="level__20">20</option>
+                        </select>
+                    </div>
                     
-                </select>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="atributes" multiple="false">Escolha seus Atributos:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="atributes">
+                            <option value=""></option>
+                            <option value="atr__choose1">4, 4, -1, -1, -1, -1</option>
+                            <option value="atr__choose2">4, 3, 0, 0, 0, -1</option>
+                            <option value="atr__choose3">4, 2, 2, 0, 0, -1</option>
+                            <option value="atr__choose4">4, 2, 1, 0, 0, 0</option>
+                            <option value="atr__choose5">3, 3, 3, 0, -1, -1</option>
+                            <option value="atr__choose6">3, 2, 2, 1, 0, -1</option>
+                            <option value="atr__choose7">3, 3, 2, 0, 0, 0</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="races" multiple="false">Escolha sua Raça:</label>
+                        <!-- select abaixo pode receber o required -->
+                        <select class="menuSuspenso__div-select" id="races" name="menuSuspenso__criaFicha">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__humano">Humano</option>
+                            <option value="t20__anao">Anão</option>
+                            <option value="t20__dahllan">Dahllan</option>
+                            <option value="t20__elfo">Elfo</option>
+                            <option value="t20__goblin">Goblin</option>
+                            <option value="t20__lefou">Lefou</option>
+                            <option value="t20__minotauro">Minotauro</option>
+                            <option value="t20__qareen">Qareen</option>
+                            <option value="t20__golem">Golem</option>
+                            <option value="t20__hynne">Hynne</option>
+                            <option value="t20__kliren">Kliren</option>
+                            <option value="t20__medusa">Medusa</option>
+                            <option value="t20__osteon">Osteon</option>
+                            <option value="t20__sereia">Sereia/tritão</option>
+                            <option value="t20__silfide">Sílfide</option>
+                            <option value="t20__suraggel">Suraggel</option>
+                            <option value="t20__trog">Trog</option>
+                            <!-- Ghanor --> 
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ghanor</option>
+                            <option value="ghanor__anao">Anão</option>
+                            <option value="ghanor__elfo">Elfo</option>
+                            <option value="ghanor__gigante">Gigante</option>
+                            <option value="ghanor__hobgoblin">Hobgoblin</option>
+                            <option value="ghanor__meioElfo">Meio-Elfo</option>
+                            <option value="ghanor__aberrante">Aberrante</option>
+                            <!-- Homebrew -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Homebrew</option>
+                            <option value="homebrew__felis">Felis</option>
+                            <option value="homebrew__gigante">Gigante</option>
+                            <option value="homebrew__golem">Golem</option>
+                            <option value="homebrew__halfElf">HalfElf</option>
+                            <option value="homebrew__nagah">Nagah</option>
+                            <option value="homebrew__licantropo">Licantropo</option>
+                            <option value="homebrew__vampiro">Vampiro</option>
+                            <option value="homebrew__amorfatico">Amorfático</option>
+                            <!-- Povo-Trovão -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Povo-Trovão</option>
+                            <option value="povoTrovao__ceratops">Ceratops</option>
+                            <option value="povoTrovao__pteros">Pteros</option>
+                            <option value="povoTrovao__velocis">Velocis</option>
+                            <option value="povoTrovao__voracis">Voracis</option>
+                            <!-- Moreau -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Moreau</option>
+                            <option value="moreau__bufalo">Búfalo</option>
+                            <option value="moreau__coelho">Coelho</option>
+                            <option value="moreau__coruja">Coruja</option>
+                            <option value="moreau__crocodilo">Crocodilo</option>
+                            <option value="moreau__gato">Gato</option>
+                            <option value="moreau__hiena">Hiena</option>
+                            <option value="moreau__leao">Leão</option>
+                            <option value="moreau__lobo">Lobo</option>
+                            <option value="moreau__morcego">Morcego</option>
+                            <option value="moreau__raposa">Raposa</option>
+                            <option value="moreau__serpente">Serpente</option>
+                            <option value="moreau__urso">Urso</option>
+                            <!-- Arym -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Arym</option>
+                            <option value="arym__dampiro">Dampiro</option>
+                            <option value="arym__draconato">Draconato</option>
+                            <option value="arym__aasimar">Aasimar</option>
+                            <option value="arym__duplo">Duplo</option>
+                            <option value="arym__gnomo">Gnomo</option>
+                            <option value="arym__harpia">Harpia</option>
+                            <option value="arym__kobold">Kobold</option>
+                            <option value="arym__camundongo">Her. do Camundongo</option>
+                            <option value="arym__macaco">Her. do Macaco</option>
+                            <option value="arym__pato">Her. do Pato</option>
+                            <option value="arym__tartaruga">Her. da Tartaruga</option>
+                            <option value="arym__oni">Oni</option>
+                            <option value="arym__orc">Orc</option>
+                            <option value="arym__meioElfo">Meio-Elfo</option>
+                            <!-- Ameaças (0.4) -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ameaças (0.4)</option>
+                            <option value="ameacas__kaijin">Kaijin</option>
+                            <option value="ameacas__kappa">Kappa</option>
+                            <option value="ameacas__mashin">Mashin</option>
+                            <option value="ameacas__nezumi">Nezumi</option>
+                            <option value="ameacas__tengu">Tengu</option>
+                            <option value="ameacas__meioOrc">Meio-Orc</option>
+                            <option value="ameacas__orc">Orc</option>
+                            <option value="ameacas__tabrachi">Tabrachi</option>
+                            <option value="ameacas__trog">Trog</option>
+                            <option value="ameacas__trogAnao">Trog Anão</option>
+                            <option value="ameacas__ogro">Ogro</option>
+                            <option value="ameacas__bugbear">Bugbear</option>
+                            <option value="ameacas__hobgoblin">Hobgoblin</option>
+                            <option value="ameacas__gnoll">Gnoll</option>
+                            <option value="ameacas__golem">Golem</option>
+                            <option value="ameacas__kallyanach">Kallyanach</option>
+                            <option value="ameacas__minauro">Minauro</option>
+                            <option value="ameacas__harpia">Harpia</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="classes" multiple="false">Escolha sua Classe:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="classes">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__arcanista">Arcanista</option>
+                            <option value="t20__barbaro">Bárbaro</option>
+                            <option value="t20__bardo">Bardo</option>
+                            <option value="t20__bucaneiro">Bucaneiro</option>
+                            <option value="t20__cacador">Caçador</option>
+                            <option value="t20__cavaleiro">Cavaleiro</option>
+                            <option value="t20__clerigo">Clérigo</option>
+                            <option value="t20__druida">Druida</option>
+                            <option value="t20__guerreiro">Guerreiro</option>
+                            <option value="t20__inventor">Inventor</option>
+                            <option value="t20__ladino">Ladino</option>
+                            <option value="t20__lutador">Lutador</option>
+                            <option value="t20__nobre">Nobre</option>
+                            <option value="t20__paladino">Paladino</option>
+                            <!-- Ghanor -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ghanor</option>
+                            <option value="ghanor__barbaro">Bárbaro</option>
+                            <option value="ghanor__bardo">Bardo</option>
+                            <option value="ghanor__bucaneiro">Bucaneiro</option>
+                            <option value="ghanor__cacador">Caçador</option>
+                            <option value="ghanor__cavaleiro">Cavaleiro</option>
+                            <option value="ghanor__clerigo">Clérigo</option>
+                            <option value="ghanor__druida">Druida</option>
+                            <option value="ghanor__ladino">Ladino</option>
+                            <option value="ghanor__mago">Mago</option>
+                            <option value="ghanor__nobre">Nobre</option>
+                            <option value="ghanor__soldado">Soldado</option>
+                            <!-- Homebrew -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Homebrew</option>
+                            <option value="homebrew__astrologian">Astrologian</option>
+                            <option value="homebrew__atirador">Atirador</option>
+                            <option value="homebrew__comandante">Comandante</option>
+                            <option value="homebrew__darkKnight">Dark Knight</option>
+                            <option value="homebrew__dragoon">Dragoon</option>
+                            <option value="homebrew__gunbreaker">Gunbreaker</option>
+                            <option value="homebrew__monge">Monge</option>
+                            <option value="homebrew__onimusha">Onimusha</option>
+                            <option value="homebrew__redMage">Red Mage</option>
+                            <option value="homebrew__samurai">Samurai</option>
+                            <option value="homebrew__usurpador">Usurpador</option>
+                            <option value="homebrew__witcher">Witcher</option>
+                            <!-- DB -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Dragão Brasil</option>
+                            <option value="db__mistico">Místico</option>
+                            
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="origin" multiple="false">Escolha sua Origem:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="origin">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__">Origem1</option>
+                            <option value="t20__">Origem2</option>
+                            <option value="t20__">Origem3</option>
+                            <option value="t20__">Origem4</option>
+                            <!-- Ghanor -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ghanor</option>
+                            <option value="ghanor__">Origem1</option>
+                            <option value="ghanor__">Origem2</option>
+                            <option value="ghanor__">Origem3</option>
+                            <option value="ghanor__">Origem4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="devotion" multiple="false">Escolha sua Devoção:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="devotion">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__">Devoção1</option>
+                            <option value="t20__">Devoção2</option>
+                            <option value="t20__">Devoção3</option>
+                            <option value="t20__">Devoção4</option>
+                            <!-- Homebrew -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Homebrew</option>
+                            <option value="hombrew__">Devoção1</option>
+                            <option value="hombrew__">Devoção2</option>
+                            <option value="hombrew__">Devoção3</option>
+                            <option value="hombrew__">Devoção4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="skill" multiple="true">Escolha suas Perícias:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="skill">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__">Pericia1</option>
+                            <option value="t20__">Pericia2</option>
+                            <option value="t20__">Pericia3</option>
+                            <option value="t20__">Pericia4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="generalPower" multiple="true">Escolha seus Poderes Gerais:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="generalPower">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__">PoderGeral1</option>
+                            <option value="t20__">PoderGeral2</option>
+                            <option value="t20__">PoderGeral3</option>
+                            <option value="t20__">PoderGeral4</option>
+                            <!-- Ghanor -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ghanor</option>
+                            <option value="ghanor__">PoderGeral1</option>
+                            <option value="ghanor__">PoderGeral2</option>
+                            <option value="ghanor__">PoderGeral3</option>
+                            <option value="ghanor__">PoderGeral4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="equipment" multiple="true">Escolha seu Equipamento:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="equipment">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__">Equip1</option>
+                            <option value="t20__">Equip2</option>
+                            <option value="t20__">Equip3</option>
+                            <option value="t20__">Equip4</option>
+                            <!-- Ghanor -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ghanor</option>
+                            <option value="ghanor__">Equip1</option>
+                            <option value="ghanor__">Equip2</option>
+                            <option value="ghanor__">Equip3</option>
+                            <option value="ghanor__">Equip4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="spell" multiple="true">Escolha suas Magias:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="spell">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__">Magia1</option>
+                            <option value="t20__">Magia2</option>
+                            <option value="t20__">Magia3</option>
+                            <option value="t20__">Magia4</option>
+                            <!-- Ghanor -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ghanor</option>
+                            <option value="ghanor__">Magia1</option>
+                            <option value="ghanor__">Magia2</option>
+                            <option value="ghanor__">Magia3</option>
+                            <option value="ghanor__">Magia4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="distinction" multiple="true">Escolha suas Distinções:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="distinction">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__">Distinção1</option>
+                            <option value="t20__">Distinção2</option>
+                            <option value="t20__">Distinção3</option>
+                            <option value="t20__">Distinção4</option>
+                            <!-- Ghanor -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ghanor</option>
+                            <option value="ghanor__">Distinção1</option>
+                            <option value="ghanor__">Distinção2</option>
+                            <option value="ghanor__">Distinção3</option>
+                            <option value="ghanor__">Distinção4</option>
+                        </select>
+                    </div>
+                    
+                    <div class="menuSuspenso__div">
+                        <label for="disadvantage" multiple="false">Escolha sua Desvantagem:</label>
+                        <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="disadvantage">
+                            <!-- T20 -->
+                            <option value=""></option>
+                            <option value="" disabled="true">Tormenta20</option>
+                            <option value="t20__">Desvantagem1</option>
+                            <option value="t20__">Desvantagem2</option>
+                            <option value="t20__">Desvantagem3</option>
+                            <option value="t20__">Desvantagem4</option>
+                            <!-- Ghanor -->
+                            <option value="" disabled="true"></option>
+                            <option value="" disabled="true">Ghanor</option>
+                            <option value="ghanor__">Desvantagem1</option>
+                            <option value="ghanor__">Desvantagem2</option>
+                            <option value="ghanor__">Desvantagem3</option>
+                            <option value="ghanor__">Desvantagem4</option>
+                        </select>
+                    </div>
+                    <div></div>
+                    <div class="menuSuspenso__div-btn">
+                        <button class="btn btn-reset" type="reset">Resetar</button>
+                        <button class="btn btn-gerarFicha" type="submit">Gerar Ficha</button>
+                    </div>
+                    <div></div>
+                </div>
             </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="origin" multiple="false">Escolha sua Origem:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="origin">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__">Origem1</option>
-                    <option value="t20__">Origem2</option>
-                    <option value="t20__">Origem3</option>
-                    <option value="t20__">Origem4</option>
-                    <!-- Ghanor -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ghanor</option>
-                    <option value="ghanor__">Origem1</option>
-                    <option value="ghanor__">Origem2</option>
-                    <option value="ghanor__">Origem3</option>
-                    <option value="ghanor__">Origem4</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="devotion" multiple="false">Escolha sua Devoção:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="devotion">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__">Devoção1</option>
-                    <option value="t20__">Devoção2</option>
-                    <option value="t20__">Devoção3</option>
-                    <option value="t20__">Devoção4</option>
-                    <!-- Homebrew -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Homebrew</option>
-                    <option value="hombrew__">Devoção1</option>
-                    <option value="hombrew__">Devoção2</option>
-                    <option value="hombrew__">Devoção3</option>
-                    <option value="hombrew__">Devoção4</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="skill" multiple="true">Escolha suas Perícias:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="skill">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__">Pericia1</option>
-                    <option value="t20__">Pericia2</option>
-                    <option value="t20__">Pericia3</option>
-                    <option value="t20__">Pericia4</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="generalPower" multiple="true">Escolha seus Poderes Gerais:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="generalPower">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__">PoderGeral1</option>
-                    <option value="t20__">PoderGeral2</option>
-                    <option value="t20__">PoderGeral3</option>
-                    <option value="t20__">PoderGeral4</option>
-                    <!-- Ghanor -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ghanor</option>
-                    <option value="ghanor__">PoderGeral1</option>
-                    <option value="ghanor__">PoderGeral2</option>
-                    <option value="ghanor__">PoderGeral3</option>
-                    <option value="ghanor__">PoderGeral4</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="equipment" multiple="true">Escolha seu Equipamento:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="equipment">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__">Equip1</option>
-                    <option value="t20__">Equip2</option>
-                    <option value="t20__">Equip3</option>
-                    <option value="t20__">Equip4</option>
-                    <!-- Ghanor -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ghanor</option>
-                    <option value="ghanor__">Equip1</option>
-                    <option value="ghanor__">Equip2</option>
-                    <option value="ghanor__">Equip3</option>
-                    <option value="ghanor__">Equip4</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="spell" multiple="true">Escolha suas Magias:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="spell">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__">Magia1</option>
-                    <option value="t20__">Magia2</option>
-                    <option value="t20__">Magia3</option>
-                    <option value="t20__">Magia4</option>
-                    <!-- Ghanor -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ghanor</option>
-                    <option value="ghanor__">Magia1</option>
-                    <option value="ghanor__">Magia2</option>
-                    <option value="ghanor__">Magia3</option>
-                    <option value="ghanor__">Magia4</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="distinction" multiple="true">Escolha suas Distinções:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="distinction">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__">Distinção1</option>
-                    <option value="t20__">Distinção2</option>
-                    <option value="t20__">Distinção3</option>
-                    <option value="t20__">Distinção4</option>
-                    <!-- Ghanor -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ghanor</option>
-                    <option value="ghanor__">Distinção1</option>
-                    <option value="ghanor__">Distinção2</option>
-                    <option value="ghanor__">Distinção3</option>
-                    <option value="ghanor__">Distinção4</option>
-                </select>
-            </div>
-            
-            <div class="menuSuspenso__div">
-                <label for="disadvantage" multiple="false">Escolha sua Desvantagem:</label>
-                <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="disadvantage">
-                    <!-- T20 -->
-                    <option value=""></option>
-                    <option value="" disabled="true">Tormenta20</option>
-                    <option value="t20__">Desvantagem1</option>
-                    <option value="t20__">Desvantagem2</option>
-                    <option value="t20__">Desvantagem3</option>
-                    <option value="t20__">Desvantagem4</option>
-                    <!-- Ghanor -->
-                    <option value="" disabled="true"></option>
-                    <option value="" disabled="true">Ghanor</option>
-                    <option value="ghanor__">Desvantagem1</option>
-                    <option value="ghanor__">Desvantagem2</option>
-                    <option value="ghanor__">Desvantagem3</option>
-                    <option value="ghanor__">Desvantagem4</option>
-                </select>
-            </div>
-            <div></div>
-            <div class="menuSuspenso__div-btn">
-                <button class="btn btn-reset" type="reset">Resetar</button>
-                <button class="btn btn-gerarFicha" type="submit">Gerar Ficha</button>
-            </div>
-            <div></div>
+            <a href="#" rel="modal:close"></a>
         </form>
         
         <div class="resumoFicha">
@@ -433,36 +447,37 @@
                 </div>
             </div>
             
+            <!-- Aqui, os 'h4' serão inputs e os 'p' mostrarão o input convertido -->
             <div class="resumoFicha__part2">
                 <div class="resumoFicha__case">
                     <h3>FOR</h3>
-                    <p>+X</p>
-                    <h4>00</h4>
+                    <p class="modAtribute" id="modAtributeFOR">0</p>
+                    <input onchange="atualizaMod('FOR', this.value)" class="resumoFicha__part2-mods" type="text" id="atributeFOR" name="atributeFOR" min="-2" max="99">
                 </div>
                 <div class="resumoFicha__case">
                     <h3>DEX</h3>
-                    <p>+X</p>
-                    <h4>00</h4>
+                    <p class="modAtribute" id="modAtributeDEX">0</p>
+                    <input onchange="atualizaMod('DEX', this.value)" class="resumoFicha__part2-mods" type="text" id="atributeDEX" name="atributeDEX" min="-2" max="99">
                 </div>
                 <div class="resumoFicha__case">
                     <h3>CON</h3>
-                    <p>+X</p>
-                    <h4>00</h4>
+                    <p class="modAtribute" id="modAtributeCON">0</p>
+                    <input onchange="atualizaMod('CON', this.value)" class="resumoFicha__part2-mods" type="text" id="atributeCON" name="atributeCON" min="-2" max="99">
                 </div>
                 <div class="resumoFicha__case">
                     <h3>INT</h3>
-                    <p>+X</p>
-                    <h4>00</h4>
+                    <p class="modAtribute" id="modAtributeINT">0</p>
+                    <input onchange="atualizaMod('INT', this.value)" class="resumoFicha__part2-mods" type="text" id="atributeINT" name="atributeINT" min="-2" max="99">
                 </div>
                 <div class="resumoFicha__case">
                     <h3>SAB</h3>
-                    <p>+X</p>
-                    <h4>00</h4>
+                    <p class="modAtribute" id="modAtributeSAB">0</p>
+                    <input onchange="atualizaMod('SAB', this.value)" class="resumoFicha__part2-mods" type="text" id="atributeSAB" name="atributeSAB" min="-2" max="99">
                 </div>
                 <div class="resumoFicha__case">
                     <h3>CAR</h3>
-                    <p>+X</p>
-                    <h4>00</h4>
+                    <p class="modAtribute" id="modAtributeCAR">0</p>
+                    <input onchange="atualizaMod('CAR', this.value)" class="resumoFicha__part2-mods" type="text" id="atributeCAR" name="atributeCAR" min="-2" max="99">
                 </div>
             </div>
             
@@ -1302,7 +1317,7 @@
             <script src="../JS/models/history.js"></script>
             <script src="../JS/controllers/FichaController.js"></script>
             <script>
-                let fichaControl = new FichaController();
+                // let fichaControl = new FichaController();
             </script>
         </body>
         </html>

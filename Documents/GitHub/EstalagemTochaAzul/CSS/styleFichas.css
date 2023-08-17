@@ -38,9 +38,14 @@
 
 /*---------------------------------------------------------------------------*/
 
+/* @font-face {
+    font-family: t20;
+    src: url(../FONTS/Tormenta20x.ttf)
+} */
+
 body {
     background-color: var(--fundo-TC);
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: 'Alegreya sans', sans-serif;
     
     align-items: center;
     box-sizing: border-box;
@@ -70,6 +75,12 @@ main {
     padding: 2rem 1rem 1rem 1rem;
 }
 
+.menuSuspenso__modal {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+
 .menuSuspenso__div {
     background-color: var(--fundo-botão);
     color: var(--texto-botão);
@@ -79,9 +90,9 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: space-between; /* Isso aqui ta certo */
-    margin-bottom: .5rem;
+    margin-bottom: 1rem;
     padding: .5rem .5rem;
-    width: 75%;
+    width: 100%;
 }
 
 .menuSuspenso__div-select {
@@ -99,6 +110,26 @@ option  {
     color: var(--fundo-botão-texto-TE);
     
     border-radius: 50px;
+}
+
+.modal {
+    background-color: var(--fundo-ficha-TE);
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+
+    width: 100%;
+    height: 100%;
 }
 
 .menuSuspenso__div-btn {
@@ -258,7 +289,9 @@ option  {
     align-items: center;
 }
 
-.resumoFicha__case p {
+.modAtribute {
+    color: var(--fundo-botão-texto-TE);
+
     height: 70%;
     width: 100%;
     
@@ -269,7 +302,17 @@ option  {
     font-size: 36px;
 }
 
-.resumoFicha__case h4 {
+.resumoFicha__part2-mods {
+    background-color: var(--fundo-botão-TE);
+    color: var(--fundo-botão-texto-TE);
+    
+    border-radius: 50px;
+    width: 15px;
+    
+    text-align-last: center;
+}
+
+.resumoFicha__case input {
     background-color: var(--fundo-ficha-TE);
     border: 2px solid var(--text-color-TE);
     border-radius: 50px;
@@ -278,7 +321,7 @@ option  {
     justify-content: center;
     align-items: center;
     
-    margin-bottom: -14px;
+    margin-bottom: -15px;
     padding: 3px;
 }
 

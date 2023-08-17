@@ -131,33 +131,33 @@ let campos = [
 
 // Isso aqui é temporário, acredito que não vou trabalhar com tabela
 
-var tbody = document.querySelector('table tbody');
+// var tbody = document.querySelector('table tbody');
 
-document.querySelector('.menuSuspenso').addEventListener('submit', function(event){
-    event.preventDefault();
+// document.querySelector('.menuSuspenso').addEventListener('submit', function(event){
+//     event.preventDefault();
     
-    var tr = document.createElement('tr');
+//     var tr = document.createElement('tr');
     
-    campos.forEach(function(campo) {
-        var td = document.createElement('td');
-        td.textContent = campo.value;
-        tr.appendChild(td);
-    });
+//     campos.forEach(function(campo) {
+//         var td = document.createElement('td');
+//         td.textContent = campo.value;
+//         tr.appendChild(td);
+//     });
     
-    tbody.appendChild(tr);
+//     tbody.appendChild(tr);
     
-    campos[0].value = 1;
-    campos[1].value = '';
-    campos[2].value = '';
-    campos[3].value = '';
-    campos[4].value = '';
-    campos[5].value = '';
-    campos[6].value = '';
-    campos[7].value = '';
-    campos[8].value = '';
-    campos[9].value = '';
-    campos[10].value = '';
-    campos[11].value = '';
+//     campos[0].value = 1;
+//     campos[1].value = '';
+//     campos[2].value = '';
+//     campos[3].value = '';
+//     campos[4].value = '';
+//     campos[5].value = '';
+//     campos[6].value = '';
+//     campos[7].value = '';
+//     campos[8].value = '';
+//     campos[9].value = '';
+//     campos[10].value = '';
+//     campos[11].value = '';
     
-    campos[0].focus();
-});
+//     campos[0].focus();
+// });
