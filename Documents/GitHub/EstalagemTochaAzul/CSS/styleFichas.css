@@ -5,26 +5,17 @@
 @import url("../CSS/styleFichaCHK.css");
 
 :root {
-    /*Tema Escuro*/
-    --fundo-TE: #282424;
-    --fundo-ficha-TE: #363636;
-    --fundo-botão-TE: #363636;
-    --fundo-botão-borda-TE: #232323;
-    --fundo-botão-texto-TE: #FFF;
-    --text-color-TE: #FFF;
-    /*Tema Claro*/
-    --fundo-TC: #EBEBEB;
-    --fundo-ficha-TC: #C0C0C0;
-    --fundo-botão-TC: #FFF;
-    --fundo-botão-borda-TC: #232323;
-    --fundo-botão-texto-TC: #000;
-    --text-color-TC: #000;
+    --fundo: #282424;
+    --fundo-ficha: #363636;
+    --fundo-botão: #363636;
+    --fundo-botão-borda: #232323;
+    --fundo-botão-texto: #FFF;
+    --text-color: #FFF;
     /*Others*/
     --fundo-botão: #0A52BD;
     --texto-botão: #FFF;
     --cabecalho-azul: #3272D1;
     --rodape-azul-escuro: #0A52BD;
-    --sol: #EEB522;
     --lua: #AEA5A5;
     --transparente: transparent;
     /*Moedas*/
@@ -38,14 +29,15 @@
 
 /*---------------------------------------------------------------------------*/
 
-/* @font-face {
+@font-face {
     font-family: t20;
     src: url(../FONTS/Tormenta20x.ttf)
-} */
+}
 
 body {
-    background-color: var(--fundo-TC);
-    font-family: 'Alegreya sans', sans-serif;
+    background-color: var(--fundo);
+    font-family: 't20', cursive;
+    /* font-family: 'Righteous', cursive; */
     
     align-items: center;
     box-sizing: border-box;
@@ -67,6 +59,51 @@ main {
     width: 100%
 }
 
+/* Accordion */
+
+.accordion {
+    background-color: var(--fundo-ficha);
+    border: 1px solid var(--fundo-botão-borda);
+    color: var(--text-color);
+    
+    cursor: pointer;
+    outline: none;
+    padding: 18px;
+    transition: 0.4s;
+    text-align: center;
+    width: 100%;
+}
+
+.accordion:after {
+    color: var(--prateado-moeda);
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .accordion:hover {
+    background-color: var(--prateado-borda);
+}
+
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion__panel {
+    padding: 0 18px;
+    background-color: var(--fundo-ficha);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
 .menuSuspenso {
     display: grid;
     justify-items: center;
@@ -75,10 +112,12 @@ main {
     padding: 2rem 1rem 1rem 1rem;
 }
 
-.menuSuspenso__modal {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
+.menuSuspenso__content {
+    border-radius: 4px;
+    max-width: 70%;
+    padding: 1em 2em;
+    position: relative;
+    width: 500px;
 }
 
 .menuSuspenso__div {
@@ -96,61 +135,41 @@ main {
 }
 
 .menuSuspenso__div-select {
-    background-color: var(--fundo-botão-borda-TE);
-    color: var(--fundo-botão-texto-TE);
+    background-color: var(--fundo-botão-borda);
+    color: var(--fundo-botão-texto);
     
     border-radius: 5px;
+    text-align: center;
     width: 150px;
-    
-    text-align-last: center;
+    vertical-align: middle;
 }
 
 option  {
-    background-color: var(--fundo-botão-borda-TE);
-    color: var(--fundo-botão-texto-TE);
+    background-color: var(--fundo-botão-borda);
+    color: var(--fundo-botão-texto);
     
     border-radius: 50px;
-}
-
-.modal {
-    background-color: var(--fundo-ficha-TE);
-
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-
-    left: 0;
-    top: 0;
-    z-index: 1;
-
-    margin: auto;
-    padding: 20px;
-    border-radius: 5px;
-
-    width: 100%;
-    height: 100%;
 }
 
 .menuSuspenso__div-btn {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-
+    
     padding: 1rem;
 }
 
 .btn {
     background-color: var(--fundo-botão);
-    border-color: var(--fundo-botão-texto-TC);
+    border-color: var(--fundo-botão-texto);
     border-radius: 5px;
     color: var(--texto-botão);
-
+    
     align-items: center;
     cursor: pointer;
     display: flex;
     justify-content: center;
-
+    
     height: 50px;
     width: 100px;
 }
@@ -160,8 +179,8 @@ option  {
 }
 
 .resumoFicha {
-    background-color: var(--fundo-ficha-TE);
-    color: var(--text-color-TE);
+    background-color: var(--fundo-ficha);
+    color: var(--text-color);
     
     display: flex;
     flex-direction: column;
@@ -171,7 +190,7 @@ option  {
 }
 
 .resumoFicha__part1 {
-    border-bottom: 1px solid var(--text-color-TE);
+    border-bottom: 1px solid var(--text-color);
     
     display: flex;
     flex-direction: row;
@@ -191,8 +210,8 @@ option  {
 }
 
 #nomePersonagem {
-    background-color: var(--fundo-ficha-TE);
-    color: var(--text-color-TE);
+    background-color: var(--fundo-ficha);
+    color: var(--text-color);
     font-size: 50px;
 }
 
@@ -219,7 +238,7 @@ option  {
 }
 
 .resumoFicha__attributes-case {
-    border: 2px solid var(--text-color-TE);
+    border: 2px solid var(--text-color);
     border-radius: 5px;
     
     align-items: center;
@@ -254,7 +273,7 @@ option  {
 }
 
 .resumoFicha__part2 {
-    border-bottom: 1px solid var(--text-color-TE);
+    border-bottom: 1px solid var(--text-color);
     
     display: flex;
     flex-direction: row;
@@ -266,7 +285,7 @@ option  {
 }
 
 .resumoFicha__case {
-    border: 2px solid var(--text-color-TE);
+    border: 2px solid var(--text-color);
     border-radius: 5px;
     
     align-items: center;
@@ -290,8 +309,8 @@ option  {
 }
 
 .modAtribute {
-    color: var(--fundo-botão-texto-TE);
-
+    color: var(--fundo-botão-texto);
+    
     height: 70%;
     width: 100%;
     
@@ -303,8 +322,8 @@ option  {
 }
 
 .resumoFicha__part2-mods {
-    background-color: var(--fundo-botão-TE);
-    color: var(--fundo-botão-texto-TE);
+    background-color: var(--fundo-botão);
+    color: var(--fundo-botão-texto);
     
     border-radius: 50px;
     width: 15px;
@@ -313,8 +332,8 @@ option  {
 }
 
 .resumoFicha__case input {
-    background-color: var(--fundo-ficha-TE);
-    border: 2px solid var(--text-color-TE);
+    background-color: var(--fundo-ficha);
+    border: 2px solid var(--text-color);
     border-radius: 50px;
     
     display: flex;
@@ -341,7 +360,7 @@ option  {
     background-color: var(--transparente);
 }
 
-.resumoFicha__powers-atk {}
+/* .resumoFicha__powers-atk {}
 
 .resumoFicha__powers-armor {}
 
@@ -365,7 +384,7 @@ option  {
 
 .resumoFicha__powers-tibarSilver {}
 
-.resumoFicha__powers-tibarBronze {}
+.resumoFicha__powers-tibarBronze {} */
 
 /* --------------- 3ª Parte - Perícias --------------- */
 
@@ -379,7 +398,7 @@ option  {
 
 .resumoFicha__pericias-casePrincipal {
     background-color: var(--cabecalho-azul);
-    color: var(--text-color-TE);
+    color: var(--text-color);
     
     display: grid;
     grid-template-columns: .25fr 1fr .5fr 1.5fr;
@@ -401,8 +420,8 @@ option  {
 }
 
 .resumoFicha__pericias-bonuses {
-    background-color: var(--fundo-botão-borda-TE);
-    color: var(--fundo-botão-texto-TE);
+    background-color: var(--fundo-botão-borda);
+    color: var(--fundo-botão-texto);
     border-radius: 5px;
     text-align: center;
     

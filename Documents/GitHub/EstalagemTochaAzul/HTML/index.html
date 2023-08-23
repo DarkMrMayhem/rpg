@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/style.css">
     <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
-    <script src="../JS/controllers/darkmode.js" defer></script>
     <title>Estalagem da Tocha Azul</title>
 </head>
 
@@ -26,13 +25,14 @@
             <a class="navbar__links-item" href="./changelog.html">Changelog</a>
             <a class="navbar__links-item" href="./about.html">Sobre Nós</a>
         </div>
-        <div class="navbar__chk">
-            <input type="checkbox" class="checkbox" id="chk"/>
-            <label class="label" for="chk">
-                <i class="fas fa-moon"></i>
-                <i class="fas fa-sun"></i>
-            </label>
-        </div>
+        <span class="navbar__chk_text" data-tooltip-bottom="Este botão é devoto de Tenebra e se recusa a ativar o modo claro!">
+            <div class="navbar__chk">
+                <input type="checkbox" class="checkbox" id="chk"/>
+                <label class="label" for="chk">
+                    <i class="fas fa-moon"></i>
+                </label>
+            </div>
+        </span>
     </header>
     <main>
         <section class="corpo">
@@ -60,12 +60,11 @@
         <section class="imagem">
             <img class="imagem__ficha" src="../IMG/Renner com Perspectiva.png" alt="img de uma ficha de Tormenta20">
         </section>
-    </section>
-</main>
-<footer class="rodape">
-    <p class="rodape__text"><b style="font-weight: bold;">Tormenta20</b> é um produto da Jambô Editora e seus respectivos criadores, todos os direitos reservados.</p>
-    <p class="rodape__text"><a class="rodape__link" href="https://jamboeditora.com.br/" target="_blank">https://jamboeditora.com.br/</a></p>
-    <p class="rodape__text">Este é um projeto de fãs e não possui fins lucrativos</p>
-</footer>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__text"><b style="font-weight: bold;">Tormenta20</b> é um produto da Jambô Editora e seus respectivos criadores, todos os direitos reservados.</p>
+        <p class="rodape__text"><a class="rodape__link" href="https://jamboeditora.com.br/" target="_blank">https://jamboeditora.com.br/</a></p>
+        <p class="rodape__text">Este é um projeto de fãs e não possui fins lucrativos</p>
+    </footer>
 </body>
 </html>

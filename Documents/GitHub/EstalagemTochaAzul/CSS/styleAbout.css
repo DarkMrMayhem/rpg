@@ -1,30 +1,21 @@
 /*Import de todas paginas*/
 @import url("../CSS/navbar.css");
-@import url("../CSS/footer.css");
+@import url("../CSS/footerAbout.css");
 /*Import do About*/
 @import url("../CSS/presentationAbout.css");
 @import url("../CSS/buttonDiscordAbout.css");
 
 :root {
-    /*Tema Escuro*/
-    --fundo-TE: #282424;
-    --fundo-ficha-TE: #363636;
-    --fundo-botão-TE: #363636;
-    --fundo-botão-borda-TE: #232323;
-    --fundo-botão-texto-TE: #FFF;
-    --text-color-TE: #FFF;
-    /*Tema Claro*/
-    --fundo-TC: #EBEBEB;
-    --fundo-ficha-TC: #C0C0C0;
-    --fundo-botão-TC: #FFF;
-    --fundo-botão-borda-TC: #232323;
-    --fundo-botão-texto-TC: #000;
-    --text-color-TC: #000;
+    --fundo: #282424;
+    --fundo-ficha: #363636;
+    --fundo-botão: #363636;
+    --fundo-botão-borda: #232323;
+    --fundo-botão-texto: #FFF;
+    --text-color: #FFF;
     /*Others*/
     --fundo-banner: #363636;
     --cabecalho-azul: #3272D1;
     --rodape-azul-escuro: #0A52BD;
-    --sol: #EEB522;
     --lua: #AEA5A5;
     --transparente: transparent;
     /*Cores First 8*/
@@ -48,7 +39,7 @@
 /*---------------------------------------------------------------------------*/
 
 body {
-    background-color: var(--fundo-TC);
+    background-color: var(--fundo);
     font-family: 'Alegreya Sans', sans-serif;
     
     align-items: center;

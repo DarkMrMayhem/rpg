@@ -16,7 +16,7 @@
 }
 
 .db__bt {
-    background-color: var(--fundo-ficha-TC);
+    background-color: var(--fundo-ficha);
     border: solid 0.16rem var(--rodape-azul-escuro);
     color: var(--text-color-TC);
     

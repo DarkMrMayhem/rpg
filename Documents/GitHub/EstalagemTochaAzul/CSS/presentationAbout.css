@@ -12,7 +12,7 @@
 }
 
 .about__section-title {
-    color: var(--text-color-TE);
+    color: var(--text-color);
 
     font-size: 1.8rem;
     font-weight: bold;
@@ -20,7 +20,7 @@
 }
 
 .about__section-text {
-    color: var(--text-color-TE);
+    color: var(--text-color);
 
     line-height: 1.2rem;
     margin-top: 1rem;
@@ -43,11 +43,11 @@
 
 .about__table {
     background-color: var(--transparente);
-    color: var(--text-color-TE);
+    color: var(--text-color);
 }
 
 .about__table-cabecalho {
-    color: var(--text-color-TE);
+    color: var(--text-color);
 
     border-bottom: 1px solid;
 }

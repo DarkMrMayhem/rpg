@@ -8,6 +8,9 @@
     justify-content: space-around;
     padding: 1rem 0;
     width: 100%;
+
+    position: absolute;
+    bottom: 0;
 }
 
 .rodape__text {
