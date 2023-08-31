@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700&family=Righteous&display=swap">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/styleFichas.css">
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>    
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
     <title>Database da Estalagem da Tocha Azul</title>
 </head>
 
@@ -37,7 +37,7 @@
     
     <main>        
         <form class="menuSuspenso" onsubmit="submeter(); fichaControl.adiciona(event)">
-            <div>
+            <div class="menuSuspenso__columns">
                 <button class="accordion">Nível, Atributos, Raça e Classe</button>
                 <div class="accordion__panel">        
                     <div class="menuSuspenso__div">
@@ -246,7 +246,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="menuSuspenso__columns">
                 <button class="accordion">Origem, Devoção, Perícias e Poderes</button>
                 <div class="accordion__panel">
                     <div class="menuSuspenso__div">
@@ -303,7 +303,7 @@
                     </div>
                     
                     <div class="menuSuspenso__div">
-                        <label for="generalPower" multiple="true">Escolha seus Poderes Gerais:</label>
+                        <label for="generalPower" multiple="true">Escolha seus Poderes:</label>
                         <select class="menuSuspenso__div-select" name="menuSuspenso__criaFicha" id="generalPower">
                             <!-- T20 -->
                             <option value=""></option>
@@ -323,7 +323,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="menuSuspenso__columns">
                 <button class="accordion">Equipamento, Magia, Distinção e Desvantagem</button>
                 <div class="accordion__panel">
                     <div class="menuSuspenso__div">
