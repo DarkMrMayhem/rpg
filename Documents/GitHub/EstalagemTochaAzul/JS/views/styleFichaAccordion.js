@@ -20,11 +20,5 @@ for (i = 0; i < acc.length; i++) {
         } else {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
-
-        if (panel.style.padding) {
-            panel.style.paddingTop = 15 + "px";
-        } else {
-            panel.style.maxHeight = panel.scrollHeight + "px";
-        }
     });
 }

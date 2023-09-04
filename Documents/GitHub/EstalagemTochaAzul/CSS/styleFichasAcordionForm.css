@@ -1,0 +1,120 @@
+/* Accordion */
+
+.accordion {
+    background-color: var(--fundo-ficha);
+    color: var(--text-color);
+    
+    cursor: pointer;
+    outline: none;
+    padding: 18px;
+    transition: 0.4s;
+    text-align: center;
+    width: 420px;
+}
+
+.accordion:after {
+    color: var(--prateado-moeda);
+    content: '\02795'; /* Unicode for (+) */
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+}
+
+/* Background Color  mais claro ao passar o mouse por cima ou ao estar aberto */
+.active, 
+.accordion:hover {
+    background-color: var(--prateado-borda);
+}
+
+.active:after {
+    content: "\2796"; /* Unicode for (-) */
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.accordion__panel {
+    padding: 0 18px;
+    background-color: var(--fundo-ficha);
+    display: hidden;
+    overflow: hidden;
+    
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion__panel .active {
+    align-items: center;
+    vertical-align: middle;
+    margin: 0 auto;
+}
+
+/* --------------------------- */
+
+.menuSuspenso {
+    display: grid;
+    justify-items: center;
+    
+    grid-template-columns: 1fr 1fr 1fr;    
+    padding: 1rem;
+}
+
+.menuSuspenso__columns {
+    padding: auto;
+}
+
+.menuSuspenso__div {
+    background-color: var(--fundo-botão);
+    color: var(--texto-botão);
+    
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Isso aqui ta certo */
+    margin-bottom: 1rem;
+    padding: .5rem .5rem;
+    width: 95%;
+}
+
+.menuSuspenso__div-select {
+    background-color: var(--fundo-botão-borda);
+    color: var(--fundo-botão-texto);
+    
+    border-radius: 5px;
+    text-align: center;
+    width: 150px;
+    vertical-align: middle;
+}
+
+option  {
+    background-color: var(--fundo-botão-borda);
+    color: var(--fundo-botão-texto);
+    
+    border-radius: 50px;
+}
+
+.menuSuspenso__div-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+    margin: 10px;
+}
+
+.btn {
+    background-color: var(--fundo-botão);
+    border-color: var(--fundo-botão-texto);
+    border-radius: 5px;
+    color: var(--texto-botão);
+    
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    
+    height: 50px;
+    width: 100px;
+}
+
+.btn-gerarFicha {
+    margin-left: 1rem;
+}

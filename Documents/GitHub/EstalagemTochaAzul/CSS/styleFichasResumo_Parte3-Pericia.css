@@ -1,0 +1,84 @@
+/* --------------- 3ª Parte - Perícias --------------- */
+
+.resumoFicha__pericias {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+    width: 40%;
+}
+
+.resumoFicha__pericias-casePrincipal {
+    background-color: var(--cabecalho-azul);
+    color: var(--text-color);
+    
+    display: grid;
+    grid-template-columns: .25fr 1fr .5fr 1.5fr;
+    padding: 1rem 0;
+    
+    border-left: 1px solid var(--cabecalho-azul);
+    border-right: 1px solid var(--cabecalho-azul);
+}
+
+.resumoFicha__pericias-case {
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: .25fr 1fr .5fr 1.5fr;
+    
+    border-bottom: 1px solid;
+    
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.resumoFicha__pericias-bonuses {
+    background-color: var(--fundo-botão-borda);
+    color: var(--fundo-botão-texto);
+    border-radius: 5px;
+    text-align: center;
+    
+    width: 20px;
+}
+
+.resumoFicha__pericias-casePrincipal_pt0,
+.resumoFicha__pericias-casePrincipal_pt1,
+.resumoFicha__pericias-casePrincipal_pt2,
+.resumoFicha__pericias-casePrincipal_pt3 {
+    display: flex;
+    justify-content: center;
+    
+    height: 1rem;
+    width: 100%;
+}
+
+.resumoFicha__pericias_pt0,
+.resumoFicha__pericias_pt1,
+.resumoFicha__pericias_pt2,
+.resumoFicha__pericias_pt3 {
+    display: flex;
+    justify-content: center;
+    
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.resumoFicha__pericias_pt0 {
+    vertical-align: middle;
+}
+
+.resumoFicha__pericias_pt1 {
+    font-size: small;
+    justify-content: left;
+}
+
+.resumoFicha__pericias_pt2 {
+    border-right: 2px solid;
+}
+
+.resumoFicha__pericias_pt3 {
+    justify-content: space-evenly;
+}
+
+.resumoFicha__pericias-casePrincipal_pt3 {
+    font-size: small;
+}

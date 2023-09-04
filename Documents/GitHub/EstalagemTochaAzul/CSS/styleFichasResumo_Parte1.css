@@ -1,0 +1,82 @@
+.resumoFicha__part1 {
+    border-bottom: 1px solid var(--text-color);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+}
+
+.resumoFicha__resumo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    
+    width: 30%;
+}
+
+#nomePersonagem {
+    background-color: var(--fundo-ficha);
+    color: var(--text-color);
+    font-size: 50px;
+}
+
+.resumoFicha__resumo-p1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.resumoFicha__resumo-p1 p {
+    margin-right: 20px;
+}
+
+.resumoFicha__resumo-p2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.resumoFicha__attributes {    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    width: 50%;
+}
+
+.resumoFicha__attributes-case {
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    margin-left: 10px;
+    
+    height: 100%;
+    width: 96px;
+}
+
+.resumoFicha__attributes-case h3 {
+    font-size: 20px;
+    height: 30%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumoFicha__attributes-case p {
+    height: 70%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

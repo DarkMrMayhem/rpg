@@ -1,0 +1,71 @@
+.resumoFicha__part2 {
+    border-bottom: 1px solid var(--text-color);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+    
+    padding-bottom: 1.5rem;
+}
+
+.resumoFicha__case {
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 96px;
+    width: 96px;
+}
+
+.resumoFicha__case h3 {
+    font-size: 20px;
+    height: 30%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modAtribute {
+    color: var(--fundo-botão-texto);
+    
+    height: 70%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 36px;
+}
+
+.resumoFicha__part2-mods {
+    background-color: var(--fundo-botão);
+    color: var(--fundo-botão-texto);
+    
+    border-radius: 50px;
+    width: 15px;
+    
+    text-align-last: center;
+}
+
+.resumoFicha__case input {
+    background-color: var(--fundo-ficha);
+    border: 2px solid var(--text-color);
+    border-radius: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: -15px;
+    padding: 3px;
+}

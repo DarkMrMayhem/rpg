@@ -1,0 +1,128 @@
+/* --------------- 3ª Parte --------------- */
+
+.resumoFicha__part3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+}
+
+/* --------------- 3ª Parte - Poderes --------------- */
+
+.resumoFicha__powers-atk,
+.resumoFicha__powers-armor,
+.resumoFicha__powers-power,
+.resumoFicha__powers-cd,
+.resumoFicha__powers-spell,
+.resumoFicha__powers-others,
+.resumoFicha__powers-notes,
+.resumoFicha__powers-equips,
+.resumoFicha__powers-weight,
+.resumoFicha__powers-tibar {
+    border: 1px solid var(--fundo-botão-texto);
+    border-radius: 5px;
+    
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    width: 100%;
+}
+
+.resumoFicha__powers{
+    background-color: var(--transparente);
+    
+    display: flex;
+    flex-direction: column;
+    width: 58%;
+}
+
+.resumoFicha__powers-cabecalho {
+    border-bottom: 2px solid var(--fundo-botão-texto);
+}
+
+/* --------------- 3ª Parte - Ataque --------------- */
+
+.powers-atk__cabecalho {
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr);
+    justify-items: center;
+    
+    width: 100%;
+}
+
+.powers-atk__linhas {
+    display: grid;
+    grid-template-columns: 2fr repeat(5, 1fr);
+    justify-items: center;
+
+    
+    width: 100%;
+}
+
+/* --------------- 3ª Parte - Armor --------------- */
+
+/* .resumoFicha__powers-armor {
+    
+} */
+
+/* --------------- 3ª Parte - Poderes --------------- */
+
+/* .resumoFicha__powers-power {
+    
+} */
+
+/* --------------- 3ª Parte - CD --------------- */
+
+/* .resumoFicha__powers-cd {
+    
+} */
+
+/* --------------- 3ª Parte - Magias --------------- */
+
+/* .resumoFicha__powers-spell {
+    
+} */
+
+/* --------------- 3ª Parte - Outras Características --------------- */
+
+/* .resumoFicha__powers-others {
+    
+} */
+
+/* --------------- 3ª Parte - Notas --------------- */
+
+/* .resumoFicha__powers-notes {
+    
+} */
+
+/* --------------- 3ª Parte - Equipamentos --------------- */
+
+/* .resumoFicha__powers-equips {
+    
+} */
+
+/* --------------- 3ª Parte - Peso --------------- */
+
+/* .resumoFicha__powers-weight {
+    
+} */
+
+/* --------------- 3ª Parte - Dinheiro --------------- */
+
+/* .resumoFicha__powers-tibar {
+    
+} */
+
+/* .resumoFicha__powers-tibarGold {
+    
+} */
+
+/* .resumoFicha__powers-tibarSilver {
+    
+} */
+
+/* .resumoFicha__powers-tibarBronze {
+    
+} */
