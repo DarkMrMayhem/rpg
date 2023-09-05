@@ -9,6 +9,11 @@
 @import url("../CSS/styleFichasResumo_Parte3-Power.css");
 @import url("../CSS/styleFichasResumo_Parte3-Pericia.css");
 
+@font-face {
+    font-family: t20;
+    src: url(../FONTS/Tormenta20x.ttf)
+}
+
 :root {
     --fundo: #282424;
     --fundo-ficha: #363636;
@@ -34,15 +39,8 @@
 
 /*---------------------------------------------------------------------------*/
 
-@font-face {
-    font-family: t20;
-    src: url(../FONTS/Tormenta20x.ttf)
-}
-
 body {
     background-color: var(--fundo);
-    font-family: 't20', cursive;
-    /* font-family: 'Righteous', cursive; */
     
     align-items: center;
     box-sizing: border-box;

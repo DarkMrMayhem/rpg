@@ -1,5 +1,6 @@
 .resumoFicha__part1 {
     border-bottom: 1px solid var(--text-color);
+    font-family: 't20', cursive;
     
     display: flex;
     flex-direction: row;

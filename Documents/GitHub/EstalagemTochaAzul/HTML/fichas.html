@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@100;300;400;500;700&family=Righteous&display=swap">
     <link rel="stylesheet" href="../CSS/reset.css">
     <link rel="stylesheet" href="../CSS/styleFichas.css">
-    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script> <!-- Simbolo de Lua/Sol - Darkmode (está desativado) -->
     <title>Database da Estalagem da Tocha Azul</title>
 </head>
 
@@ -449,7 +449,6 @@
             </div>
         </div>
         
-        <!-- Aqui, os 'h4' serão inputs e os 'p' mostrarão o input convertido -->
         <div class="resumoFicha__part2">
             <div class="resumoFicha__case">
                 <h3>FOR</h3>
@@ -511,72 +510,92 @@
                         <p>-</p>
                     </div>
                 </div>
-                <div class="resumoFicha__powers-armor resumoFicha__powers-cabecalho">
-                    <div class="powers-armor__cabecalho">
+                <div class="resumoFicha__powers-armor">
+                    <div class="powers-armor__cabecalho resumoFicha__powers-cabecalho">
                         <h3>Armadura & Escudo</h3>
+                        <h4></h4>
+                        <h4></h4>
                         <h3>BD</h3>
                         <h3>PA</h3>
                         <h3>Tipo</h3>
                     </div>
                     <div class="powers-armor__linhas">
                         <p>Brunea</p>
+                        <h4></h4>
+                        <h4></h4>
                         <p>+5</p>
                         <p>-2</p>
                         <p>Pesado</p>
                     </div>
                     <div class="powers-armor__linhas">
                         <p>Escudo Leve</p>
+                        <h4></h4>
+                        <h4></h4>
                         <p>+1</p>
                         <p>-1</p>
                         <p>Leve</p>
                     </div>
                 </div>
-                <div class="resumoFicha__powers-power resumoFicha__powers-cabecalho">
-                    <div class="powers-power__cabecalho">
+                <div class="resumoFicha__powers-power">
+                    <div class="powers-power__cabecalho resumoFicha__powers-cabecalho">
                         <h3>Poderes</h3>
+                        <h4></h4>
+                        <h4></h4>
                         <h3>Tipo</h3>
                         <h3>Custo</h3>
-                        <h3>Execução</h3>
+                        <h3>Ação</h3>
                     </div>
                     <div class="powers-power__linhas">
                         <p>Fúria</p>
+                        <h4></h4>
+                        <h4></h4>
                         <p>Classe</p>
                         <p>-</p>
-                        <p>Ação Livre</p>
+                        <p>Livre</p>
                     </div>
                     <div class="powers-power__linhas">
                         <p>Ataque Especial</p>
+                        <h4></h4>
+                        <h4></h4>
                         <p>Classe</p>
                         <p>1 PM</p>
                         <p>Reação</p>
                     </div>
                     <div class="powers-power__linhas">
                         <p>Golpe Pessoal</p>
+                        <h4></h4>
+                        <h4></h4>
                         <p>Classe</p>
                         <p>4 PM</p>
-                        <p>Ação Padrão</p>
+                        <p>Padrão</p>
                     </div>
                     <div class="powers-power__linhas">
                         <p>Sortudo</p>
+                        <h4></h4>
+                        <h4></h4>
                         <p>Geral</p>
                         <p>3 PM</p>
                         <p>Reação</p>
                     </div>
                     <div class="powers-power__linhas">
                         <p>Surto Heróico</p>
+                        <h4></h4>
+                        <h4></h4>
                         <p>Geral</p>
                         <p>3 PM</p>
-                        <p>Ação Livre</p>
+                        <p>Livre</p>
                     </div>
                     <div class="powers-power__linhas">
                         <p>Ataque Furtivo</p>
+                        <h4></h4>
+                        <h4></h4>
                         <p>Classe</p>
                         <p>-</p>
-                        <p>Ação Livre</p>
+                        <p>Livre</p>
                     </div>
                 </div>
                 <div class="resumoFicha__powers-cd">
-                    <p>CD de Magias: 22 = 22 + <SELECT>
+                    <p>CD de Magias: 22 = 22 + <SELECT class="resumoFicha__powers-select">
                         <option value="resumoFicha__powers-cd__FOR">Força</option>
                         <option value="resumoFicha__powers-cd__DEX">Destreza</option>
                         <option value="resumoFicha__powers-cd__CON">Constituição</option>
@@ -585,88 +604,123 @@
                         <option value="resumoFicha__powers-cd__CAR">Carisma</option>
                     </SELECT></p>
                 </div>
-                <div class="resumoFicha__powers-spell resumoFicha__powers-cabecalho">
-                    <div class="powers-spell__cabecalho">
+                <div class="resumoFicha__powers-spell">
+                    <div class="powers-spell__cabecalho resumoFicha__powers-cabecalho">
                         <h3>Magias</h3>
+                        <h4></h4>
+                        <h4></h4>
                         <h3>Escola</h3>
+                        <h4></h4>
                         <h3>Ativação</h3>
                     </div>
                     <div class="powers-spell__linhas">
-                        <h3>1º Círculo (1 PM)</h3>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 1</p>
-                            <p>Abjuração</p>
-                            <p>Padrão</p>
-                        </div>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 2</p>
-                            <p>Ilusão</p>
-                            <p>Completa</p>
-                        </div>
+                        <h3 style="color: var(--cabecalho-azul);">1º Círculo (1 PM)</h3>
                     </div>
                     <div class="powers-spell__linhas">
+                        <p>Magia 1</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Abjuração</p>
+                        <h4></h4>
+                        <p>Padrão</p>
+                    </div>
+                    <div class="powers-spell__linhas">
+                        <p>Magia 2</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Ilusão</p>
+                        <h4></h4>
+                        <p>Completa</p>
+                    </div>
+                    <div class="powers-spell__linhas resumoFicha__spell-subcabecalho">
                         <h3>2º Círculo (3 PM)</h3>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 3</p>
-                            <p>Encantamento</p>
-                            <p>Movimento</p>
-                        </div>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 4</p>
-                            <p>Transmutação</p>
-                            <p>Reação</p>
-                        </div>
                     </div>
                     <div class="powers-spell__linhas">
+                        <p>Magia 3</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Encantamento</p>
+                        <h4></h4>
+                        <p>Movimento</p>
+                    </div>
+                    <div class="powers-spell__linhas">
+                        <p>Magia 4</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Transmutação</p>
+                        <h4></h4>
+                        <p>Reação</p>
+                    </div>
+                    <div class="powers-spell__linhas resumoFicha__spell-subcabecalho">
                         <h3>3º Círculo (6 PM)</h3>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 5</p>
-                            <p>Evocação</p>
-                            <p>Livre</p>
-                        </div>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 6</p>
-                            <p>Necromancia</p>
-                            <p>Movimento</p>
-                        </div>
                     </div>
                     <div class="powers-spell__linhas">
+                        <p>Magia 5</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Evocação</p>
+                        <h4></h4>
+                        <p>Livre</p>
+                    </div>
+                    <div class="powers-spell__linhas">
+                        <p>Magia 6</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Necromancia</p>
+                        <h4></h4>
+                        <p>Movimento</p>
+                    </div>
+                    <div class="powers-spell__linhas resumoFicha__spell-subcabecalho">
                         <h3>4º Círculo (10 PM)</h3>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 7</p>
-                            <p>Convocação</p>
-                            <p>Padrão</p>
-                        </div>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 8</p>
-                            <p>Adivinhação</p>
-                            <p>Completa</p>
-                        </div>
                     </div>
                     <div class="powers-spell__linhas">
+                        <p>Magia 7</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Convocação</p>
+                        <h4></h4>
+                        <p>Padrão</p>
+                    </div>
+                    <div class="powers-spell__linhas">
+                        <p>Magia 8</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Adivinhação</p>
+                        <h4></h4>
+                        <p>Completa</p>
+                    </div>
+                    <div class="powers-spell__linhas resumoFicha__spell-subcabecalho">
                         <h3>5º Círculo (15 PM)</h3>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 9</p>
-                            <p>Encantamento</p>
-                            <p>Movimento</p>
-                        </div>
-                        <div class="powers-spell__linhas-spells">
-                            <p>Magia 10</p>
-                            <p>Transmutação</p>
-                            <p>Completa</p>
-                        </div>
+                    </div>
+                    <div class="powers-spell__linhas">
+                        <p>Magia 9</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Encantamento</p>
+                        <h4></h4>
+                        <p>Movimento</p>
+                    </div>
+                    <div class="powers-spell__linhas">
+                        <p>Magia 10</p>
+                        <h4></h4>
+                        <h4></h4>
+                        <p>Transmutação</p>
+                        <h4></h4>
+                        <p>Completa</p>
                     </div>
                 </div>
-                <div class="resumoFicha__powers-others resumoFicha__powers-cabecalho">
-                    <label for="tamanho">Tamanho: </label>
-                    <select class="resumoFicha__powers-others__select"  name="select__others" id="tamanho">
-                        <option value="resumoFicha__powers-others__min">Minúsculo</option>
-                        <option value="resumoFicha__powers-others__peq">Pequeno</option>
-                        <option value="resumoFicha__powers-others__med">Médio</option>
-                        <option value="resumoFicha__powers-others__gra">Grande</option>
-                        <option value="resumoFicha__powers-others__eno">Enorme</option>
-                        <option value="resumoFicha__powers-others__col">Colossal</option>
-                    </select></p>
+                <div class="resumoFicha__powers-others">
+                    <div class="resumoFicha__powers-cabecalho">
+                        <label for="tamanho">Tamanho: </label>
+                        <select class="resumoFicha__powers-select" name="select__others" id="tamanho">
+                            <option value="resumoFicha__powers-others__min">Minúsculo</option>
+                            <option value="resumoFicha__powers-others__peq">Pequeno</option>
+                            <option value="resumoFicha__powers-others__med">Médio</option>
+                            <option value="resumoFicha__powers-others__gra">Grande</option>
+                            <option value="resumoFicha__powers-others__eno">Enorme</option>
+                            <option value="resumoFicha__powers-others__col">Colossal</option>
+                        </select></p>
+                    </div>
                     <p>Resistências: Fogo, Frio</p>
                     <p>Imunidades: Ácido, Veneno</p>
                     <p>Sentidos: Faro</p>
@@ -676,7 +730,7 @@
                     <p>Notas</p>
                     <input type="text">
                 </div>
-                <div class="resumoFicha__powers-equips resumoFicha__powers-cabecalho">
+                <div class="resumoFicha__powers-equips">
                     <div class="powers-atk__cabecalho resumoFicha__powers-cabecalho">
                         <h3>Equipamentos</h3>
                         <h3>Quantidade</h3>
