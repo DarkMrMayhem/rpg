@@ -1,4 +1,5 @@
-.resumoFicha__pericias-chk__container {
+.resumoFicha__pericias-chk__container,
+.resumoFicha__powers-chk__container {
     cursor: pointer;
     position: relative;
     margin: -20px;
@@ -8,7 +9,8 @@
     transform: translate3d(0, 0, 0);
 }
 
-.resumoFicha__pericias-chk__container:before {
+.resumoFicha__pericias-chk__container:before,
+.resumoFicha__powers-chk__container:before {
     content: "";
     position: relative;
     top: -15px;
@@ -21,7 +23,8 @@
     transition: opacity 0.2s ease;
 }
 
-.resumoFicha__pericias-chk__container svg {
+.resumoFicha__pericias-chk__container svg,
+.resumoFicha__powers-chk__container svg {
     position: relative;
     z-index: 1;
     fill: none;
@@ -33,21 +36,25 @@
     transition: all 0.2s ease;
 }
 
-.resumoFicha__pericias-chk__container svg path {
+.resumoFicha__pericias-chk__container svg path,
+.resumoFicha__powers-chk__container svg path {
     stroke-dasharray: 60;
     stroke-dashoffset: 0;
 }
 
-.resumoFicha__pericias-chk__container svg polyline {
+.resumoFicha__pericias-chk__container svg polyline,
+.resumoFicha__powers-chk__container svg polyline {
     stroke-dasharray: 22;
     stroke-dashoffset: 66;
 }
 
-.resumoFicha__pericias-chk__container:hover:before {
+.resumoFicha__pericias-chk__container:hover:before,
+.resumoFicha__powers-chk__container:hover:before {
     opacity: 1;
 }
 
-.resumoFicha__pericias-chk__container:hover svg {
+.resumoFicha__pericias-chk__container:hover svg,
+.resumoFicha__powers-chk__container:hover svg {
     stroke: var(--accent-color, #3272D1);
 }
 
@@ -510,6 +517,167 @@
 }
 
 #treino__vont:checked + .resumoFicha__pericias-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line1*/
+#vestido__line1:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line1:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line1:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line2*/
+#vestido__line2:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line2:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line2:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line3*/
+#vestido__line3:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line3:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line3:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line4*/
+#vestido__line4:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line4:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line4:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line5*/
+#vestido__line5:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line5:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line5:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line6*/
+#vestido__line6:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line6:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line6:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line7*/
+#vestido__line7:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line7:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line7:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line8*/
+#vestido__line8:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line8:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line8:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+/*vestido__line9*/
+#vestido__line9:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line9:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line9:checked + .resumoFicha__powers-chk__container svg polyline {
+    stroke-dashoffset: 42;
+    transition: all 0.2s linear;
+    transition-delay: 0.15s;
+}
+
+
+/*vestido__line10*/
+#vestido__line10:checked + .resumoFicha__powers-chk__container svg {
+    stroke: var(--accent-color, #3272D1);
+}
+
+#vestido__line10:checked + .resumoFicha__powers-chk__container svg path {
+    stroke-dashoffset: 60;
+    transition: all 0.3s linear;
+}
+
+#vestido__line10:checked + .resumoFicha__powers-chk__container svg polyline {
     stroke-dashoffset: 42;
     transition: all 0.2s linear;
     transition-delay: 0.15s;
