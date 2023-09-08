@@ -21,7 +21,7 @@
 }
 
 .resumoFicha__pericias-case {
-    align-items: baseline;
+    align-items: end;
     display: grid;
     grid-template-columns: .25fr 1fr .5fr 1.5fr;
     
@@ -57,13 +57,10 @@
 .resumoFicha__pericias_pt3 {
     display: flex;
     justify-content: center;
+    align-items: baseline;
     
-    margin: 1rem 0;
+    margin: .65rem 0;
     width: 100%;
-}
-
-.resumoFicha__pericias_pt0 {
-    vertical-align: middle;
 }
 
 .resumoFicha__pericias_pt1 {

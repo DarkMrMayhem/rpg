@@ -453,7 +453,7 @@
             <div class="resumoFicha__case">
                 <h3>FOR</h3>
                 <p class="modAtribute" id="modAtributeFOR">0</p>
-                <input onchange="atualizaMod('FOR', this.value)" class="resumoFicha__part2-mods" type="text" id="atributeFOR" name="atributeFOR" min="-2" max="99">
+                <input onchange="atualizaMod('FOR', this.value); alterarPesoAtual();" class="resumoFicha__part2-mods" type="text" id="atributeFOR" name="atributeFOR" min="-2" max="99">
             </div>
             <div class="resumoFicha__case">
                 <h3>DEX</h3>
@@ -765,218 +765,178 @@
                 <div class="resumoFicha__powers-equips">
                     <div class="powers-equip__cabecalho resumoFicha__powers-cabecalho">
                         <h3>Equipamentos</h3>
-                        <h4></h4>
-                        <h4></h4>
+                        <p></p>
+                        <p></p>
                         <h3>Quantidade</h3>
                         <h3>Espaço</h3>
                         <h3>Vestido</h3>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Saco de Dormir</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Saco de Dormir</h3>
+                        <p></p>
+                        <p></p>
                         <p>1</p>
                         <p>1</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line1" style="display: none;">
-                            <label for="vestido__line1" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line1" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line1">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Mochila</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Mochila</h3>
+                        <p></p>
+                        <p></p>
                         <p>1</p>
                         <p>1</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line2" style="display: none;">
-                            <label for="vestido__line2" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line2" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line2">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Traje de Viajante</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Traje de Viajante</h3>
+                        <p></p>
+                        <p></p>
                         <p>1</p>
                         <p>1</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line3" style="display: none;">
-                            <label for="vestido__line3" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line3" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line3">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Brunea</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Brunea</h3>
+                        <p></p>
+                        <p></p>
                         <p>1</p>
                         <p>2</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line4" style="display: none;">
-                            <label for="vestido__line4" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line4" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line4">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Escudo Leve</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Escudo Leve</h3>
+                        <p></p>
+                        <p></p>
                         <p>1</p>
                         <p>1</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line5" style="display: none;">
-                            <label for="vestido__line5" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line5" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line5">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Arco Longo</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Arco Longo</h3>
+                        <p></p>
+                        <p></p>
                         <p>1</p>
                         <p>2</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line6" style="display: none;">
-                            <label for="vestido__line6" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line6" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line6">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Machado Táurico</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Machado Táurico</h3>
+                        <p></p>
+                        <p></p>
                         <p>1</p>
                         <p>3</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line7" style="display: none;">
-                            <label for="vestido__line7" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line7" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line7">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Poção de Vida</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Poção de Vida</h3>
+                        <p></p>
+                        <p></p>
                         <p>10</p>
                         <p>5</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line8" style="display: none;">
-                            <label for="vestido__line8" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line8" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line8">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Poção de Mana</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Poção de Mana</h3>
+                        <p></p>
+                        <p></p>
                         <p>8</p>
                         <p>4</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line9" style="display: none;">
-                            <label for="vestido__line9" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line9" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line9">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
                     <div class="powers-equip__linhas">
-                        <p>Poção de Velocidade</p>
-                        <h4></h4>
-                        <h4></h4>
+                        <h3>Poção de Velocidade</h3>
+                        <p></p>
+                        <p></p>
                         <p>3</p>
                         <p>1.5</p>
-                        <div class="diminuidor_de_checkbox">
-                            <h4></h4>
-                            <input type="checkbox" class="resumoFicha__powers-chk" id="vestido__line10" style="display: none;">
-                            <label for="vestido__line10" class="resumoFicha__powers-chk__container">
-                                <svg viewBox="0 0 18 18">
-                                    <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
-                                    <polyline points="1 9 7 14 15 4"></polyline>
-                                </svg>
-                            </label>
-                            <h4></h4>
-                        </div>
+                        <input class="resumoFicha__powers-chk" id="vestido__line10" type="checkbox" style="display: none;">
+                        <label class="resumoFicha__powers-chk__container" for="vestido__line10">
+                            <svg viewBox="0 0 69 69">
+                                <path d="M 1 9 L 1 9 c 0 -5 3 -8 8 -8 L 9 1 C 14 1 17 5 17 9 L 17 9 c 0 4 -4 8 -8 8 L 9 17 C 5 17 1 14 1 9 L 1 9 Z"></path>
+                                <polyline points="1 9 7 14 15 4"></polyline>
+                            </svg>
+                        </label>
                     </div>
-                    <div class="powers-equip__rodape powers-equip__linhas">
+                    <div class="powers-equip__rodape">
                         <h3>Total</h3>
-                        <h4></h4>
-                        <h4></h4>
+                        <p></p>
+                        <p></p>
                         <h3>28</h3>
-                        <h3>21.5</h3>
-                        <h3></h3>
+                        <h3 id="pesoAtual">21.5</h3>
+                        <p></p>
                     </div>
                 </div>
                 <div class="resumoFicha__powers-weight">
-                    <!-- <p>barra de carga</p> -->
+                    <div class="resumoFicha__powers-weight__limite">12/24</div>
                 </div>
                 <div class="resumoFicha__powers-tibar">
                     <div class="resumoFicha__powers-tibarGold">
                         <img src="../IMG/SVG/coins-dourado.svg">
-                        <p>135</p>
+                        <input class="resumoFicha__powers-tibarGold__value" type="number" id="tibarGold__value" name="tibarGold__value" min="0" max="9999">
                         <p>TO</p>
                     </div>
                     <div class="resumoFicha__powers-tibarSilver">
                         <img src="../IMG/SVG/coins-prateado.svg">
-                        <p>357</p>
+                        <input class="resumoFicha__powers-tibarSilver__value" type="number" id="tibarSilver__value" name="tibarSilver__value" min="0" max="9999">
                         <p>T$</p>
                     </div>
                     <div class="resumoFicha__powers-tibarBronze">
                         <img src="../IMG/SVG/coins-bronze.svg">
-                        <p>579</p>
+                        <input class="resumoFicha__powers-tibarBronze__value" type="number" id="tibarBronze__value" name="tibarBronze__value" min="0" max="9999">
                         <p>TC</p>
                     </div>
                 </div>
@@ -1728,6 +1688,7 @@
 <script src="../JS/models/CriaFicha.js"></script>
 <script src="../JS/models/history.js"></script>
 <script src="../JS/controllers/FichaController.js"></script>
+<script src="../JS/controllers/weightController.js"></script>
 <script src="../JS/views/styleFichaAccordion.js"></script>
 <script>
     // let fichaControl = new FichaController();

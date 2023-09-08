@@ -2,7 +2,7 @@
 .resumoFicha__powers-chk__container {
     cursor: pointer;
     position: relative;
-    margin: -20px;
+    margin: -15px;
     width: 50%;
     height: auto;
     -webkit-tap-highlight-color: transparent;
@@ -34,6 +34,15 @@
     stroke-width: 1.5;
     transform: translate3d(0, 0, 0);
     transition: all 0.2s ease;
+}
+
+.resumoFicha__powers-chk__container {
+    margin: -40px;
+}
+
+.resumoFicha__powers-chk__container svg {
+    top: 2.4rem;
+    left: 6rem;
 }
 
 .resumoFicha__pericias-chk__container svg path,
