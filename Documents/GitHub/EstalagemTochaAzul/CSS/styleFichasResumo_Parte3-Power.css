@@ -315,13 +315,16 @@ option  {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.resumoFicha__powers-tibarGold {
+.resumoFicha__powers-tibarValues {
     border: 1px solid var(--fundo-botão-texto);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr .5fr;
+    justify-content: center;
+    padding: .5rem;
 }
 
-.resumoFicha__powers-tibarGold__value,
-.resumoFicha__powers-tibarSilver__value,
-.resumoFicha__powers-tibarBronze__value {
+.resumoFicha__powers-tibarNumber {
     background-color: var(--fundo-ficha);
     border: 2px solid var(--text-color);
     border-radius: 50px;
@@ -331,21 +334,15 @@ option  {
     align-items: center;
     
     margin-bottom: -15px;
-    padding: 3px;
+    padding: 1px;
+
+    height: 15px;
+    width: 90%;
 }
 
-.resumoFicha__powers-tibarSilver {
-    border: 1px solid var(--fundo-botão-texto);
-}
-
- {
-    
-}
-
-.resumoFicha__powers-tibarBronze {
-    border: 1px solid var(--fundo-botão-texto);
-}
-
-.resumoFicha__powers-tibarBronze__value {
-    
+.textTibar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
