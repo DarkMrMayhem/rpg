@@ -1,0 +1,129 @@
+/*Import de todas paginas*/
+@import url("../CSS/navbar.css");
+@import url("../CSS/footer.css");
+/*Import do Changelog*/
+/* @import url("../CSS/presentationAbout.css");
+@import url("../CSS/buttonDiscordAbout.css"); */
+
+@font-face {
+    font-family: t20;
+    src: url(../FONTS/Tormenta20x.ttf)
+}
+
+:root {
+    --fundo: #282424;
+    --fundo-ficha: #363636;
+    --fundo-botão: #363636;
+    --fundo-botão-borda: #232323;
+    --fundo-botão-texto: #FFF;
+    --text-color: #FFF;
+    /*Others*/
+    --fundo-banner: #363636;
+    --cabecalho-azul: #3272D1;
+    --rodape-azul-escuro: #0A52BD;
+    --lua: #AEA5A5;
+    --transparente: transparent;
+    /*Cores First 8*/
+    --cor-gado: #84519C;
+    --cor-lucas: #3288c2;
+    --cor-dark: #ee5108;
+    --cor-binho: #e4b400;
+    --cor-diego: #ca025c;
+    --cor-northeus: #25806a;
+    --cor-augusto: #ce3126;
+    --cor-ramom: #3f6d95;
+    /*Moedas*/
+    --dourado-moeda: #9A7311;
+    --dourado-borda: #6B4F09;
+    --prateado-moeda: #AEA5A5;
+    --prateado-borda: #686464;
+    --bronze-moeda: #BC6D24;
+    --bronze-borda: #964F0C;
+}
+
+/*---------------------------------------------------------------------------*/
+
+body {
+    background-color: var(--fundo);
+    font-family: 'Alegreya Sans', sans-serif;
+    
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    width: 100%;
+    
+    transition: background 0.2s linear;
+}
+
+/*Infos Gerais*/
+
+main {
+    display: flex;
+    flex-direction: row;
+
+    width: 100%;
+}
+
+.backChangelog {
+    background-color: var(--fundo-ficha);
+    color: var(--text-color);
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin: 0 2rem;
+    padding: 1rem 2rem;
+
+    width: 100%;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+
+    margin-block-start: .67em;
+    margin-block-end: .67em;
+}
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+
+    margin-block-start: .83em;
+    margin-block-end: .83em;
+}
+
+h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+}
+
+ul {
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;    
+}
+
+li {
+    display: list-item;
+}
+
+a {
+    color: var(--cabecalho-azul);
+}
+
+a:hover {
+    text-decoration: underline;
+}
