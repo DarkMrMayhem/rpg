@@ -1,0 +1,329 @@
+# Version: 0.1
+# 
+# "race":
+#   "T20":
+#       "Humano"
+#       "Anão"
+#       "Dahllan"
+#       "Elfo"
+#       "Goblin"
+#       "Lefou"
+#       "Minotauro"
+#       "Qareen"
+#       "Golem"
+#       "Hynne"
+#       "Kliren"
+#       "Medusa"
+#       "Osteon"
+#       "Sereia/tritão"
+#       "Sílfide"
+#       "Suraggel"
+#       "Trog"
+
+#   "Ghanor": 
+#       "Anão"
+#       "Elfo"
+#       "Gigante"
+#       "Hobgoblin"
+#       "Meio-Elfo"
+#       "Aberrante"
+
+#   "Homebrew": 
+#       "Felis"
+#       "Gigante"
+#       "Golem"
+#       "HalfElf"
+#       "Nagah"
+#       "Licantropo"
+#       "Vampiro"
+#       "Amorfático" 
+		
+#   "Povo-Trovão": 
+#       "Ceratops"
+#       "Pteros"
+#       "Velocis"
+#       "Voracis"
+	
+#   "Moreau": 
+#       "Búfalo"
+#       "Coelho"
+#       "Coruja"
+#       "Crocodilo"
+#       "Gato"
+#       "Hiena"
+#       "Leão"
+#       "Lobo"
+#       "Morcego"
+#       "Raposa"
+#       "Serpente"
+#       "Urso"
+	
+#   "Arym": 
+#       "Dampiro"
+#       "Draconato"
+#       "Aasimar"
+#       "Duplo"
+#       "Gnomo"
+#       "Harpia"
+#       "Kobold"
+#       "Herança do Camundongo"
+#       "Herança do Macaco"
+#       "Herança do Pato"
+#       "Herança da Tartaruga"
+#       "Oni"
+#       "Orc"
+#       "Meio-Elfo"
+    
+#   "Ameaças (0.4)":
+#       "Kaijin"
+#       "Kappa"
+#       "Mashin"
+#       "Nezumi"
+#       "Tengu"
+#       "Meio-Orc"
+#       "Orc"
+#       "Tabrachi"
+#       "Trog"
+#       "Trog Anão"
+#       "Ogro"
+#       "Bugbear"
+#       "Hobgoblin"
+#       "Gnoll"
+#       "Golem"
+#       "Kallyanach"
+#       "Minauro"
+#       "Harpia"
+
+
+
+
+
+
+
+
+"race":         (2411 linhas) | (79 Raças)
+"class":        (0 linhas)
+"origin":       (0 linhas)
+"devotion":     (0 linhas)
+"skill":        (0 linhas)
+"generalPower": (0 linhas)
+"equipment":    (0 linhas)
+"spells":       (0 linhas)
+"distinction":  (0 linhas)
+
+
+Nível
+Atributos
+Raça
+
+Classe
+    Poderes de Classe
+Origem
+    Poderes de Origem
+Devoção
+    Poderes de Devoção
+
+Distinção
+    Poderes de Devoção
+Perícias
+Poderes
+    Poderes Gerais
+Magia
+    Magias
+Equipamento
+    Equipamento
+Desvantagem
+    Poder de Desvantagem
+
+
+---------------------------------------------------------------------------------------------------------------
+{
+		"origin":
+		[
+			{
+				"className": "-",
+				"raceAbilities": 
+				[
+					{
+						"abilitiesName": "Atributos",
+						"abilitiesDescription": "+1 em Três Atributos Diferentes"
+					},
+					{
+						"abilitiesName": "Versátil",
+						"abilitiesDescription": "Você se torna treinado em duas perícias a sua escolha (não precisam ser da sua classe). Você pode trocar uma dessas perícias por um poder geral a sua escolha."
+					}
+				]
+			}
+		]
+	}
+---------------------------------------------------------------------------------------------------------------
+
+
+
+--------------| Modelo de Sintaxe
+
+Raça:
+
+[
+  {
+    "race":
+    [
+      {
+        "raceName": "Nome",
+        "raceAbilities":
+        [
+          {
+            "raceAbilitiesName": "Nome",
+            "raceAbilitiesDescription": "Habilidade",
+            "raceAbilitiesOptions": //(Opcional)
+            [
+              {  
+                "raceAbilitiesOptionsName": "Nome",
+                "raceAbilitiesOptionsDescription": "Habilidade"    
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
+
+  Classe: 
+
+[
+  {
+    "class":
+    [
+      {
+        "className": "Arcanista",
+        "classCharacteristics": 
+        [
+          {
+            "classCharacteristicsInitialPV": 8, 
+            "classCharacteristicsLevelPV": 2,
+            "classCharacteristicsPM": 6,
+            "classCharacteristicsSkills": "Misticismo, Vontade",
+            "classCharacteristicsSkillsOptions": 
+            [
+              {
+                "classCharacteristicsSkillsOptionsQty": 2,
+                "classCharacteristicsSkillsOptions": "Conhecimento, Diplomacia, Enganação, Guerra, Iniciativa, Intimidação, Intuição, Investigação, Nobreza, Ofício, Percepção"
+              }
+            ],
+            "classCharacteristicsProficiency": "Nenhuma" 
+          }
+        ],
+        [
+        "classAbilities":
+        [
+          {
+            "classAbilitiesLevelRequire": 1,
+            "classAbilitiesName": "Caminho do Arcanista",
+            "classAbilitiesDescription": "Description",
+            "classAbilitiesOptions": 
+            [
+              {
+                "classAbilitiesOptionsName": "Bruxo",
+                "classAbilitiesOptionsDescription": "Description"
+              },
+              {
+                "classAbilitiesOptionsName": "Feiticeiro",
+                "classAbilitiesOptionsDescription": "Description"
+              },
+              {
+                "classAbilitiesOptionsName": "Mago",
+                "classAbilitiesOptionsDescription": "Description"
+              }
+            ]
+          },
+        ]
+      }
+    ]
+  }
+]
+
+
+
+
+[{ "indice1": "valor1", "indice2": "valor2" }]
+
+Sempre que tiver mais de 1 valor dentro de um indice, precisa abrir [colchetes] e {chaves} -> [{}]
+indices/valores multiplos são separados por virgula.
+
+String precisa estar entre aspas | Number não
+
+
+
+
+
+
+
+
+
+
+
+
+
+Botoes usado:
+Discord: https://uiverse.io/kamehame-ha/dull-dog-37
+Glitch: https://uiverse.io/212004ALJI/fat-eagle-24
+
+
+
+
+
+
+
+
+
+
+
+
+
+Nível (1 - 20)
+Atributos 
+  [ 4, 4, -1, -1, -1, -1 ] -> 4
+  [ 4, 3,  0,  0,  0, -1 ] -> 6
+  [ 4, 2,  2,  0,  0, -1 ] -> 7
+  [ 4, 2,  1,  0,  0,  0 ] -> 7
+  [ 3, 3,  3,  0, -1, -1 ] -> 7
+  [ 3, 2,  2,  1,  0, -1 ] -> 7
+  [ 3, 3,  2,  0,  0,  0 ] -> 8
+Raça (1 - 79)
+Classe (1 - xx)
+Origem (1 - xx)
+Devoção (1 - 2x)
+Perícia (1 - 29)
+Poder Geral (1 - xx)
+  Combate
+  Destino
+  Magia
+  Concedido
+  Tormenta
+  Nativo
+Equipamento (1 - xx)
+  Arma
+    Arma Simples
+    Arma Marcial
+    Arma Exótica
+    Arma de Fogo
+  Armadura
+    Armadura Leve
+    Armadura Pesada
+    Escudo Leve
+    Escudo Pesado
+  Esotérico
+  Item
+Magia (1 - xx)
+  1º Circulo
+  2º Circulo
+  3º Circulo
+  4º Circulo
+  5º Circulo
+Distinção (1 - xx)
+Desvantagem (1 - xx)
+
+
+
+<option value=""></option>

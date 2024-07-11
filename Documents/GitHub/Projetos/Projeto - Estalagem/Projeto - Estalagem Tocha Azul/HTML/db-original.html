@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="../CSS/reset.css">
+    <link rel="stylesheet" href="../CSS/styleDB.css">
+    <script src="https://kit.fontawesome.com/998c60ef77.js" crossorigin="anonymous"></script>    
+    <script src="../JS/darkmode.js" defer></script>
+    <script src="../JS/dbscript.js" defer></script>
+    <title>Database da Estalagem da Tocha Azul</title>
+</head>
+
+<body>
+    <header class="navbar">
+        <img class="navbar__logo" src="../IMG/Logo_Disc_Menor.png" alt="logo da masmorra da tocha azul">
+        <div class="navbar__links">
+            <a class="navbar__links-item" href="./index.html">Início</a>
+            <a class="navbar__links-item" href="./fichas.html">Fichas</a>
+            <a class="navbar__links-item" href="./db-original.html">Database</a>
+            <a class="navbar__links-item" href="./db-homebrew.html">Homebrew</a>
+            <a class="navbar__links-item" href="./changelog.html">Changelog</a>
+            <a class="navbar__links-item" href="./about.html">Sobre Nós</a>
+        </div>
+        <div class="navbar__chk">
+            <input type="checkbox" class="checkbox" id="chk"/>
+            <label class="label" for="chk">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </label>
+        </div>
+    </header>
+    <main>
+        <div class="db__botoes">
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/raças.png" alt="Raças" />
+                    <h2>Raças</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/classes.png" alt="Classes" />
+                    <h2>Classes</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/origens.png" alt="Origens" />
+                    <h2>Origens</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/devoções.png" alt="Devoções" />
+                    <h2>Devoções</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/distinções.png" alt="Distinções" />
+                    <h2>Distinções</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/pericia.png" alt="Perícias" />
+                    <h2>Perícias</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/poderGeral.png" alt="Poderes Gerais" />
+                    <h2>Poderes Gerais</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/magias.png" alt="Magias" />
+                    <h2>Magias</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/equipamentos.png" alt="Equipamentos" />
+                    <h2>Equipamentos</h2>
+                </article>
+            </button>
+            <button type="button" onclick="window.open('#', '_self')">
+                <article class="db__bt">
+                    <img src="../IMG/icons-db/desvantagem.png" alt="Desvantagens" />
+                    <h2>Desvantagens</h2>
+                </article>
+            </button>
+        </div>
+        <div class="db__descrições">
+            <table>
+                <thead>
+                    <!--
+                        Aqui vai ter o nome do botão e uma pesquisa
+                        
+                        [ ] Raças               [ ]
+                        [ ] Input de Pesuisa(?) [ ]
+                    -->
+                    <tr>
+                        <th></th>
+                        <th>
+                            <h1>Table</h1>
+                        </th>
+                        <th></th>
+                    </tr>
+                    <tr>
+                        <th></th>
+                        <th>
+                            <div>
+                                <div>
+                                    <label for=""></label>
+                                </div>
+                                <div>
+                                    <svg class="" data-testid="HelpOutlineIcon"></svg>
+                                </div>
+                            </div>
+                        </th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--
+                        Aqui vai ter X <tr>, onde X é o numero de retornos que o botão der
+                        Raça: 79
+                        Classe: ??
+                        Origem: ??
+                        Devoção: ??
+                        Distinção: ??
+                        Pericia: ??
+                        Poder Geral: ??
+                        Magia: ??
+                        Equipamento: ??
+                        Desvantagem: ??
+                    -->
+                </tbody>
+            </table>
+            
+        </div>
+    </main>
+    <footer class="rodape">
+        <p class="rodape__text"><b class="strong">Tormenta20</b> é um produto da Jambô Editora e seus respectivos criadores, todos os direitos reservados.</p>
+        <p class="rodape__text"><a class="rodape__link" href="https://jamboeditora.com.br/" target="_blank">https://jamboeditora.com.br/</a></p>
+        <p class="rodape__text">Este é um projeto de fãs e não possui fins lucrativos</p>
+    </footer>
+</body>
+</html>
+
+
+
+<!-- HelpOutlineIcon -->

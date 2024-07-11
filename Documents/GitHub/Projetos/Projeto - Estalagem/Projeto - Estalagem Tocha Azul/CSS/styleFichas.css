@@ -1,0 +1,401 @@
+/*Import de todas paginas*/
+@import url("../CSS/navbar.css");
+@import url("../CSS/footer.css");
+/*Import do Inicio*/
+@import url("../CSS/styleFichaCHK.css");
+
+:root {
+    /*Tema Escuro*/
+    --fundo-TE: #282424;
+    --fundo-ficha-TE: #363636;
+    --fundo-botão-TE: #363636;
+    --fundo-botão-borda-TE: #232323;
+    --fundo-botão-texto-TE: #FFF;
+    --text-color-TE: #FFF;
+    /*Tema Claro*/
+    --fundo-TC: #EBEBEB;
+    --fundo-ficha-TC: #C0C0C0;
+    --fundo-botão-TC: #FFF;
+    --fundo-botão-borda-TC: #232323;
+    --fundo-botão-texto-TC: #000;
+    --text-color-TC: #000;
+    /*Others*/
+    --fundo-botão: #0A52BD;
+    --texto-botão: #FFF;
+    --cabecalho-azul: #3272D1;
+    --rodape-azul-escuro: #0A52BD;
+    --sol: #EEB522;
+    --lua: #AEA5A5;
+    --transparente: transparent;
+    /*Moedas*/
+    --dourado-moeda: #9A7311;
+    --dourado-borda: #6B4F09;
+    --prateado-moeda: #AEA5A5;
+    --prateado-borda: #686464;
+    --bronze-moeda: #BC6D24;
+    --bronze-borda: #964F0C;
+}
+
+/*---------------------------------------------------------------------------*/
+
+body {
+    background-color: var(--fundo-TC);
+    font-family: 'Alegreya Sans', sans-serif;
+    
+    align-items: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    
+    height: 100vh;
+    width: 100%;
+    
+    transition: background 0.2s linear;
+}
+
+/*Infos Gerais*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%
+}
+
+.menuSuspenso {
+    display: grid;
+    justify-items: center;
+    
+    grid-template-columns: 1fr 1fr 1fr;    
+    padding: 2rem 1rem 1rem 1rem;
+}
+
+.menuSuspenso__div {
+    background-color: var(--fundo-botão);
+    color: var(--texto-botão);
+    
+    align-items: center;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Isso aqui ta certo */
+    margin-bottom: .5rem;
+    padding: .5rem .5rem;
+    width: 75%;
+}
+
+.menuSuspenso__div-select {
+    background-color: var(--fundo-botão-borda-TE);
+    color: var(--fundo-botão-texto-TE);
+    
+    border-radius: 5px;
+    width: 150px;
+    
+    text-align-last: center;
+}
+
+option  {
+    background-color: var(--fundo-botão-borda-TE);
+    color: var(--fundo-botão-texto-TE);
+    
+    border-radius: 50px;
+}
+
+.menuSuspenso__div-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    padding: 1rem;
+}
+
+.btn {
+    background-color: var(--fundo-botão);
+    border-color: var(--fundo-botão-texto-TC);
+    border-radius: 5px;
+    color: var(--texto-botão);
+
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    height: 50px;
+    width: 100px;
+}
+
+.btn-gerarFicha {
+    margin-left: 1rem;
+}
+
+.resumoFicha {
+    background-color: var(--fundo-ficha-TE);
+    color: var(--text-color-TE);
+    
+    display: flex;
+    flex-direction: column;
+    
+    margin: 2rem 2rem;
+    padding: 1rem 1rem;
+}
+
+.resumoFicha__part1 {
+    border-bottom: 1px solid var(--text-color-TE);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+    padding-bottom: 2rem;
+}
+
+.resumoFicha__resumo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5px;
+    
+    width: 30%;
+}
+
+#nomePersonagem {
+    background-color: var(--fundo-ficha-TE);
+    color: var(--text-color-TE);
+    font-size: 50px;
+}
+
+.resumoFicha__resumo-p1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.resumoFicha__resumo-p1 p {
+    margin-right: 20px;
+}
+
+.resumoFicha__resumo-p2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.resumoFicha__attributes {    
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    width: 50%;
+}
+
+.resumoFicha__attributes-case {
+    border: 2px solid var(--text-color-TE);
+    border-radius: 5px;
+    
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    margin-left: 10px;
+    
+    height: 100%;
+    width: 96px;
+}
+
+.resumoFicha__attributes-case h3 {
+    font-size: 20px;
+    height: 30%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumoFicha__attributes-case p {
+    height: 70%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumoFicha__part2 {
+    border-bottom: 1px solid var(--text-color-TE);
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+    
+    padding-bottom: 1.5rem;
+}
+
+.resumoFicha__case {
+    border: 2px solid var(--text-color-TE);
+    border-radius: 5px;
+    
+    align-items: center;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    height: 96px;
+    width: 96px;
+}
+
+.resumoFicha__case h3 {
+    font-size: 20px;
+    height: 30%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumoFicha__case p {
+    height: 70%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    font-size: 36px;
+}
+
+.resumoFicha__case h4 {
+    background-color: var(--fundo-ficha-TE);
+    border: 2px solid var(--text-color-TE);
+    border-radius: 50px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-bottom: -14px;
+    padding: 3px;
+}
+
+/* --------------- 3ª Parte --------------- */
+
+.resumoFicha__part3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    padding: 1rem 2rem;
+}
+
+/* --------------- 3ª Parte - Poderes --------------- */
+
+.resumoFicha__powers{
+    background-color: var(--transparente);
+}
+
+.resumoFicha__powers-atk {}
+
+.resumoFicha__powers-armor {}
+
+.resumoFicha__powers-power {}
+
+.resumoFicha__powers-cd {}
+
+.resumoFicha__powers-spell {}
+
+.resumoFicha__powers-others {}
+
+.resumoFicha__powers-notes {}
+
+.resumoFicha__powers-equips {}
+
+.resumoFicha__powers-weight {}
+
+.resumoFicha__powers-tibar {}
+
+.resumoFicha__powers-tibarGold {}
+
+.resumoFicha__powers-tibarSilver {}
+
+.resumoFicha__powers-tibarBronze {}
+
+/* --------------- 3ª Parte - Perícias --------------- */
+
+.resumoFicha__pericias {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    
+    width: 36%;
+}
+
+.resumoFicha__pericias-casePrincipal {
+    background-color: var(--cabecalho-azul);
+    color: var(--text-color-TE);
+    
+    display: grid;
+    grid-template-columns: .25fr 1fr .5fr 1.5fr;
+    padding: 1rem 0;
+    
+    border-left: 1px solid var(--cabecalho-azul);
+    border-right: 1px solid var(--cabecalho-azul);
+}
+
+.resumoFicha__pericias-case {
+    align-items: baseline;
+    display: grid;
+    grid-template-columns: .25fr 1fr .5fr 1.5fr;
+    
+    border-bottom: 1px solid;
+    
+    border-left: 1px solid;
+    border-right: 1px solid;
+}
+
+.resumoFicha__pericias-bonuses {
+    background-color: var(--fundo-botão-borda-TE);
+    color: var(--fundo-botão-texto-TE);
+    border-radius: 5px;
+    text-align: center;
+    
+    width: 20px;
+}
+
+.resumoFicha__pericias-casePrincipal_pt0,
+.resumoFicha__pericias-casePrincipal_pt1,
+.resumoFicha__pericias-casePrincipal_pt2,
+.resumoFicha__pericias-casePrincipal_pt3 {
+    display: flex;
+    justify-content: center;
+    
+    height: 1rem;
+    width: 100%;
+}
+
+.resumoFicha__pericias_pt0,
+.resumoFicha__pericias_pt1,
+.resumoFicha__pericias_pt2,
+.resumoFicha__pericias_pt3 {
+    display: flex;
+    justify-content: center;
+    
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.resumoFicha__pericias_pt1 {
+    justify-content: left;
+}
+
+.resumoFicha__pericias_pt2 {
+    border-right: 2px solid;
+}
+
+.resumoFicha__pericias_pt3 {
+    justify-content: space-evenly;
+}
